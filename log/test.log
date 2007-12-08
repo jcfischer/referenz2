@@ -1,0 +1,2732 @@
+Spec::Rails::DSL::HelperBehaviourController: missing default helper path spec/rails/dsl/helper_behaviour_helper
+Spec::Rails::DSL::ViewExampleController: missing default helper path spec/rails/dsl/view_example_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+Spec::Rails::DSL::HelperBehaviourController: missing default helper path spec/rails/dsl/helper_behaviour_helper
+Spec::Rails::DSL::ViewExampleController: missing default helper path spec/rails/dsl/view_example_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000188)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000151)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000129)[0m   [0;1mBEGIN[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-11-28 22:50:10) [GET]
+  Session ID: 9c41a28ce742b7f477954c1c0f28753a
+  Parameters: {}
+/! FAILSAFE /!  Wed Nov 28 22:50:10 +0100 2007
+  Status: 500 Internal Server Error
+  No route matches "/" with {:method=>:get}
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1411:in `recognize_path'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1394:in `recognize'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:164:in `handle_request'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch_cgi'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:261:in `process'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:156:in `get'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:129:in `get_via_redirect'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:550:in `send'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:550:in `method_missing'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/matchers.rb:146:in `method_missing'
+    stories/view_page_story1.rb:10:in `visiting'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/simple_step.rb:13:in `__send__'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/simple_step.rb:13:in `perform'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/world.rb:58:in `store_and_call'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/world.rb:73:in `When'
+    stories/view_page_story1.rb:9
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/scenario_runner.rb:14:in `instance_eval'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/scenario_runner.rb:14:in `run'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/story_runner.rb:48:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/story_runner.rb:43:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/story_runner.rb:43:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/story_runner.rb:39:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/story_runner.rb:39:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner.rb:38:in `register_exit_hook'
+    stories/view_page_story1.rb:3
+  [4;35;1mSQL (0.000228)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000136)[0m   [0;1mBEGIN[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-11-28 22:50:10) [GET]
+  Session ID: aadef9104469c468b09b2c181bec5549
+  Parameters: {}
+/! FAILSAFE /!  Wed Nov 28 22:50:10 +0100 2007
+  Status: 500 Internal Server Error
+  No route matches "/esp" with {:method=>:get}
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1411:in `recognize_path'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1394:in `recognize'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:164:in `handle_request'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch_cgi'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:261:in `process'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:156:in `get'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:129:in `get_via_redirect'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:550:in `send'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:550:in `method_missing'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/matchers.rb:146:in `method_missing'
+    stories/view_page_story1.rb:10:in `visiting'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/simple_step.rb:13:in `__send__'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/simple_step.rb:13:in `perform'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/world.rb:58:in `store_and_call'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/world.rb:73:in `When'
+    stories/view_page_story1.rb:25
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/scenario_runner.rb:14:in `instance_eval'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/scenario_runner.rb:14:in `run'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/story_runner.rb:48:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/story_runner.rb:43:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/story_runner.rb:43:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/story_runner.rb:39:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/story_runner.rb:39:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner.rb:38:in `register_exit_hook'
+    stories/view_page_story1.rb:3
+  [4;35;1mSQL (0.000381)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000151)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000191)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000133)[0m   [0;1mBEGIN[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-11-28 22:50:10) [GET]
+  Session ID: 1a4a973fa9e142c60c12501ce78630ae
+  Parameters: {}
+/! FAILSAFE /!  Wed Nov 28 22:50:10 +0100 2007
+  Status: 500 Internal Server Error
+  No route matches "/esp" with {:method=>:get}
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1411:in `recognize_path'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1394:in `recognize'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:164:in `handle_request'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch_cgi'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:261:in `process'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:156:in `get'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:129:in `get_via_redirect'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:550:in `send'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:550:in `method_missing'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/matchers.rb:146:in `method_missing'
+    stories/view_page_story1.rb:10:in `visiting'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/simple_step.rb:13:in `__send__'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/simple_step.rb:13:in `perform'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/world.rb:58:in `store_and_call'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/world.rb:73:in `When'
+    stories/view_page_story1.rb:42
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/scenario_runner.rb:14:in `instance_eval'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/scenario_runner.rb:14:in `run'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/story_runner.rb:48:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/story_runner.rb:43:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/story_runner.rb:43:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/story_runner.rb:39:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner/story_runner.rb:39:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec/lib/spec/story/runner.rb:38:in `register_exit_hook'
+    stories/view_page_story1.rb:3
+  [4;35;1mSQL (0.000379)[0m   [0mROLLBACK[0m
+Spec::Rails::DSL::HelperBehaviourController: missing default helper path spec/rails/dsl/helper_behaviour_helper
+Spec::Rails::DSL::ViewExampleController: missing default helper path spec/rails/dsl/view_example_helper
+Spec::Rails::DSL::HelperBehaviourController: missing default helper path spec/rails/dsl/helper_behaviour_helper
+Spec::Rails::DSL::ViewExampleController: missing default helper path spec/rails/dsl/view_example_helper
+Spec::Rails::DSL::HelperBehaviourController: missing default helper path spec/rails/dsl/helper_behaviour_helper
+Spec::Rails::DSL::ViewExampleController: missing default helper path spec/rails/dsl/view_example_helper
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000231)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000185)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000196)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000154)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000138)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.103432)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.020340)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000319)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.007355)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000202)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000134)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000135)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000226)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000192)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000143)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000351)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000205)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000132)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000130)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000180)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000146)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000152)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000131)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000130)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000364)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000217)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000178)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000251)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000196)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000292)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000163)[0m   [0;1mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000410)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000312)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000220)[0m   [0;1mBEGIN[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-11-29 15:09:29) [GET]
+  Session ID: 8223eff526c73a17282308636df83f84
+  Parameters: {}
+/! FAILSAFE /!  Thu Nov 29 15:09:29 +0100 2007
+  Status: 500 Internal Server Error
+  No route matches "/pages" with {:method=>:get}
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1411:in `recognize_path'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1394:in `recognize'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:164:in `handle_request'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch_cgi'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:261:in `process'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:156:in `get'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `send'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `get'
+    stories/view_page_story.rb:17:in `anklicken von'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `__send__'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `perform'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:73:in `store_and_call'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:110:in `When'
+    stories/view_page_story.rb:16
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `instance_eval'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `run'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:48:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner.rb:46:in `register_exit_hook'
+    stories/view_page_story.rb:3
+  [4;35;1mSQL (0.010376)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000193)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000146)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000335)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000194)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000199)[0m   [0;1mBEGIN[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-11-29 15:11:29) [GET]
+  Session ID: ce0d4ee84ad92487a9ff9849104c29f0
+  Parameters: {}
+/! FAILSAFE /!  Thu Nov 29 15:11:29 +0100 2007
+  Status: 500 Internal Server Error
+  No route matches "/pages" with {:method=>:get}
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1411:in `recognize_path'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1394:in `recognize'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:164:in `handle_request'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch_cgi'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:261:in `process'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:156:in `get'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `send'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `get'
+    stories/view_page_story.rb:17:in `anklicken von'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `__send__'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `perform'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:73:in `store_and_call'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:110:in `When'
+    stories/view_page_story.rb:16
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `instance_eval'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `run'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:48:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner.rb:46:in `register_exit_hook'
+    stories/view_page_story.rb:3
+  [4;35;1mSQL (0.000251)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000128)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000115)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000317)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000221)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000165)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000408)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000439)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000211)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000167)[0m   [0;1mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000329)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000232)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000175)[0m   [0;1mBEGIN[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-11-29 15:14:22) [GET]
+  Session ID: 7e9f101803ff9dedbb30b842448535b0
+  Parameters: {}
+/! FAILSAFE /!  Thu Nov 29 15:14:22 +0100 2007
+  Status: 500 Internal Server Error
+  No route matches "/pages" with {:method=>:get}
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1411:in `recognize_path'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1394:in `recognize'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:164:in `handle_request'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch_cgi'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:261:in `process'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:156:in `get'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:129:in `get_via_redirect'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:550:in `send'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:550:in `method_missing'
+    stories/view_page_story.rb:17:in `anklicken von'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `__send__'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `perform'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:73:in `store_and_call'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:110:in `When'
+    stories/view_page_story.rb:16
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `instance_eval'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `run'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:48:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner.rb:46:in `register_exit_hook'
+    stories/view_page_story.rb:3
+  [4;35;1mSQL (0.000216)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000116)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000112)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000237)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000188)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000174)[0m   [0;1mBEGIN[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-11-29 15:14:43) [GET]
+  Session ID: 764bee35b1ae29b17b8766aa832e3969
+  Parameters: {}
+/! FAILSAFE /!  Thu Nov 29 15:14:43 +0100 2007
+  Status: 500 Internal Server Error
+  No route matches "/pages" with {:method=>:get}
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1411:in `recognize_path'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1394:in `recognize'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:164:in `handle_request'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch_cgi'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:261:in `process'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:156:in `get'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `send'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `get'
+    stories/view_page_story.rb:17:in `anklicken von'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `__send__'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `perform'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:73:in `store_and_call'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:110:in `When'
+    stories/view_page_story.rb:16
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `instance_eval'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `run'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:48:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner.rb:46:in `register_exit_hook'
+    stories/view_page_story.rb:3
+  [4;35;1mSQL (0.000227)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000129)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000238)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.003663)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000368)[0m   [0;1mBEGIN[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-11-29 15:15:36) [GET]
+  Session ID: d67041f3ce9e9b48dc9b46c3e8121557
+  Parameters: {}
+/! FAILSAFE /!  Thu Nov 29 15:15:36 +0100 2007
+  Status: 500 Internal Server Error
+  No route matches "/pages" with {:method=>:get}
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1411:in `recognize_path'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1394:in `recognize'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:164:in `handle_request'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch_cgi'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:261:in `process'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:156:in `get'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `send'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `get'
+    stories/view_page_story.rb:17:in `anklicken von'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `__send__'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `perform'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:73:in `store_and_call'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:110:in `When'
+    stories/view_page_story.rb:16
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `instance_eval'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `run'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:48:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner.rb:46:in `register_exit_hook'
+    stories/view_page_story.rb:3
+  [4;35;1mSQL (0.000914)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000857)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000626)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.003013)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000218)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000134)[0m   [0;1mBEGIN[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-11-29 15:17:35) [GET]
+  Session ID: 954c0f7d4cb0292a1d73667499b55947
+  Parameters: {}
+/! FAILSAFE /!  Thu Nov 29 15:17:35 +0100 2007
+  Status: 500 Internal Server Error
+  No route matches "/pages" with {:method=>:get}
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1411:in `recognize_path'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1394:in `recognize'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:164:in `handle_request'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch_cgi'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:261:in `process'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:156:in `get'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `send'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `get'
+    stories/view_page_story.rb:17:in `anklicken von'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `__send__'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `perform'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:73:in `store_and_call'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:110:in `When'
+    stories/view_page_story.rb:16
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `instance_eval'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `run'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:48:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner.rb:46:in `register_exit_hook'
+    stories/view_page_story.rb:3
+  [4;35;1mSQL (0.000574)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.001733)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000337)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.015587)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000188)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000128)[0m   [0;1mBEGIN[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-11-29 15:26:11) [GET]
+  Session ID: 8dec486ba73e9966f48817d2eceeac0c
+  Parameters: {}
+/! FAILSAFE /!  Thu Nov 29 15:26:11 +0100 2007
+  Status: 500 Internal Server Error
+  No route matches "/pages" with {:method=>:get}
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1411:in `recognize_path'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1394:in `recognize'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:164:in `handle_request'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch_cgi'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:261:in `process'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:156:in `get'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `send'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `get'
+    stories/view_page_story.rb:17:in `anklicken von'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `__send__'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `perform'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:73:in `store_and_call'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:110:in `When'
+    stories/view_page_story.rb:16
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `instance_eval'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `run'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:48:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner.rb:46:in `register_exit_hook'
+    stories/view_page_story.rb:3
+  [4;35;1mSQL (0.000228)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000795)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000321)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000247)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000232)[0m   [0;1mBEGIN[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-11-29 16:51:47) [GET]
+  Session ID: feec43f56db126c0d6479bb43e5cf374
+  Parameters: {}
+/! FAILSAFE /!  Thu Nov 29 16:51:47 +0100 2007
+  Status: 500 Internal Server Error
+  No route matches "/pages" with {:method=>:get}
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1411:in `recognize_path'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1394:in `recognize'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:164:in `handle_request'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch_cgi'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:261:in `process'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:156:in `get'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `send'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `get'
+    stories/view_page_story.rb:17:in `anklicken von'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `__send__'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `perform'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:73:in `store_and_call'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:110:in `When'
+    stories/view_page_story.rb:16
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `instance_eval'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `run'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:48:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner.rb:46:in `register_exit_hook'
+    stories/view_page_story.rb:3
+  [4;35;1mSQL (0.000323)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000156)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000273)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000165)[0m   [0;1mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000183)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000212)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000190)[0m   [0;1mBEGIN[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-11-29 16:56:23) [GET]
+  Session ID: fbb9de4feb07976d2ff69a3b8c335584
+  Parameters: {}
+/! FAILSAFE /!  Thu Nov 29 16:56:23 +0100 2007
+  Status: 500 Internal Server Error
+  No route matches "/pages" with {:method=>:get}
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1411:in `recognize_path'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1394:in `recognize'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:164:in `handle_request'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch_cgi'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:261:in `process'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:156:in `get'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `send'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `get'
+    stories/view_page_story.rb:17:in `anklicken von'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `__send__'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `perform'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:73:in `store_and_call'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:110:in `When'
+    stories/view_page_story.rb:16
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `instance_eval'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `run'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:48:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner.rb:46:in `register_exit_hook'
+    stories/view_page_story.rb:3
+  [4;35;1mSQL (0.000491)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000166)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000165)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000155)[0m   [0;1mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000176)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000216)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000187)[0m   [0;1mBEGIN[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-11-29 17:03:00) [GET]
+  Session ID: 8fc27c29531ca888be2b5333a6a9c244
+  Parameters: {}
+/! FAILSAFE /!  Thu Nov 29 17:03:00 +0100 2007
+  Status: 500 Internal Server Error
+  No route matches "/pages" with {:method=>:get}
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1411:in `recognize_path'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1394:in `recognize'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:164:in `handle_request'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch_cgi'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:261:in `process'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:156:in `get'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `send'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `get'
+    stories/view_page_story.rb:18:in `anklicken von'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `__send__'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `perform'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:73:in `store_and_call'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:110:in `When'
+    stories/view_page_story.rb:17
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `instance_eval'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `run'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:48:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner.rb:46:in `register_exit_hook'
+    stories/view_page_story.rb:3
+  [4;35;1mSQL (0.000542)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.001144)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000931)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000165)[0m   [0;1mBEGIN[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2007-11-29 17:07:54) [GET]
+  Session ID: 3aad7d70940a1b7a602d40a9e245ff4b
+  Parameters: {}
+/! FAILSAFE /!  Thu Nov 29 17:07:54 +0100 2007
+  Status: 500 Internal Server Error
+  No route matches "/pages" with {:method=>:get}
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1411:in `recognize_path'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/routing.rb:1394:in `recognize'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:164:in `handle_request'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch_cgi'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:261:in `process'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:156:in `get'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `send'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `get'
+    stories/view_page_story.rb:18:in `anklicken von'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `__send__'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `perform'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:73:in `store_and_call'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:110:in `When'
+    stories/view_page_story.rb:17
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `instance_eval'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `run'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:48:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner.rb:46:in `register_exit_hook'
+    stories/view_page_story.rb:3
+  [4;35;1mSQL (0.000224)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000152)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000143)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000322)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000163)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000133)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000119)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000118)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000165)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000159)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.003077)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000153)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000165)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000133)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000132)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000304)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000211)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000181)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000176)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000220)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000175)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000194)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000222)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 00:31:13) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mSQL (0.000267)[0m   [0;1mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000227)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000158)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000133)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000151)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000134)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000148)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 00:39:10) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00258 (387 reqs/sec) | Rendering: 0.00135 (52%) | DB: 0.00121 (47%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000979)[0m   [0;1mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000445)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000228)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000180)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000254)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000192)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000233)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000181)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000327)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 00:57:33) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00246 (405 reqs/sec) | Rendering: 0.00119 (48%) | DB: 0.00204 (82%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000232)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000609)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000616)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000160)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000132)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000134)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000147)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 00:57:33) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00083 (1199 reqs/sec) | Rendering: 0.00062 (73%) | DB: 0.00203 (243%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000176)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000191)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000175)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000132)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000126)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000131)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000134)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 00:57:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00211 (473 reqs/sec) | Rendering: 0.00107 (50%) | DB: 0.00115 (54%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000212)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000281)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000272)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000159)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000135)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000154)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 00:57:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00088 (1133 reqs/sec) | Rendering: 0.00065 (73%) | DB: 0.00135 (153%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000218)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000311)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000179)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000185)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000165)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000188)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000148)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000144)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000184)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 00:59:20) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mSQL (0.000247)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000158)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000603)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000170)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000139)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000135)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000150)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 00:59:20) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mSQL (0.000181)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000286)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000196)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.001222)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.005272)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000136)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000117)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000191)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 01:06:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mSQL (0.000223)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000155)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000631)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000118)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000117)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000116)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000129)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 01:06:25) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mSQL (0.000149)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.212634)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.019662)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000426)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000204)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000185)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000176)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000209)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000207)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.007818)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000294)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000173)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000168)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.002029)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000231)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000193)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 13:45:23) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mSQL (0.000263)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.003208)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000159)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000171)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000158)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000133)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000149)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 13:45:23) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mSQL (0.000205)[0m   [0;1mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000190)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000157)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000147)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000132)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000143)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000379)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000140)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000128)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000129)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000134)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 13:45:59) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mSQL (0.000205)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000545)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000176)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000132)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000142)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 13:45:59) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mSQL (0.000154)[0m   [0;1mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000180)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000151)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000131)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000129)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000132)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000136)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000161)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 13:46:08) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00256 (390 reqs/sec) | Rendering: 0.00144 (56%) | DB: 0.00115 (44%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000271)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.021026)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.008855)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000238)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000162)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001665)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000274)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 13:46:08) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mSQL (0.000237)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000208)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000136)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000124)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000137)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 13:46:08) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mSQL (0.000174)[0m   [0;1mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000259)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000155)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000132)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000131)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000120)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000118)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000139)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000146)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 15:17:12) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00219 (455 reqs/sec) | Rendering: 0.00107 (48%) | DB: 0.00120 (54%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000240)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000156)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001478)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000138)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000120)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000122)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000133)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 15:17:12) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00089 (1124 reqs/sec) | Rendering: 0.00063 (70%) | DB: 0.00239 (268%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000205)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000120)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000116)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000116)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000131)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 15:17:12) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00092 (1088 reqs/sec) | Rendering: 0.00065 (70%) | DB: 0.00095 (102%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000203)[0m   [0;1mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000493)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000176)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000143)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000139)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000129)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000144)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000145)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000146)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000318)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000172)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000128)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000789)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000221)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 15:17:15) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00357 (280 reqs/sec) | Rendering: 0.00180 (50%) | DB: 0.00339 (95%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000259)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000388)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000125)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000115)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000115)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000118)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000137)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 15:17:15) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00092 (1089 reqs/sec) | Rendering: 0.00066 (71%) | DB: 0.00126 (136%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000239)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000442)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001587)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000263)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.002325)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000159)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000565)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 15:17:15) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00192 (519 reqs/sec) | Rendering: 0.00161 (83%) | DB: 0.00558 (290%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000233)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000313)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000212)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000170)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000162)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000285)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000197)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000168)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000204)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000180)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000300)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000249)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000169)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000139)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000165)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 16:32:03) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00233 (428 reqs/sec) | Rendering: 0.00113 (48%) | DB: 0.00304 (130%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000239)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000446)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000157)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000131)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000136)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 16:32:03) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00092 (1083 reqs/sec) | Rendering: 0.00065 (70%) | DB: 0.00136 (147%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000212)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.002516)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000281)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000132)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000145)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000232)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 16:32:03) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00135 (742 reqs/sec) | Rendering: 0.00094 (70%) | DB: 0.00365 (270%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000227)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000235)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000166)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000140)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000191)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000171)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000133)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000149)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 16:34:24) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00417 (239 reqs/sec) | Rendering: 0.00140 (33%) | DB: 0.00131 (31%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000251)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000979)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000283)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000152)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000275)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000179)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000186)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 16:34:24) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00096 (1042 reqs/sec) | Rendering: 0.00070 (72%) | DB: 0.00231 (240%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000217)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000150)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000246)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000308)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000153)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000248)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000357)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-11-30 16:34:24) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00085 (1180 reqs/sec) | Rendering: 0.00062 (73%) | DB: 0.00168 (198%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000271)[0m   [0;1mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000219)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000153)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2007-11-30 18:52:11) [GET]
+  Session ID: fb235ca9e94ab5039fde7ffabd1292a8
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+
+
+Processing PagesController#index (for 127.0.0.1 at 2007-11-30 18:52:11) [GET]
+  Session ID: fb235ca9e94ab5039fde7ffabd1292a8
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+/! FAILSAFE /!  Fri Nov 30 18:52:11 +0100 2007
+  Status: 500 Internal Server Error
+  Missing template pages/index.html.erb in view path /Users/jcf/dev/work/referenz2/app/views
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/base.rb:1215:in `assert_existence_of_template_file'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/base.rb:1048:in `render_for_file'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/base.rb:792:in `render_with_no_layout'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/layout.rb:267:in `render_without_benchmark'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:51:in `render'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/base.rb:1105:in `perform_action_without_filters'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/filters.rb:695:in `call_filters'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/filters.rb:687:in `perform_action_without_benchmark'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/rescue.rb:175:in `perform_action_without_caching'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/caching.rb:665:in `perform_action'
+    /Users/jcf/dev/work/referenz2/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Users/jcf/dev/work/referenz2/vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/caching.rb:664:in `perform_action'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/base.rb:512:in `send'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/base.rb:512:in `process_without_filters'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/filters.rb:683:in `process_without_session_management_support'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/session_management.rb:122:in `sass_old_process'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/haml/lib/sass/plugin/rails.rb:14:in `process_without_test'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/test_process.rb:15:in `process'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/base.rb:372:in `process'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:165:in `handle_request'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:114:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:125:in `dispatch_cgi'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:261:in `process'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:156:in `get'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `send'
+    /Users/jcf/dev/work/referenz2/vendor/rails/actionpack/lib/action_controller/integration.rb:501:in `get'
+    stories/view_page_story.rb:18:in `anklicken von'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `__send__'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/step.rb:15:in `perform'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:73:in `store_and_call'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/world.rb:110:in `When'
+    stories/view_page_story.rb:17
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `instance_eval'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/scenario_runner.rb:14:in `run'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:48:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:44:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `each'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner/story_runner.rb:39:in `run_stories'
+    /Users/jcf/dev/work/referenz2/vendor/plugins/rspec_on_rails/lib/spec/rails/../../../../rspec/lib/spec/story/runner.rb:46:in `register_exit_hook'
+    stories/view_page_story.rb:3
+  [4;35;1mSQL (0.000348)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000121)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000181)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000164)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000177)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000133)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000127)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000393)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000209)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000181)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000192)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000180)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000212)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000199)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000180)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000216)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000278)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000152)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000125)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000129)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#destroy (for 0.0.0.0 at 2007-12-01 01:12:29) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"blas"}
+Redirected to http://test.host/blas
+Completed in 0.00130 (771 reqs/sec) | DB: 0.00291 (224%) | 302 Found [http://test.host/blas/1]
+  [4;35;1mSQL (0.000209)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000164)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000128)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000132)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000132)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000129)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000143)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#destroy (for 0.0.0.0 at 2007-12-01 01:12:29) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"blas"}
+Redirected to http://test.host/blas
+Completed in 0.00039 (2597 reqs/sec) | DB: 0.00104 (269%) | 302 Found [http://test.host/blas/1]
+  [4;36;1mSQL (0.000195)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000775)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000144)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000126)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000124)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000141)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#destroy (for 0.0.0.0 at 2007-12-01 01:12:29) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"blas"}
+Redirected to http://test.host/blas
+Completed in 0.00039 (2563 reqs/sec) | DB: 0.00163 (418%) | 302 Found [http://test.host/blas/1]
+  [4;35;1mSQL (0.000197)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000239)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000138)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000128)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000120)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000136)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#update (for 0.0.0.0 at 2007-12-01 01:12:29) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"blas"}
+Rendering blas/edit
+Completed in 0.00179 (558 reqs/sec) | Rendering: 0.00111 (61%) | DB: 0.00108 (60%) | 200 OK [http://test.host/blas/1]
+  [4;36;1mSQL (0.000217)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000306)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000126)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000156)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000137)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000141)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#update (for 0.0.0.0 at 2007-12-01 01:12:29) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"blas"}
+Redirected to http://test.host/blas/1
+Completed in 0.00059 (1683 reqs/sec) | DB: 0.00122 (205%) | 302 Found [http://test.host/blas/1]
+  [4;35;1mSQL (0.000234)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000162)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000161)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000126)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000132)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000139)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#update (for 0.0.0.0 at 2007-12-01 01:12:29) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"blas"}
+Redirected to http://test.host/blas/1
+Completed in 0.00064 (1572 reqs/sec) | DB: 0.00108 (169%) | 302 Found [http://test.host/blas/1]
+  [4;36;1mSQL (0.001365)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000797)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000119)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000126)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000151)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#update (for 0.0.0.0 at 2007-12-01 01:12:29) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"blas"}
+Redirected to http://test.host/blas/1
+Completed in 0.00068 (1479 reqs/sec) | DB: 0.00282 (416%) | 302 Found [http://test.host/blas/1]
+  [4;35;1mSQL (0.000210)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000606)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000137)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000150)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000150)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#update (for 0.0.0.0 at 2007-12-01 01:12:29) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"blas"}
+Redirected to http://test.host/blas/1
+Completed in 0.00057 (1754 reqs/sec) | DB: 0.00150 (263%) | 302 Found [http://test.host/blas/1]
+  [4;36;1mSQL (0.000193)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000233)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000154)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000133)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000144)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#create (for 0.0.0.0 at 2007-12-01 01:12:29) [POST]
+  Session ID: 
+  Parameters: {"bla"=>{}, "action"=>"create", "controller"=>"blas"}
+Rendering blas/new
+Completed in 0.00119 (836 reqs/sec) | Rendering: 0.00073 (61%) | DB: 0.00112 (93%) | 200 OK [http://test.host/blas?]
+  [4;35;1mSQL (0.000208)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000216)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000127)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000129)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000140)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#create (for 0.0.0.0 at 2007-12-01 01:12:29) [POST]
+  Session ID: 
+  Parameters: {"bla"=>{}, "action"=>"create", "controller"=>"blas"}
+Redirected to http://test.host/blas/1
+Completed in 0.00058 (1715 reqs/sec) | DB: 0.00107 (183%) | 302 Found [http://test.host/blas?]
+  [4;36;1mSQL (0.000239)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000936)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000197)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000127)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000132)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000149)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#create (for 0.0.0.0 at 2007-12-01 01:12:29) [POST]
+  Session ID: 
+  Parameters: {"bla"=>{}, "action"=>"create", "controller"=>"blas"}
+Redirected to http://test.host/blas/1
+Completed in 0.00065 (1533 reqs/sec) | DB: 0.00190 (291%) | 302 Found [http://test.host/blas?]
+  [4;35;1mSQL (0.000259)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000236)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000129)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000124)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000135)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#edit (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"blas"}
+Rendering blas/edit
+Completed in 0.00072 (1385 reqs/sec) | Rendering: 0.00047 (65%) | DB: 0.00113 (156%) | 200 OK [http://test.host/blas/1/edit]
+  [4;36;1mSQL (0.000194)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.002278)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000150)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000127)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000124)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000148)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#edit (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"blas"}
+Rendering blas/edit
+Completed in 0.00072 (1385 reqs/sec) | Rendering: 0.00047 (65%) | DB: 0.00314 (435%) | 200 OK [http://test.host/blas/1/edit]
+  [4;35;1mSQL (0.000195)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000190)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000128)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000151)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000131)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000141)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#edit (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"blas"}
+Rendering blas/edit
+Completed in 0.00072 (1382 reqs/sec) | Rendering: 0.00047 (64%) | DB: 0.00106 (146%) | 200 OK [http://test.host/blas/1/edit]
+  [4;36;1mSQL (0.000221)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000386)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000120)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000139)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000152)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#edit (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"blas"}
+Rendering blas/edit
+Completed in 0.00077 (1305 reqs/sec) | Rendering: 0.00050 (65%) | DB: 0.00128 (166%) | 200 OK [http://test.host/blas/1/edit]
+  [4;35;1mSQL (0.000207)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000231)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000129)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000155)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000139)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000136)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#new (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"blas"}
+Rendering blas/new
+Completed in 0.00101 (989 reqs/sec) | Rendering: 0.00054 (53%) | DB: 0.00112 (110%) | 200 OK [http://test.host/blas/new]
+  [4;36;1mSQL (0.000220)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000306)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000142)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000131)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000122)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000139)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#new (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"blas"}
+Rendering blas/new
+Completed in 0.00098 (1020 reqs/sec) | Rendering: 0.00052 (53%) | DB: 0.00118 (120%) | 200 OK [http://test.host/blas/new]
+  [4;35;1mSQL (0.000259)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000147)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000628)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000162)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000126)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000148)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#new (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"blas"}
+Rendering blas/new
+Completed in 0.00091 (1101 reqs/sec) | Rendering: 0.00049 (54%) | DB: 0.00160 (175%) | 200 OK [http://test.host/blas/new]
+  [4;36;1mSQL (0.000187)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000459)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000125)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000124)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000161)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#new (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"blas"}
+Rendering blas/new
+Completed in 0.00093 (1071 reqs/sec) | Rendering: 0.00051 (54%) | DB: 0.00132 (141%) | 200 OK [http://test.host/blas/new]
+  [4;35;1mSQL (0.000207)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000596)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000137)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000125)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000138)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#new (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"blas"}
+Rendering blas/new
+Completed in 0.00102 (980 reqs/sec) | Rendering: 0.00054 (52%) | DB: 0.00145 (142%) | 200 OK [http://test.host/blas/new]
+  [4;36;1mSQL (0.000245)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000220)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000145)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000154)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000144)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000131)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#show (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"blas"}
+Completed in 0.00060 (1655 reqs/sec) | Rendering: 0.00010 (16%) | DB: 0.00117 (194%) | 200 OK [http://test.host/blas/1]
+  [4;35;1mSQL (0.000212)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000335)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000138)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000150)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000142)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#show (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"blas"}
+Completed in 0.00065 (1543 reqs/sec) | Rendering: 0.00010 (15%) | DB: 0.00124 (191%) | 200 OK [http://test.host/blas/1]
+  [4;36;1mSQL (0.000438)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000213)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000131)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000164)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#show (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"blas"}
+Completed in 0.00053 (1894 reqs/sec) | Rendering: 0.00009 (16%) | DB: 0.00133 (251%) | 200 OK [http://test.host/blas/1]
+  [4;35;1mSQL (0.000199)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000267)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000136)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000122)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000133)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#show (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"blas"}
+Rendering blas/show
+Completed in 0.00116 (859 reqs/sec) | Rendering: 0.00073 (62%) | DB: 0.00111 (94%) | 200 OK [http://test.host/blas/1]
+  [4;36;1mSQL (0.000212)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000411)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000153)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000159)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000150)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#show (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"blas"}
+Rendering blas/show
+Completed in 0.00100 (996 reqs/sec) | Rendering: 0.00055 (54%) | DB: 0.00133 (132%) | 200 OK [http://test.host/blas/1]
+  [4;35;1mSQL (0.000237)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.002934)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000163)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000141)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000156)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#show (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"blas"}
+Rendering blas/show
+Completed in 0.00100 (1004 reqs/sec) | Rendering: 0.00051 (51%) | DB: 0.00389 (390%) | 200 OK [http://test.host/blas/1]
+  [4;36;1mSQL (0.000245)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000175)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000121)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000124)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#show (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"blas"}
+Rendering blas/show
+Completed in 0.00093 (1072 reqs/sec) | Rendering: 0.00050 (54%) | DB: 0.00106 (113%) | 200 OK [http://test.host/blas/1]
+  [4;35;1mSQL (0.000201)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000244)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000141)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000133)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000134)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#index (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"blas"}
+Completed in 0.00054 (1855 reqs/sec) | Rendering: 0.00009 (16%) | DB: 0.00110 (204%) | 200 OK [http://test.host/blas]
+  [4;36;1mSQL (0.000200)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000158)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000122)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000129)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000152)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#index (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"blas"}
+Completed in 0.00115 (869 reqs/sec) | Rendering: 0.00070 (61%) | DB: 0.00101 (87%) | 200 OK [http://test.host/blas]
+  [4;35;1mSQL (0.000230)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000408)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000143)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000121)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000137)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#index (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"blas"}
+Completed in 0.00055 (1824 reqs/sec) | Rendering: 0.00009 (16%) | DB: 0.00128 (234%) | 200 OK [http://test.host/blas]
+  [4;36;1mSQL (0.000195)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000427)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000145)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000142)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000136)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000149)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#index (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"blas"}
+Rendering blas/index
+Completed in 0.00140 (716 reqs/sec) | Rendering: 0.00082 (58%) | DB: 0.00132 (94%) | 200 OK [http://test.host/blas]
+  [4;35;1mSQL (0.000235)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000151)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000754)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000143)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000135)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000144)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#index (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"blas"}
+Rendering blas/index
+Completed in 0.00099 (1005 reqs/sec) | Rendering: 0.00052 (52%) | DB: 0.00169 (169%) | 200 OK [http://test.host/blas]
+  [4;36;1mSQL (0.000381)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000172)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.002334)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000155)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000152)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000155)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000153)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#index (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"blas"}
+Rendering blas/index
+Completed in 0.00099 (1007 reqs/sec) | Rendering: 0.00052 (51%) | DB: 0.00350 (352%) | 200 OK [http://test.host/blas]
+  [4;35;1mSQL (0.000214)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000154)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000131)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000134)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000160)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000161)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#index (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"blas"}
+Rendering blas/index
+Completed in 0.00097 (1029 reqs/sec) | Rendering: 0.00051 (52%) | DB: 0.00108 (111%) | 200 OK [http://test.host/blas]
+  [4;36;1mSQL (0.000210)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000221)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000432)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000160)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000128)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000134)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000224)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000624)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000147)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000122)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000128)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000140)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000149)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000305)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000141)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000138)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000129)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000143)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000126)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000132)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000097)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000141)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000301)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000139)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000125)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000122)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000158)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000148)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000153)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000130)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000129)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000157)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000141)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000148)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000146)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000159)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000147)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000131)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000128)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000149)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000159)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000127)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000253)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000136)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000120)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000159)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000151)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000638)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000122)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000156)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000156)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000167)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000131)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000128)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000121)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000143)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000128)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000560)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000132)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000136)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000134)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000170)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000137)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000343)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000174)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000128)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000139)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000314)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000141)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000175)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000129)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000237)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000163)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000204)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000988)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000139)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000125)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000129)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000150)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000215)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000227)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000124)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000132)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000146)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000349)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000239)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000134)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000460)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000238)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000223)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000128)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000129)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000124)[0m   [0mBEGIN[0m
+  [4;36;1mBla Columns (0.000000)[0m   [0;1mMysql::Error: #42S02Table 'referenz2_test.blas' doesn't exist: SHOW FIELDS FROM blas[0m
+  [4;35;1mSQL (0.000187)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000249)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000132)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000153)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000212)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000235)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000125)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000127)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000142)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00213 (468 reqs/sec) | Rendering: 0.00096 (45%) | DB: 0.00109 (51%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000223)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000155)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000125)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000159)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000205)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000150)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00106 (941 reqs/sec) | Rendering: 0.00078 (73%) | DB: 0.00114 (107%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000210)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.003972)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000212)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.015155)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000204)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000135)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000152)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-12-01 01:12:29) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00697 (143 reqs/sec) | Rendering: 0.00667 (95%) | DB: 0.02004 (287%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000226)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000204)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000144)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000122)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000141)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000165)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000165)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-12-01 01:18:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00213 (469 reqs/sec) | Rendering: 0.00100 (47%) | DB: 0.00119 (55%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000223)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000854)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000153)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000122)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000132)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000142)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000171)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-12-01 01:18:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00103 (970 reqs/sec) | Rendering: 0.00068 (66%) | DB: 0.00180 (174%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000188)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000185)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000637)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000146)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000130)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000138)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-12-01 01:18:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00088 (1132 reqs/sec) | Rendering: 0.00062 (70%) | DB: 0.00155 (175%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000191)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000252)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000144)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000124)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000407)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000189)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000165)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-12-01 01:18:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00097 (1032 reqs/sec) | Rendering: 0.00068 (69%) | DB: 0.00147 (152%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000239)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000250)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000177)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000297)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000139)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000136)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000261)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001115)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-12-01 01:18:59) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00290 (344 reqs/sec) | Rendering: 0.00149 (51%) | DB: 0.00251 (86%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000439)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000826)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000147)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000140)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000134)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000158)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000147)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-12-01 01:18:59) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00112 (891 reqs/sec) | Rendering: 0.00081 (71%) | DB: 0.00199 (177%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000255)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000511)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000161)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000144)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000145)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000189)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000307)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-12-01 01:18:59) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00103 (970 reqs/sec) | Rendering: 0.00071 (69%) | DB: 0.00171 (166%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000246)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.001323)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000468)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000548)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000472)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000197)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000205)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-12-01 01:18:59) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00101 (988 reqs/sec) | Rendering: 0.00070 (69%) | DB: 0.00346 (341%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000560)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000216)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000167)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000153)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000153)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000160)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000172)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000165)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000192)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-12-01 01:19:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00332 (301 reqs/sec) | Rendering: 0.00115 (34%) | DB: 0.00138 (41%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000240)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.001128)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000187)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000133)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000134)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000136)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000342)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-12-01 01:19:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00109 (914 reqs/sec) | Rendering: 0.00076 (69%) | DB: 0.00230 (210%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000241)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000626)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000164)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.002187)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000327)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000526)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000186)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-12-01 01:19:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00105 (952 reqs/sec) | Rendering: 0.00073 (69%) | DB: 0.00426 (405%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000402)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000367)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000139)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000129)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000250)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000158)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000731)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-12-01 01:19:31) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00109 (915 reqs/sec) | Rendering: 0.00075 (68%) | DB: 0.00218 (199%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000238)[0m   [0mROLLBACK[0m
+Spec::Rails::Example::HelperBehaviourController: missing default helper path spec/rails/example/helper_behaviour_helper
+Spec::Rails::Example::ViewExampleGroupController: missing default helper path spec/rails/example/view_example_group_helper
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000266)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000151)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000122)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.131462)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000303)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.017213)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.046821)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.016066)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.004658)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000443)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000133)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000187)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.001839)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#destroy (for 0.0.0.0 at 2007-12-01 01:19:38) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"blas"}
+Redirected to http://test.host/blas
+Completed in 0.00144 (693 reqs/sec) | DB: 0.21991 (15250%) | 302 Found [http://test.host/blas/1]
+  [4;35;1mSQL (0.000229)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.025359)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000195)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000133)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001389)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000155)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000145)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#destroy (for 0.0.0.0 at 2007-12-01 01:19:38) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"blas"}
+Redirected to http://test.host/blas
+Completed in 0.00044 (2288 reqs/sec) | DB: 0.02760 (6316%) | 302 Found [http://test.host/blas/1]
+  [4;36;1mSQL (0.000226)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000807)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000144)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001500)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000169)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000133)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000220)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#destroy (for 0.0.0.0 at 2007-12-01 01:19:38) [DELETE]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "id"=>"1", "controller"=>"blas"}
+Redirected to http://test.host/blas
+Completed in 0.00044 (2283 reqs/sec) | DB: 0.00320 (730%) | 302 Found [http://test.host/blas/1]
+  [4;35;1mSQL (0.000250)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000257)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000284)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.020488)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.038637)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000152)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000140)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#update (for 0.0.0.0 at 2007-12-01 01:19:38) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"blas"}
+Rendering blas/edit
+Completed in 0.00146 (686 reqs/sec) | Rendering: 0.00078 (53%) | DB: 0.06021 (4132%) | 200 OK [http://test.host/blas/1]
+  [4;36;1mSQL (0.063970)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000441)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000157)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000137)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000174)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000154)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#update (for 0.0.0.0 at 2007-12-01 01:19:38) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"blas"}
+Redirected to http://test.host/blas/1
+Completed in 0.00066 (1520 reqs/sec) | DB: 0.06516 (9906%) | 302 Found [http://test.host/blas/1]
+  [4;35;1mSQL (0.000223)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000194)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000134)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000154)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#update (for 0.0.0.0 at 2007-12-01 01:19:38) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"blas"}
+Redirected to http://test.host/blas/1
+Completed in 0.00068 (1476 reqs/sec) | DB: 0.00109 (160%) | 302 Found [http://test.host/blas/1]
+  [4;36;1mSQL (0.000240)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000259)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000140)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000474)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000147)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000224)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#update (for 0.0.0.0 at 2007-12-01 01:19:38) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"blas"}
+Redirected to http://test.host/blas/1
+Completed in 0.00064 (1557 reqs/sec) | DB: 0.00162 (252%) | 302 Found [http://test.host/blas/1]
+  [4;35;1mSQL (0.009613)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000201)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000133)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000139)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000128)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000140)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000416)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#update (for 0.0.0.0 at 2007-12-01 01:19:38) [PUT]
+  Session ID: 
+  Parameters: {"action"=>"update", "id"=>"1", "controller"=>"blas"}
+Redirected to http://test.host/blas/1
+Completed in 0.00065 (1543 reqs/sec) | DB: 0.01077 (1661%) | 302 Found [http://test.host/blas/1]
+  [4;36;1mSQL (0.000224)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000256)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000131)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000133)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000168)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000153)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#create (for 0.0.0.0 at 2007-12-01 01:19:38) [POST]
+  Session ID: 
+  Parameters: {"bla"=>{}, "action"=>"create", "controller"=>"blas"}
+Rendering blas/new
+Completed in 0.00124 (809 reqs/sec) | Rendering: 0.00076 (61%) | DB: 0.00120 (97%) | 200 OK [http://test.host/blas?]
+  [4;35;1mSQL (0.000240)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000205)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000135)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000154)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000155)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#create (for 0.0.0.0 at 2007-12-01 01:19:38) [POST]
+  Session ID: 
+  Parameters: {"bla"=>{}, "action"=>"create", "controller"=>"blas"}
+Redirected to http://test.host/blas/1
+Completed in 0.00103 (971 reqs/sec) | DB: 0.00115 (112%) | 302 Found [http://test.host/blas?]
+  [4;36;1mSQL (0.000319)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000639)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000170)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000278)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000150)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000157)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#create (for 0.0.0.0 at 2007-12-01 01:19:38) [POST]
+  Session ID: 
+  Parameters: {"bla"=>{}, "action"=>"create", "controller"=>"blas"}
+Redirected to http://test.host/blas/1
+Completed in 0.00076 (1314 reqs/sec) | DB: 0.00184 (242%) | 302 Found [http://test.host/blas?]
+  [4;35;1mSQL (0.000249)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000463)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000307)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000142)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000140)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000167)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000159)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#edit (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"blas"}
+Rendering blas/edit
+Completed in 0.00084 (1186 reqs/sec) | Rendering: 0.00055 (65%) | DB: 0.00163 (193%) | 200 OK [http://test.host/blas/1/edit]
+  [4;36;1mSQL (0.002864)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000359)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000165)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000125)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000128)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000189)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000214)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#edit (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"blas"}
+Rendering blas/edit
+Completed in 0.00113 (887 reqs/sec) | Rendering: 0.00086 (76%) | DB: 0.00404 (358%) | 200 OK [http://test.host/blas/1/edit]
+  [4;35;1mSQL (0.000238)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000622)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000152)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000583)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000139)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000131)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000514)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#edit (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"blas"}
+Rendering blas/edit
+Completed in 0.00085 (1170 reqs/sec) | Rendering: 0.00056 (65%) | DB: 0.00238 (278%) | 200 OK [http://test.host/blas/1/edit]
+  [4;36;1mSQL (0.000233)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000211)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000142)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000127)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000146)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000157)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#edit (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"blas"}
+Rendering blas/edit
+Completed in 0.00083 (1209 reqs/sec) | Rendering: 0.00054 (64%) | DB: 0.00115 (139%) | 200 OK [http://test.host/blas/1/edit]
+  [4;35;1mSQL (0.000251)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000634)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000150)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000217)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000138)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000145)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.002119)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#new (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"blas"}
+Rendering blas/new
+Completed in 0.00100 (1002 reqs/sec) | Rendering: 0.00055 (54%) | DB: 0.00365 (366%) | 200 OK [http://test.host/blas/new]
+  [4;36;1mSQL (0.000231)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000359)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000146)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000127)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000155)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000142)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000149)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#new (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"blas"}
+Rendering blas/new
+Completed in 0.00117 (855 reqs/sec) | Rendering: 0.00058 (49%) | DB: 0.00131 (111%) | 200 OK [http://test.host/blas/new]
+  [4;35;1mSQL (0.000252)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000200)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000135)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000139)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000212)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000151)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000642)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#new (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"blas"}
+Rendering blas/new
+Completed in 0.00100 (996 reqs/sec) | Rendering: 0.00053 (53%) | DB: 0.00173 (172%) | 200 OK [http://test.host/blas/new]
+  [4;36;1mSQL (0.000248)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000218)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.003396)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000189)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000155)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000158)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#new (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"blas"}
+Rendering blas/new
+Completed in 0.00103 (970 reqs/sec) | Rendering: 0.00056 (54%) | DB: 0.00449 (436%) | 200 OK [http://test.host/blas/new]
+  [4;35;1mSQL (0.000437)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.001403)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000546)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000324)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000130)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000133)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000162)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#new (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"blas"}
+Rendering blas/new
+Completed in 0.00114 (874 reqs/sec) | Rendering: 0.00064 (56%) | DB: 0.00313 (274%) | 200 OK [http://test.host/blas/new]
+  [4;36;1mSQL (0.000246)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000240)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000136)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000128)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000133)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000160)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#show (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"blas"}
+Completed in 0.00071 (1412 reqs/sec) | Rendering: 0.00012 (17%) | DB: 0.00118 (166%) | 200 OK [http://test.host/blas/1]
+  [4;35;1mSQL (0.000387)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.007895)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000169)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000166)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000354)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000142)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000158)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#show (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"blas"}
+Completed in 0.00067 (1483 reqs/sec) | Rendering: 0.00011 (16%) | DB: 0.00927 (1375%) | 200 OK [http://test.host/blas/1]
+  [4;36;1mSQL (0.000225)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000707)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000135)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000176)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#show (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"blas"}
+Completed in 0.00060 (1669 reqs/sec) | Rendering: 0.00010 (16%) | DB: 0.00162 (271%) | 200 OK [http://test.host/blas/1]
+  [4;35;1mSQL (0.000239)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000229)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000162)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000585)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000150)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000204)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000207)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#show (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"blas"}
+Rendering blas/show
+Completed in 0.00122 (820 reqs/sec) | Rendering: 0.00078 (63%) | DB: 0.00178 (145%) | 200 OK [http://test.host/blas/1]
+  [4;36;1mSQL (0.000245)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000740)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000210)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000124)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000121)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000164)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000163)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#show (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"blas"}
+Rendering blas/show
+Completed in 0.00103 (972 reqs/sec) | Rendering: 0.00053 (51%) | DB: 0.00177 (171%) | 200 OK [http://test.host/blas/1]
+  [4;35;1mSQL (0.000232)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000207)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000137)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000152)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000324)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000168)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#show (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"blas"}
+Rendering blas/show
+Completed in 0.00112 (892 reqs/sec) | Rendering: 0.00064 (57%) | DB: 0.00135 (120%) | 200 OK [http://test.host/blas/1]
+  [4;36;1mSQL (0.000611)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000281)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000202)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000143)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000123)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000284)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000166)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#show (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"blas"}
+Rendering blas/show
+Completed in 0.00103 (970 reqs/sec) | Rendering: 0.00054 (52%) | DB: 0.00181 (175%) | 200 OK [http://test.host/blas/1]
+  [4;35;1mSQL (0.000221)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000231)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000132)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000129)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000164)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#index (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"blas"}
+Completed in 0.00063 (1577 reqs/sec) | Rendering: 0.00011 (17%) | DB: 0.00114 (179%) | 200 OK [http://test.host/blas]
+  [4;36;1mSQL (0.000233)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000614)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000143)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000129)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000615)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000153)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000159)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#index (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"blas"}
+Completed in 0.00121 (829 reqs/sec) | Rendering: 0.00071 (58%) | DB: 0.00205 (169%) | 200 OK [http://test.host/blas]
+  [4;35;1mSQL (0.000222)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.001185)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000210)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000124)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000141)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000155)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#index (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"blas"}
+Completed in 0.00054 (1848 reqs/sec) | Rendering: 0.00009 (17%) | DB: 0.00216 (400%) | 200 OK [http://test.host/blas]
+  [4;36;1mSQL (0.000200)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000240)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000541)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000145)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000161)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#index (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"blas"}
+Rendering blas/index
+Completed in 0.00143 (699 reqs/sec) | Rendering: 0.00090 (62%) | DB: 0.00156 (109%) | 200 OK [http://test.host/blas]
+  [4;35;1mSQL (0.000404)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000227)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000145)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000127)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000172)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000173)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#index (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"blas"}
+Rendering blas/index
+Completed in 0.00115 (871 reqs/sec) | Rendering: 0.00059 (51%) | DB: 0.00138 (120%) | 200 OK [http://test.host/blas]
+  [4;36;1mSQL (0.000238)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000348)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000151)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000126)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000144)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000177)[0m   [0;1mBEGIN[0m
+
+
+Processing BlasController#index (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"blas"}
+Rendering blas/index
+Completed in 0.00122 (818 reqs/sec) | Rendering: 0.00067 (55%) | DB: 0.00131 (107%) | 200 OK [http://test.host/blas]
+  [4;35;1mSQL (0.000268)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.003251)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000200)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000129)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000134)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000146)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000161)[0m   [0mBEGIN[0m
+
+
+Processing BlasController#index (for 0.0.0.0 at 2007-12-01 01:19:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"blas"}
+Rendering blas/index
+Completed in 0.00118 (847 reqs/sec) | Rendering: 0.00059 (50%) | DB: 0.00429 (363%) | 200 OK [http://test.host/blas]
+  [4;36;1mSQL (0.000234)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000236)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000137)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000150)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000142)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000162)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000227)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000162)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000155)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000331)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000213)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000140)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000161)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000192)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000452)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000136)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.001335)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000167)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000145)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000167)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000414)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000492)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000152)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000133)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000128)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000166)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000158)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000495)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000147)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000136)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000281)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000139)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000482)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000154)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000302)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000150)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000154)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000130)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000136)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000232)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000235)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000621)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000130)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000116)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000139)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000158)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000136)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000251)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000147)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000128)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000128)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000141)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000163)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000164)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000268)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000412)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000131)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000132)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000138)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000147)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000176)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000215)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000141)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000134)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000133)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000150)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000171)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000196)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.001122)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000134)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000120)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000134)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000145)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000349)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000224)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000133)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000127)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000131)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000487)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000169)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000152)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000176)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000229)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000293)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000183)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000272)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000188)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000265)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000487)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000177)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000172)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000477)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000238)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000249)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000266)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000163)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000152)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000152)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.002079)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000263)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000251)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.001345)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000475)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.003640)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000381)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000162)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000330)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000254)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.002451)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000196)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000168)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000143)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000132)[0m   [0mBEGIN[0m
+  [4;36;1mBla Columns (0.000000)[0m   [0;1mMysql::Error: #42S02Table 'referenz2_test.blas' doesn't exist: SHOW FIELDS FROM blas[0m
+  [4;35;1mSQL (0.000212)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000448)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000156)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000148)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000364)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000150)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000173)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000408)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000254)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000162)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000195)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000206)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000275)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000461)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-12-01 01:19:39) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00265 (377 reqs/sec) | Rendering: 0.00141 (53%) | DB: 0.00196 (73%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000420)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000742)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.002575)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000163)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000141)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000144)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000207)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-12-01 01:19:39) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00103 (974 reqs/sec) | Rendering: 0.00072 (70%) | DB: 0.00439 (428%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.002263)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000208)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000144)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000139)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000134)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000143)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.002620)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-12-01 01:19:39) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00104 (965 reqs/sec) | Rendering: 0.00071 (68%) | DB: 0.00565 (545%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000229)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000239)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000189)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000169)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000141)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000156)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000161)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2007-12-01 01:19:39) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+Rendering pages/index
+Completed in 0.00130 (768 reqs/sec) | Rendering: 0.00100 (76%) | DB: 0.00128 (98%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000242)[0m   [0;1mROLLBACK[0m
