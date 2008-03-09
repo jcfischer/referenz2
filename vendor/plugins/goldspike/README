@@ -1,0 +1,13 @@
+This task allows you to package up your Rails web application
+as a war file for deployment to Tomcat or another J2EE server.
+
+It adds the following tasks to your project:
+
++ war:standalone:create
+create a self-contained package which includes JRuby and any gems that are
+required by the application.
+
++ war:shared:create
+create a package containing only the application. JRuby and rails-integration
+should be made available using a shared classloader. If JRUBY_HOME is set,
+then this will be used to locate any Ruby libraries and gems.

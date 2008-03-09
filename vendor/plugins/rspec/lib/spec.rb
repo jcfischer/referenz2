@@ -22,16 +22,9 @@ module Spec
       result; \
     end
     attr_writer :run
-
+    
     def exit?; \
       !Object.const_defined?(:Test) || Test::Unit.run?; \
     end
   end
-end
-
-at_exit do \
-  unless $! || Spec.run?; \
-    success = Spec.run; \
-    exit success if Spec.exit?; \
-  end \
 end

@@ -28,13 +28,12 @@ class RspecScaffoldGenerator < Rails::Generator::NamedBase
       @controller_class_name = "#{@controller_class_nesting}::#{@controller_class_name_without_nesting}"
     end
     
-    if ActionView::Base.const_defined?('DEFAULT_TEMPLATE_HANDLER_PREFERENCE') &&
-       ActionView::Base::DEFAULT_TEMPLATE_HANDLER_PREFERENCE.include?(:erb) then
-      @resource_generator = "scaffold"
-      @default_file_extension = "html.erb"
-    else
+    if Rails::VERSION::STRING < "2.0.0"
       @resource_generator = "scaffold_resource"
       @default_file_extension = "rhtml"
+		else
+      @resource_generator = "scaffold"
+      @default_file_extension = "html.erb"
     end
     
     if ActionController::Base.respond_to?(:resource_action_separator)
@@ -63,6 +62,9 @@ class RspecScaffoldGenerator < Rails::Generator::NamedBase
       m.directory File.join('spec/views', controller_class_path, controller_file_name)
       
       # Controller spec, class, and helper.
+      m.template 'rspec_scaffold:routing_spec.rb',
+        File.join('spec/controllers', controller_class_path, "#{controller_file_name}_routing_spec.rb")
+
       m.template 'rspec_scaffold:controller_spec.rb',
         File.join('spec/controllers', controller_class_path, "#{controller_file_name}_controller_spec.rb")
 

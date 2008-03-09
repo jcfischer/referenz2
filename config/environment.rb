@@ -10,6 +10,11 @@
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
 
+if RUBY_PLATFORM =~ /java/
+  require 'rubygems'
+  RAILS_CONNECTION_ADAPTERS = %w(jdbc)
+end
+
 Rails::Initializer.run do |config|
   # Settings in config/environments/* take precedence over those specified here
 
@@ -55,3 +60,7 @@ Rails::Initializer.run do |config|
   # Application configuration should go into files in config/initializers
   # -- all .rb files in that directory are automatically loaded
 end
+
+#ActionController::AbstractRequest.relative_url_root = "/referenz2/"
+#ActionController::CgiRequest.relative_url_root = "/referenz2/"
+
