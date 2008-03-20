@@ -1,7 +1,7 @@
 - content_for :sidebar do
   %ul.selection
     - @categories.each do |cat|
-      %li(cat)= link_to cat.title, category_path(page)
+      %li[cat]= link_to cat.name, category_path(cat)
 
 %ul#pages
   - @pages.each do |page|

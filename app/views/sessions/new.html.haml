@@ -1,0 +1,18 @@
+- form_tag session_path do
+%p
+  %label{"for"=>"login"}
+    Login
+  %br/
+  = text_field_tag 'login'
+%p
+  %label{"for"=>"password"}
+    Password
+  %br/
+  = password_field_tag 'password'
+/
+  Uncomment this if you want this functionality
+  <p><label for="remember_me">Remember me:</label>
+  <haml:loud> check_box_tag 'remember_me' </haml:loud></p>
+%p
+  = submit_tag 'Log in'
+- end

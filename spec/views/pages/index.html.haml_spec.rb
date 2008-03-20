@@ -8,6 +8,7 @@ describe "/pages/index" do
     @page2 = mock_model(Page, :title => "Titel 2")
     @pages = [@page1, @page2]
     assigns[:pages] = @pages
+    assigns[:categories] = []
     render "/pages/index"
   end
 

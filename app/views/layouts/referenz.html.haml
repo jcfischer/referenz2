@@ -1,0 +1,21 @@
+!!!
+%html
+  %head
+    %title= @title || "Referenz"
+    = stylesheet_link_tag 'referenz'
+  %body
+    #header
+      %h1= @title || "Referenz" 
+      #navigation
+        = render :partial => "shared/navigation"
+   
+    #main
+      #content
+        = yield
+      #sidebar
+        = yield :sidebar
+      #clear
+    #footer
+      %p
+        &copy; 2007-
+        = Time.now.year

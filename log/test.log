@@ -1,0 +1,864 @@
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.001414)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000168)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.023024)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000208)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000245)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2008-03-20 19:40:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mCategory Load (0.000949)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/referenz
+Rendering pages/index
+Completed in 0.00523 (191 reqs/sec) | Rendering: 0.00059 (11%) | DB: 0.02601 (496%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.011334)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000235)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2008-03-20 19:40:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mCategory Load (0.000672)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/referenz
+Rendering pages/index
+Completed in 0.00167 (600 reqs/sec) | Rendering: 0.00042 (24%) | DB: 0.01224 (734%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000189)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000259)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2008-03-20 19:40:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mCategory Load (0.000601)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/referenz
+Rendering pages/index
+Completed in 0.00154 (648 reqs/sec) | Rendering: 0.00040 (26%) | DB: 0.00105 (68%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000173)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000137)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2008-03-20 19:40:38) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mCategory Load (0.000567)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/referenz
+Rendering pages/index
+Completed in 0.00148 (676 reqs/sec) | Rendering: 0.00040 (27%) | DB: 0.00088 (59%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000171)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000215)[0m   [0;1mBEGIN[0m
+  [4;35;1mPage Columns (0.002818)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mSQL (0.000165)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000220)[0m   [0mBEGIN[0m
+Rendering /pages/index
+  [4;36;1mSQL (0.000236)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000235)[0m   [0mBEGIN[0m
+Rendering /pages/index
+  [4;36;1mSQL (0.000230)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000206)[0m   [0mBEGIN[0m
+Rendering /pages/index
+  [4;36;1mSQL (0.000255)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.001407)[0m   [0mBEGIN[0m
+Rendering /pages/index
+  [4;36;1mSQL (0.000366)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000214)[0m   [0mBEGIN[0m
+  [4;36;1mCategory Columns (0.002762)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mSQL (0.000175)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000194)[0m   [0;1mBEGIN[0m
+  [4;35;1mRole Columns (0.002327)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (0.000148)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000243)[0m   [0mBEGIN[0m
+  [4;36;1mPreference Columns (0.002390)[0m   [0;1mSHOW FIELDS FROM `preferences`[0m
+  [4;35;1mSQL (0.000171)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000266)[0m   [0;1mBEGIN[0m
+  [4;35;1mAccess Columns (0.002927)[0m   [0mSHOW FIELDS FROM `accesses`[0m
+  [4;36;1mSQL (0.001489)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000157)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#activate (for 0.0.0.0 at 2008-03-20 19:40:39) [GET]
+  Session ID: 
+  Parameters: {"action"=>"activate", "activation_code"=>"", "controller"=>"users"}
+Redirected to http://test.host/
+Completed in 0.00373 (267 reqs/sec) | DB: 0.01383 (370%) | 302 Found [http://test.host/users/activate?activation_code=]
+  [4;36;1mSQL (0.000297)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000269)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#activate (for 0.0.0.0 at 2008-03-20 19:40:39) [GET]
+  Session ID: 
+  Parameters: {"action"=>"activate", "controller"=>"users"}
+Redirected to http://test.host/
+Completed in 0.00021 (4670 reqs/sec) | DB: 0.00057 (264%) | 302 Found [http://test.host/users/activate]
+  [4;36;1mSQL (0.000200)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000179)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.003327)[0m   [0;1mSELECT * FROM `users` WHERE (users.state = 'active') AND (`users`.`login` = 'aaron') LIMIT 1[0m
+  [4;35;1mUser Load (0.001464)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+
+
+Processing UsersController#activate (for 0.0.0.0 at 2008-03-20 19:40:39) [GET]
+  Session ID: 
+  Parameters: {"action"=>"activate", "activation_code"=>"8f24789ae988411ccf33ab0c30fe9106fab32e9a", "controller"=>"users"}
+  [4;36;1mUser Load (0.001384)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9a') LIMIT 1[0m
+  [4;35;1mUser Update (0.034266)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-19 19:40:39', `login` = 'aaron', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-20 18:40:39', `remember_token_expires_at` = NULL, `activation_code` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'aaron@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 2[0m
+Redirected to http://test.host/
+Completed in 0.03881 (25 reqs/sec) | DB: 0.04082 (105%) | 302 Found [http://test.host/users/activate?activation_code=8f24789ae988411ccf33ab0c30fe9106fab32e9a]
+  [4;36;1mUser Load (0.001564)[0m   [0;1mSELECT * FROM `users` WHERE (users.state = 'active') AND (`users`.`login` = 'aaron') LIMIT 1[0m
+  [4;35;1mSQL (0.027215)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.003519)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.032138)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-03-20 19:40:39) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "login"=>"quire", "password"=>"quire", "email"=>nil}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mUser Load (0.019131)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.001415)[0m   [0mSELECT * FROM `users` WHERE (users.email IS NULL) LIMIT 1[0m
+Rendering users/new
+Completed in 0.02334 (42 reqs/sec) | Rendering: 0.00063 (2%) | DB: 0.08498 (364%) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Blogin%5D=quire&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=quire]
+  [4;36;1mSQL (0.000488)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000189)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000170)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000409)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-03-20 19:40:39) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>nil, "login"=>"quire", "password"=>"quire", "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mUser Load (0.001179)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.000939)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+Rendering users/new
+Completed in 0.00440 (227 reqs/sec) | Rendering: 0.00044 (10%) | DB: 0.00337 (76%) | 200 OK [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=]
+  [4;36;1mSQL (0.000423)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000155)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000144)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000325)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-03-20 19:40:39) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "login"=>"quire", "password"=>nil, "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mUser Load (0.000969)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.000851)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+Rendering users/new
+Completed in 0.00375 (266 reqs/sec) | Rendering: 0.00040 (10%) | DB: 0.00287 (76%) | 200 OK [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=quire]
+  [4;36;1mSQL (0.000335)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000154)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000154)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000321)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-03-20 19:40:39) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "login"=>nil, "password"=>"quire", "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mUser Load (0.000932)[0m   [0;1mSELECT * FROM `users` WHERE (users.login IS NULL) LIMIT 1[0m
+  [4;35;1mUser Load (0.000862)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+Rendering users/new
+Completed in 0.00368 (271 reqs/sec) | Rendering: 0.00040 (10%) | DB: 0.00276 (74%) | 200 OK [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=quire]
+  [4;36;1mSQL (0.000339)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000148)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000132)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-03-20 19:40:39) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "login"=>"quire", "password"=>"quire", "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mUser Load (0.001076)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;36;1mUser Load (0.000898)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.000367)[0m   [0mINSERT INTO `users` (`salt`, `activated_at`, `updated_at`, `crypted_password`, `deleted_at`, `activation_code`, `remember_token_expires_at`, `remember_token`, `login`, `created_at`, `email`, `state`) VALUES('e7531ca5a36dd4618879cd7764f7580c0ac26162', NULL, '2008-03-20 19:40:39', 'f64173f5cbf105ab5167974b1b06959f4bf730e1', NULL, 'c3971ddfa34054c1ca1a0925b5bc9046c10672d8', NULL, NULL, 'quire', '2008-03-20 19:40:39', 'quire@example.com', 'pending')[0m
+Redirected to http://test.host/
+Completed in 0.00594 (168 reqs/sec) | DB: 0.00296 (49%) | 302 Found [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=quire]
+  [4;36;1mSQL (0.002807)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000181)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-03-20 19:40:39) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "login"=>"quire", "password"=>"quire", "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mUser Load (0.001090)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.000867)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.000374)[0m   [0;1mINSERT INTO `users` (`salt`, `activated_at`, `updated_at`, `crypted_password`, `deleted_at`, `activation_code`, `remember_token_expires_at`, `remember_token`, `login`, `created_at`, `email`, `state`) VALUES('e7531ca5a36dd4618879cd7764f7580c0ac26162', NULL, '2008-03-20 19:40:39', 'f64173f5cbf105ab5167974b1b06959f4bf730e1', NULL, 'b5357bf5bfcb33ae1d192030f079d10532dc5a65', NULL, NULL, 'quire', '2008-03-20 19:40:39', 'quire@example.com', 'pending')[0m
+Redirected to http://test.host/
+Completed in 0.00553 (180 reqs/sec) | DB: 0.00532 (96%) | 302 Found [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=quire]
+  [4;35;1mSQL (0.000890)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000160)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000383)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-03-20 19:40:39) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "login"=>"quire", "password"=>"quire", "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mUser Load (0.001015)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.000828)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.000293)[0m   [0;1mINSERT INTO `users` (`salt`, `activated_at`, `updated_at`, `crypted_password`, `deleted_at`, `activation_code`, `remember_token_expires_at`, `remember_token`, `login`, `created_at`, `email`, `state`) VALUES('e7531ca5a36dd4618879cd7764f7580c0ac26162', NULL, '2008-03-20 19:40:39', 'f64173f5cbf105ab5167974b1b06959f4bf730e1', NULL, '993a5447563f739f593f83f393f3d7f8743a6d00', NULL, NULL, 'quire', '2008-03-20 19:40:39', 'quire@example.com', 'pending')[0m
+Redirected to http://test.host/
+Completed in 0.00502 (199 reqs/sec) | DB: 0.00357 (71%) | 302 Found [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=quire]
+  [4;35;1mSQL (0.000363)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.001134)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000234)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.001109)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000434)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = '2008-04-03 17:40:39', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = 'c138493da89e3602680456a2ece37fab581c5af4', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2008-03-20 19:40:39) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00355 (281 reqs/sec) | Rendering: 0.00047 (13%) | DB: 0.00327 (92%) | 200 OK [http://test.host/session/new]
+  [4;36;1mUser Load (0.001040)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'invalid_auth_token') LIMIT 1[0m
+  [4;35;1mSQL (0.000778)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000162)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001168)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000580)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = '2008-04-03 17:40:39', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = 'c138493da89e3602680456a2ece37fab581c5af4', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+  [4;35;1mUser Update (0.000473)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = '2008-03-20 19:35:39', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = 'c138493da89e3602680456a2ece37fab581c5af4', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2008-03-20 19:40:39) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00062 (1613 reqs/sec) | Rendering: 0.00037 (60%) | DB: 0.00420 (677%) | 200 OK [http://test.host/session/new]
+  [4;36;1mUser Load (0.001281)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'c138493da89e3602680456a2ece37fab581c5af4') LIMIT 1[0m
+  [4;35;1mSQL (0.000852)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000141)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001159)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000449)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = '2008-04-03 17:40:39', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = 'c138493da89e3602680456a2ece37fab581c5af4', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2008-03-20 19:40:39) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00060 (1658 reqs/sec) | Rendering: 0.00037 (60%) | DB: 0.00388 (643%) | 200 OK [http://test.host/session/new]
+  [4;35;1mUser Load (0.001054)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'c138493da89e3602680456a2ece37fab581c5af4') LIMIT 1[0m
+  [4;36;1mUser Update (0.000368)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = '2008-04-03 17:40:39', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = 'c138493da89e3602680456a2ece37fab581c5af4', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+Cookie set: auth_token=c138493da89e3602680456a2ece37fab581c5af4; path=/; expires=Thu, 03 Apr 2008 17:40:39 GMT
+  [4;35;1mSQL (0.000785)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000186)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001002)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2008-03-20 19:40:39) [GET]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.000979)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Update (0.000270)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://test.host/
+Completed in 0.00305 (328 reqs/sec) | DB: 0.00464 (152%) | 302 Found [http://test.host/session]
+  [4;36;1mSQL (0.000172)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000180)[0m   [0mBEGIN[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-03-20 19:40:39) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"0"}
+  [4;36;1mUser Load (0.001037)[0m   [0;1mSELECT * FROM `users` WHERE (users.state = 'active') AND (`users`.`login` = 'quentin') LIMIT 1[0m
+Redirected to http://test.host/
+Completed in 0.00180 (556 reqs/sec) | DB: 0.00139 (77%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+  [4;35;1mSQL (0.000192)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000193)[0m   [0;1mBEGIN[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-03-20 19:40:39) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test", "remember_me"=>"1"}
+  [4;35;1mUser Load (0.001682)[0m   [0mSELECT * FROM `users` WHERE (users.state = 'active') AND (`users`.`login` = 'quentin') LIMIT 1[0m
+  [4;36;1mUser Update (0.000534)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = '2008-04-03 17:40:39', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = 'c138493da89e3602680456a2ece37fab581c5af4', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+Cookie set: auth_token=c138493da89e3602680456a2ece37fab581c5af4; path=/; expires=Thu, 03 Apr 2008 17:40:39 GMT
+Redirected to http://test.host/
+Completed in 0.00610 (163 reqs/sec) | DB: 0.00260 (42%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+  [4;35;1mSQL (0.001034)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000138)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001002)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2008-03-20 19:40:39) [GET]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.001044)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Update (0.000281)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://test.host/
+Completed in 0.00292 (341 reqs/sec) | DB: 0.00350 (119%) | 302 Found [http://test.host/session]
+  [4;36;1mSQL (0.000167)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000131)[0m   [0mBEGIN[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-03-20 19:40:39) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"bad password"}
+  [4;36;1mUser Load (0.001096)[0m   [0;1mSELECT * FROM `users` WHERE (users.state = 'active') AND (`users`.`login` = 'quentin') LIMIT 1[0m
+Rendering sessions/new
+Completed in 0.00238 (419 reqs/sec) | Rendering: 0.00039 (16%) | DB: 0.00139 (58%) | 200 OK [http://test.host/session?login=quentin&password=bad+password]
+  [4;35;1mSQL (0.000178)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000134)[0m   [0;1mBEGIN[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-03-20 19:40:39) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "login"=>"quentin", "password"=>"test"}
+  [4;35;1mUser Load (0.003809)[0m   [0mSELECT * FROM `users` WHERE (users.state = 'active') AND (`users`.`login` = 'quentin') LIMIT 1[0m
+Redirected to http://test.host/
+Completed in 0.00700 (142 reqs/sec) | DB: 0.00412 (58%) | 302 Found [http://test.host/session?login=quentin&password=test]
+  [4;36;1mSQL (0.000278)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000219)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.001000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000381)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'suspended', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+  [4;36;1mUser Update (0.000259)[0m   [0;1mUPDATE users SET `activated_at` = NULL, `activation_code` = 'foo-bar' [0m
+  [4;35;1mUser Load (0.000904)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000574)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = NULL, `remember_token_expires_at` = NULL, `activation_code` = '5454171dd32dc2ffbb6f25ffe7fa77d2ce607e10', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'pending', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000913)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000151)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001110)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000464)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'suspended', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+  [4;35;1mUser Update (0.000351)[0m   [0mUPDATE users SET `activated_at` = NULL, `activation_code` = NULL [0m
+  [4;36;1mUser Load (0.000975)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000334)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = NULL, `remember_token_expires_at` = NULL, `activation_code` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'passive', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.001153)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000135)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000964)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000340)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'suspended', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+  [4;36;1mUser Update (0.000439)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-20 18:40:39', `remember_token_expires_at` = NULL, `activation_code` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000655)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000310)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001099)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;36;1mUser Load (0.000877)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.000292)[0m   [0mINSERT INTO `users` (`salt`, `activated_at`, `updated_at`, `crypted_password`, `deleted_at`, `activation_code`, `remember_token_expires_at`, `remember_token`, `login`, `created_at`, `email`, `state`) VALUES('e7531ca5a36dd4618879cd7764f7580c0ac26162', NULL, '2008-03-20 19:40:39', 'f64173f5cbf105ab5167974b1b06959f4bf730e1', NULL, 'e1a7057f2dba44d1731ee600e384dc024b000973', NULL, NULL, 'quire', '2008-03-20 19:40:39', 'quire@example.com', 'pending')[0m
+  [4;36;1mSQL (0.000691)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000178)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000976)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.000984)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.000348)[0m   [0;1mINSERT INTO `users` (`salt`, `activated_at`, `updated_at`, `crypted_password`, `deleted_at`, `activation_code`, `remember_token_expires_at`, `remember_token`, `login`, `created_at`, `email`, `state`) VALUES('e7531ca5a36dd4618879cd7764f7580c0ac26162', NULL, '2008-03-20 19:40:39', 'f64173f5cbf105ab5167974b1b06959f4bf730e1', NULL, '92e4fee74df6be6677bc3436b3c0de7b20b0503f', NULL, NULL, 'quire', '2008-03-20 19:40:39', 'quire@example.com', 'pending')[0m
+  [4;35;1mUser Load (0.000993)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 7) [0m
+  [4;36;1mSQL (0.001317)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000179)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000533)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mUser Load (0.001083)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;36;1mUser Load (0.001026)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.000421)[0m   [0mINSERT INTO `users` (`salt`, `activated_at`, `updated_at`, `crypted_password`, `deleted_at`, `activation_code`, `remember_token_expires_at`, `remember_token`, `login`, `created_at`, `email`, `state`) VALUES('e7531ca5a36dd4618879cd7764f7580c0ac26162', NULL, '2008-03-20 19:40:39', 'f64173f5cbf105ab5167974b1b06959f4bf730e1', NULL, '1825717ef911881ec3d855769e82495f8be0be60', NULL, NULL, 'quire', '2008-03-20 19:40:39', 'quire@example.com', 'pending')[0m
+  [4;36;1mSQL (0.000350)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000912)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000195)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001092)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000413)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = '2008-03-20 18:40:39', `state` = 'deleted', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000988)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000755)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001476)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000830)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'suspended', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+  [4;35;1mUser Load (0.005047)[0m   [0mSELECT * FROM `users` WHERE (users.state = 'active') AND (`users`.`login` = 'quentin') LIMIT 1[0m
+  [4;36;1mSQL (0.001010)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000211)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.001452)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000685)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'suspended', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.000801)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000196)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.001213)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.001108)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.001114)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.001084)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.000384)[0m   [0;1mINSERT INTO `users` (`salt`, `activated_at`, `updated_at`, `crypted_password`, `deleted_at`, `activation_code`, `remember_token_expires_at`, `remember_token`, `login`, `created_at`, `email`, `state`) VALUES('e7531ca5a36dd4618879cd7764f7580c0ac26162', NULL, '2008-03-20 19:40:39', '74a59d725ccb19daf7624a24e22dced0a904142a', NULL, NULL, NULL, NULL, 'quire', '2008-03-20 19:40:39', 'quire@example.com', 'pending')[0m
+  [4;35;1mSQL (0.000738)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000141)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001064)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000428)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = '2008-04-03 17:40:39', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = 'c138493da89e3602680456a2ece37fab581c5af4', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.001180)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000157)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001084)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000431)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = '2008-03-27 18:40:39', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = 'edff1eafc5c7e7df85c933c8cf16fdd78ba48f74', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.001052)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000146)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000986)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000357)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = '2008-03-27 18:40:39', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = 'edff1eafc5c7e7df85c933c8cf16fdd78ba48f74', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000690)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.001329)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001344)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000570)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = '2008-04-03 17:40:39', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = 'c138493da89e3602680456a2ece37fab581c5af4', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+  [4;35;1mUser Update (0.000479)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.000846)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000135)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000967)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000443)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = '2008-04-03 17:40:39', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = 'c138493da89e3602680456a2ece37fab581c5af4', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.000726)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000206)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.001112)[0m   [0;1mSELECT * FROM `users` WHERE (users.state = 'active') AND (`users`.`login` = 'quentin') LIMIT 1[0m
+  [4;35;1mUser Load (0.001030)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.000238)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000337)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.001150)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (0.001397)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quentin2' AND users.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.001034)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quentin@example.com' AND users.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Update (0.000416)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin2', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+  [4;36;1mUser Load (0.000921)[0m   [0;1mSELECT * FROM `users` WHERE (users.state = 'active') AND (`users`.`login` = 'quentin2') LIMIT 1[0m
+  [4;35;1mSQL (0.000936)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.001472)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001044)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.001772)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quentin' AND users.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.001169)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quentin@example.com' AND users.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Update (0.000401)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:40:39', `login` = 'quentin', `crypted_password` = '4b6dd603c64f03bc2f676658e287094878df9603', `activated_at` = '2008-03-15 19:40:39', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:40:39' WHERE `id` = 1[0m
+  [4;35;1mUser Load (0.001227)[0m   [0mSELECT * FROM `users` WHERE (users.state = 'active') AND (`users`.`login` = 'quentin') LIMIT 1[0m
+  [4;36;1mSQL (0.000827)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000137)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000341)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mUser Load (0.000858)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;36;1mUser Load (0.000798)[0m   [0;1mSELECT * FROM `users` WHERE (users.email IS NULL) LIMIT 1[0m
+  [4;35;1mSQL (0.000266)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000145)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000130)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000293)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mUser Load (0.000850)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;36;1mUser Load (0.000883)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.000393)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000153)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000123)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000387)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mUser Load (0.001025)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;36;1mUser Load (0.000969)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.000338)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000164)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000152)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000392)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mUser Load (0.001253)[0m   [0mSELECT * FROM `users` WHERE (users.login IS NULL) LIMIT 1[0m
+  [4;36;1mUser Load (0.000884)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.000309)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000159)[0m   [0;1mROLLBACK[0m
+WARNING: You're using the Ruby-based MySQL library that ships with Rails. This library is not suited for production. Please install the C-based MySQL library instead (gem install mysql).
+  [4;36;1mSQL (0.000176)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000134)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000159)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000163)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000199)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2008-03-20 19:41:35) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mCategory Load (0.000929)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/referenz
+Rendering pages/index
+Completed in 0.00481 (207 reqs/sec) | Rendering: 0.00059 (12%) | DB: 0.00176 (36%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000220)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000148)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2008-03-20 19:41:35) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mCategory Load (0.000710)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/referenz
+Rendering pages/index
+Completed in 0.08287 (12 reqs/sec) | Rendering: 0.00043 (0%) | DB: 0.00108 (1%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000197)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000142)[0m   [0;1mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2008-03-20 19:41:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;35;1mCategory Load (0.000618)[0m   [0mSELECT * FROM `categories` [0m
+Rendering template within layouts/referenz
+Rendering pages/index
+Completed in 0.00161 (622 reqs/sec) | Rendering: 0.00042 (26%) | DB: 0.00096 (59%) | 200 OK [http://test.host/pages]
+  [4;36;1mSQL (0.000186)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000141)[0m   [0mBEGIN[0m
+
+
+Processing PagesController#index (for 0.0.0.0 at 2008-03-20 19:41:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"pages"}
+  [4;36;1mCategory Load (0.000580)[0m   [0;1mSELECT * FROM `categories` [0m
+Rendering template within layouts/referenz
+Rendering pages/index
+Completed in 0.00149 (671 reqs/sec) | Rendering: 0.00039 (26%) | DB: 0.00091 (60%) | 200 OK [http://test.host/pages]
+  [4;35;1mSQL (0.000175)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000247)[0m   [0;1mBEGIN[0m
+  [4;35;1mPage Columns (0.002786)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mSQL (0.000166)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000190)[0m   [0mBEGIN[0m
+  [4;36;1mCategory Columns (0.002242)[0m   [0;1mSHOW FIELDS FROM `categories`[0m
+  [4;35;1mSQL (0.000150)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000217)[0m   [0;1mBEGIN[0m
+  [4;35;1mRole Columns (0.002413)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSQL (0.000182)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000196)[0m   [0mBEGIN[0m
+  [4;36;1mPreference Columns (0.003288)[0m   [0;1mSHOW FIELDS FROM `preferences`[0m
+  [4;35;1mSQL (0.000220)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000201)[0m   [0;1mBEGIN[0m
+  [4;35;1mAccess Columns (0.002410)[0m   [0mSHOW FIELDS FROM `accesses`[0m
+  [4;36;1mSQL (0.000304)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000162)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.002592)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000770)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'suspended', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+  [4;36;1mUser Update (0.000417)[0m   [0;1mUPDATE users SET `activated_at` = NULL, `activation_code` = 'foo-bar' [0m
+  [4;35;1mUser Load (0.001307)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000545)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = NULL, `remember_token_expires_at` = NULL, `activation_code` = 'd225675dc1f34532481c14be8b2ed1891a880598', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'pending', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.001251)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000199)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.002655)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000626)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'suspended', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+  [4;35;1mUser Update (0.000569)[0m   [0mUPDATE users SET `activated_at` = NULL, `activation_code` = NULL [0m
+  [4;36;1mUser Load (0.001190)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000563)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = NULL, `remember_token_expires_at` = NULL, `activation_code` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'passive', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.000893)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000156)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000982)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000347)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'suspended', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+  [4;36;1mUser Update (0.000274)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-20 18:41:36', `remember_token_expires_at` = NULL, `activation_code` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.001057)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000242)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001259)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;36;1mUser Load (0.001098)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.000466)[0m   [0mINSERT INTO `users` (`salt`, `activated_at`, `updated_at`, `crypted_password`, `deleted_at`, `activation_code`, `remember_token_expires_at`, `remember_token`, `login`, `created_at`, `email`, `state`) VALUES('b0ca25d1305d59dbd6b09eb05be677e93f1c6f26', NULL, '2008-03-20 19:41:36', '0cf41e72be9c8b4d85199ad9b5c47fe0fc8a345b', NULL, 'c7b1834b1da4300b97b162319f117b2185e6c196', NULL, NULL, 'quire', '2008-03-20 19:41:36', 'quire@example.com', 'pending')[0m
+  [4;36;1mSQL (0.000703)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000135)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.000992)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.000902)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.000420)[0m   [0;1mINSERT INTO `users` (`salt`, `activated_at`, `updated_at`, `crypted_password`, `deleted_at`, `activation_code`, `remember_token_expires_at`, `remember_token`, `login`, `created_at`, `email`, `state`) VALUES('b0ca25d1305d59dbd6b09eb05be677e93f1c6f26', NULL, '2008-03-20 19:41:36', '0cf41e72be9c8b4d85199ad9b5c47fe0fc8a345b', NULL, '51e44f36e540a9ce0c878e673aa2f435edbd1077', NULL, NULL, 'quire', '2008-03-20 19:41:36', 'quire@example.com', 'pending')[0m
+  [4;35;1mUser Load (0.001091)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+  [4;36;1mSQL (0.000760)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000168)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000351)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mUser Load (0.000894)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;36;1mUser Load (0.000856)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.000287)[0m   [0mINSERT INTO `users` (`salt`, `activated_at`, `updated_at`, `crypted_password`, `deleted_at`, `activation_code`, `remember_token_expires_at`, `remember_token`, `login`, `created_at`, `email`, `state`) VALUES('b0ca25d1305d59dbd6b09eb05be677e93f1c6f26', NULL, '2008-03-20 19:41:36', '0cf41e72be9c8b4d85199ad9b5c47fe0fc8a345b', NULL, '5ce811f5a573129e56e0bbaa6ab65fdbcba95921', NULL, NULL, 'quire', '2008-03-20 19:41:36', 'quire@example.com', 'pending')[0m
+  [4;36;1mSQL (0.000281)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000953)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000232)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001305)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000568)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = '2008-03-20 18:41:36', `state` = 'deleted', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000832)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000347)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001424)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000633)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'suspended', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+  [4;35;1mUser Load (0.001194)[0m   [0mSELECT * FROM `users` WHERE (users.state = 'active') AND (`users`.`login` = 'quentin') LIMIT 1[0m
+  [4;36;1mSQL (0.000773)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000299)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.001346)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000526)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'suspended', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.001015)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000195)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.001369)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.001847)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;36;1mUser Load (0.001132)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.000982)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.000311)[0m   [0;1mINSERT INTO `users` (`salt`, `activated_at`, `updated_at`, `crypted_password`, `deleted_at`, `activation_code`, `remember_token_expires_at`, `remember_token`, `login`, `created_at`, `email`, `state`) VALUES('b0ca25d1305d59dbd6b09eb05be677e93f1c6f26', NULL, '2008-03-20 19:41:36', '654806b4f044d58a341ee47eddf565b1104502d0', NULL, NULL, NULL, NULL, 'quire', '2008-03-20 19:41:36', 'quire@example.com', 'pending')[0m
+  [4;35;1mSQL (0.000705)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000993)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000431)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = '2008-04-03 17:41:36', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = 'caccaa060232f640b42a2ac3cf8887b11c82919a', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000916)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000173)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.004896)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000510)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = '2008-03-27 18:41:36', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '869bfb656120c1267fb447f72478dfd89df1f9f2', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000903)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000207)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001021)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000461)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = '2008-03-27 18:41:36', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = '869bfb656120c1267fb447f72478dfd89df1f9f2', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+  [4;35;1mSQL (0.000723)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001160)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000531)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = '2008-04-03 17:41:36', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = 'caccaa060232f640b42a2ac3cf8887b11c82919a', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+  [4;35;1mUser Update (0.000456)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.001155)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000263)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.001897)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000590)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = '2008-04-03 17:41:36', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = 'caccaa060232f640b42a2ac3cf8887b11c82919a', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.000781)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000192)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.001409)[0m   [0;1mSELECT * FROM `users` WHERE (users.state = 'active') AND (`users`.`login` = 'quentin') LIMIT 1[0m
+  [4;35;1mUser Load (0.001279)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.000206)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000165)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.001127)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (0.001067)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quentin2' AND users.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Load (0.000886)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quentin@example.com' AND users.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Update (0.000327)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin2', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+  [4;36;1mUser Load (0.000914)[0m   [0;1mSELECT * FROM `users` WHERE (users.state = 'active') AND (`users`.`login` = 'quentin2') LIMIT 1[0m
+  [4;35;1mSQL (0.000750)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000222)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000958)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Load (0.000951)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quentin' AND users.id <> 1) LIMIT 1[0m
+  [4;35;1mUser Load (0.000974)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quentin@example.com' AND users.id <> 1) LIMIT 1[0m
+  [4;36;1mUser Update (0.000350)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '4b6dd603c64f03bc2f676658e287094878df9603', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+  [4;35;1mUser Load (0.000928)[0m   [0mSELECT * FROM `users` WHERE (users.state = 'active') AND (`users`.`login` = 'quentin') LIMIT 1[0m
+  [4;36;1mSQL (0.015912)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000195)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000442)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mUser Load (0.001629)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;36;1mUser Load (0.001293)[0m   [0;1mSELECT * FROM `users` WHERE (users.email IS NULL) LIMIT 1[0m
+  [4;35;1mSQL (0.000345)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000210)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000265)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000341)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mUser Load (0.000941)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;36;1mUser Load (0.000996)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.000340)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000160)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000129)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000324)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mUser Load (0.000955)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;36;1mUser Load (0.000845)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.000257)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000149)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000130)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000289)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mUser Load (0.000849)[0m   [0mSELECT * FROM `users` WHERE (users.login IS NULL) LIMIT 1[0m
+  [4;36;1mUser Load (0.000889)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;35;1mSQL (0.000439)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.000152)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000188)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#activate (for 0.0.0.0 at 2008-03-20 19:41:36) [GET]
+  Session ID: 
+  Parameters: {"activation_code"=>"", "action"=>"activate", "controller"=>"users"}
+Redirected to http://test.host/
+Completed in 0.00296 (337 reqs/sec) | DB: 0.12054 (4066%) | 302 Found [http://test.host/users/activate?activation_code=]
+  [4;36;1mSQL (0.000200)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000198)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#activate (for 0.0.0.0 at 2008-03-20 19:41:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"activate", "controller"=>"users"}
+Redirected to http://test.host/
+Completed in 0.00016 (6096 reqs/sec) | DB: 0.00040 (242%) | 302 Found [http://test.host/users/activate]
+  [4;36;1mSQL (0.000187)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000279)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.001089)[0m   [0;1mSELECT * FROM `users` WHERE (users.state = 'active') AND (`users`.`login` = 'aaron') LIMIT 1[0m
+  [4;35;1mUser Load (0.001521)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+
+
+Processing UsersController#activate (for 0.0.0.0 at 2008-03-20 19:41:36) [GET]
+  Session ID: 
+  Parameters: {"activation_code"=>"8f24789ae988411ccf33ab0c30fe9106fab32e9a", "action"=>"activate", "controller"=>"users"}
+  [4;36;1mUser Load (0.001092)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9a') LIMIT 1[0m
+  [4;35;1mUser Update (0.000444)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-19 19:41:36', `login` = 'aaron', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-20 18:41:36', `remember_token_expires_at` = NULL, `activation_code` = NULL, `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'aaron@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 2[0m
+Redirected to http://test.host/
+Completed in 0.00357 (279 reqs/sec) | DB: 0.00461 (129%) | 302 Found [http://test.host/users/activate?activation_code=8f24789ae988411ccf33ab0c30fe9106fab32e9a]
+  [4;36;1mUser Load (0.001209)[0m   [0;1mSELECT * FROM `users` WHERE (users.state = 'active') AND (`users`.`login` = 'aaron') LIMIT 1[0m
+  [4;35;1mSQL (0.001545)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000342)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000415)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-03-20 19:41:36) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "password"=>"quire", "login"=>"quire", "email"=>nil}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mUser Load (0.001083)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.000957)[0m   [0mSELECT * FROM `users` WHERE (users.email IS NULL) LIMIT 1[0m
+Rendering users/new
+Completed in 0.00546 (183 reqs/sec) | Rendering: 0.00172 (31%) | DB: 0.00555 (101%) | 200 OK [http://test.host/users?user%5Bemail%5D=&user%5Blogin%5D=quire&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=quire]
+  [4;36;1mSQL (0.000424)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000150)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000135)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000319)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-03-20 19:41:36) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>nil, "password"=>"quire", "login"=>"quire", "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mUser Load (0.000961)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.000833)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+Rendering users/new
+Completed in 0.00365 (273 reqs/sec) | Rendering: 0.00039 (10%) | DB: 0.00282 (77%) | 200 OK [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=]
+  [4;36;1mSQL (0.000324)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000148)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000136)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000364)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-03-20 19:41:36) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "password"=>nil, "login"=>"quire", "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mUser Load (0.000961)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.000809)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+Rendering users/new
+Completed in 0.00368 (272 reqs/sec) | Rendering: 0.00045 (12%) | DB: 0.00274 (74%) | 200 OK [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=&user%5Bpassword_confirmation%5D=quire]
+  [4;36;1mSQL (0.000473)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000641)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000150)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000386)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-03-20 19:41:36) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "password"=>"quire", "login"=>nil, "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mUser Load (0.000923)[0m   [0;1mSELECT * FROM `users` WHERE (users.login IS NULL) LIMIT 1[0m
+  [4;35;1mUser Load (0.000930)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+Rendering users/new
+Completed in 0.00386 (259 reqs/sec) | Rendering: 0.00053 (13%) | DB: 0.00350 (90%) | 200 OK [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=quire]
+  [4;36;1mSQL (0.000483)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.000159)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000136)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-03-20 19:41:36) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "password"=>"quire", "login"=>"quire", "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;35;1mUser Load (0.000999)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;36;1mUser Load (0.000821)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.000291)[0m   [0mINSERT INTO `users` (`salt`, `activated_at`, `updated_at`, `crypted_password`, `deleted_at`, `activation_code`, `remember_token_expires_at`, `remember_token`, `login`, `created_at`, `email`, `state`) VALUES('b0ca25d1305d59dbd6b09eb05be677e93f1c6f26', NULL, '2008-03-20 19:41:36', '0cf41e72be9c8b4d85199ad9b5c47fe0fc8a345b', NULL, 'a76059aa682df3f30b25615f086b6bd9b48ff614', NULL, NULL, 'quire', '2008-03-20 19:41:36', 'quire@example.com', 'pending')[0m
+Redirected to http://test.host/
+Completed in 0.00491 (203 reqs/sec) | DB: 0.00289 (58%) | 302 Found [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=quire]
+  [4;36;1mSQL (0.000721)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000133)[0m   [0mBEGIN[0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-03-20 19:41:36) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "password"=>"quire", "login"=>"quire", "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mUser Load (0.001020)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.000843)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.000308)[0m   [0;1mINSERT INTO `users` (`salt`, `activated_at`, `updated_at`, `crypted_password`, `deleted_at`, `activation_code`, `remember_token_expires_at`, `remember_token`, `login`, `created_at`, `email`, `state`) VALUES('b0ca25d1305d59dbd6b09eb05be677e93f1c6f26', NULL, '2008-03-20 19:41:36', '0cf41e72be9c8b4d85199ad9b5c47fe0fc8a345b', NULL, '44c212e5edbdbbeff4086183a2cbd6335a333bf9', NULL, NULL, 'quire', '2008-03-20 19:41:36', 'quire@example.com', 'pending')[0m
+Redirected to http://test.host/
+Completed in 0.00513 (194 reqs/sec) | DB: 0.00303 (58%) | 302 Found [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=quire]
+  [4;35;1mSQL (0.000715)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000142)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000353)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2008-03-20 19:41:36) [POST]
+  Session ID: 
+  Parameters: {"user"=>{"password_confirmation"=>"quire", "password"=>"quire", "login"=>"quire", "email"=>"quire@example.com"}, "action"=>"create", "controller"=>"users"}
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+  [4;36;1mUser Load (0.000934)[0m   [0;1mSELECT * FROM `users` WHERE (LOWER(users.login) = 'quire') LIMIT 1[0m
+  [4;35;1mUser Load (0.000810)[0m   [0mSELECT * FROM `users` WHERE (LOWER(users.email) = 'quire@example.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.000335)[0m   [0;1mINSERT INTO `users` (`salt`, `activated_at`, `updated_at`, `crypted_password`, `deleted_at`, `activation_code`, `remember_token_expires_at`, `remember_token`, `login`, `created_at`, `email`, `state`) VALUES('b0ca25d1305d59dbd6b09eb05be677e93f1c6f26', NULL, '2008-03-20 19:41:36', '0cf41e72be9c8b4d85199ad9b5c47fe0fc8a345b', NULL, 'dff70a43e4d440b179d41e070c3fcce7e068026e', NULL, NULL, 'quire', '2008-03-20 19:41:36', 'quire@example.com', 'pending')[0m
+Redirected to http://test.host/
+Completed in 0.00507 (197 reqs/sec) | DB: 0.00329 (64%) | 302 Found [http://test.host/users?user%5Bemail%5D=quire%40example.com&user%5Blogin%5D=quire&user%5Bpassword%5D=quire&user%5Bpassword_confirmation%5D=quire]
+  [4;35;1mSQL (0.000417)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.001090)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000243)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.001121)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Update (0.000458)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = '2008-04-03 17:41:36', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = 'caccaa060232f640b42a2ac3cf8887b11c82919a', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2008-03-20 19:41:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00324 (308 reqs/sec) | Rendering: 0.00039 (11%) | DB: 0.00333 (102%) | 200 OK [http://test.host/session/new]
+  [4;36;1mUser Load (0.001004)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'invalid_auth_token') LIMIT 1[0m
+  [4;35;1mSQL (0.000763)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000229)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.000976)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000441)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = '2008-04-03 17:41:36', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = 'caccaa060232f640b42a2ac3cf8887b11c82919a', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+  [4;35;1mUser Update (0.000345)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = '2008-03-20 19:36:36', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = 'caccaa060232f640b42a2ac3cf8887b11c82919a', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2008-03-20 19:41:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00055 (1831 reqs/sec) | Rendering: 0.00034 (61%) | DB: 0.00376 (688%) | 200 OK [http://test.host/session/new]
+  [4;36;1mUser Load (0.001083)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'caccaa060232f640b42a2ac3cf8887b11c82919a') LIMIT 1[0m
+  [4;35;1mSQL (0.000757)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000145)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001351)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mUser Update (0.000516)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = '2008-04-03 17:41:36', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = 'caccaa060232f640b42a2ac3cf8887b11c82919a', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+
+
+Processing SessionsController#new (for 0.0.0.0 at 2008-03-20 19:41:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering sessions/new
+Completed in 0.00062 (1623 reqs/sec) | Rendering: 0.00038 (61%) | DB: 0.00385 (625%) | 200 OK [http://test.host/session/new]
+  [4;35;1mUser Load (0.002366)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = 'caccaa060232f640b42a2ac3cf8887b11c82919a') LIMIT 1[0m
+  [4;36;1mUser Update (0.001215)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = '2008-04-03 17:41:36', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = 'caccaa060232f640b42a2ac3cf8887b11c82919a', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+Cookie set: auth_token=caccaa060232f640b42a2ac3cf8887b11c82919a; path=/; expires=Thu, 03 Apr 2008 17:41:36 GMT
+  [4;35;1mSQL (0.000911)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000177)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001108)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2008-03-20 19:41:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.001163)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Update (0.000359)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://test.host/
+Completed in 0.00364 (274 reqs/sec) | DB: 0.00730 (200%) | 302 Found [http://test.host/session]
+  [4;36;1mSQL (0.000185)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000142)[0m   [0mBEGIN[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-03-20 19:41:36) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "password"=>"test", "login"=>"quentin", "remember_me"=>"0"}
+  [4;36;1mUser Load (0.001174)[0m   [0;1mSELECT * FROM `users` WHERE (users.state = 'active') AND (`users`.`login` = 'quentin') LIMIT 1[0m
+Redirected to http://test.host/
+Completed in 0.00221 (452 reqs/sec) | DB: 0.00150 (67%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=0]
+  [4;35;1mSQL (0.000217)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000166)[0m   [0;1mBEGIN[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-03-20 19:41:36) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "password"=>"test", "login"=>"quentin", "remember_me"=>"1"}
+  [4;35;1mUser Load (0.001164)[0m   [0mSELECT * FROM `users` WHERE (users.state = 'active') AND (`users`.`login` = 'quentin') LIMIT 1[0m
+  [4;36;1mUser Update (0.000450)[0m   [0;1mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = '2008-04-03 17:41:36', `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = 'caccaa060232f640b42a2ac3cf8887b11c82919a', `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+Cookie set: auth_token=caccaa060232f640b42a2ac3cf8887b11c82919a; path=/; expires=Thu, 03 Apr 2008 17:41:36 GMT
+Redirected to http://test.host/
+Completed in 0.00400 (250 reqs/sec) | DB: 0.00200 (49%) | 302 Found [http://test.host/session?login=quentin&password=test&remember_me=1]
+  [4;35;1mSQL (0.000744)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000305)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.001474)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+
+
+Processing SessionsController#destroy (for 0.0.0.0 at 2008-03-20 19:41:36) [GET]
+  Session ID: 
+  Parameters: {"action"=>"destroy", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.001328)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mUser Update (0.000351)[0m   [0mUPDATE `users` SET `created_at` = '2008-03-15 19:41:36', `login` = 'quentin', `crypted_password` = '00742970dc9e6319f8019fd54864d3ea740f04b1', `activated_at` = '2008-03-15 19:41:36', `remember_token_expires_at` = NULL, `activation_code` = '8f24789ae988411ccf33ab0c30fe9106fab32e9b', `salt` = '7e3041ebc2fc05a40c60028e2c4901a81035d3cd', `remember_token` = NULL, `deleted_at` = NULL, `state` = 'active', `email` = 'quentin@example.com', `updated_at` = '2008-03-20 19:41:36' WHERE `id` = 1[0m
+Cookie set: auth_token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT
+Redirected to http://test.host/
+Completed in 0.00372 (268 reqs/sec) | DB: 0.00420 (112%) | 302 Found [http://test.host/session]
+  [4;36;1mSQL (0.000203)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000172)[0m   [0mBEGIN[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-03-20 19:41:36) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "password"=>"bad password", "login"=>"quentin"}
+  [4;36;1mUser Load (0.001258)[0m   [0;1mSELECT * FROM `users` WHERE (users.state = 'active') AND (`users`.`login` = 'quentin') LIMIT 1[0m
+Rendering sessions/new
+Completed in 0.00275 (363 reqs/sec) | Rendering: 0.00045 (16%) | DB: 0.00163 (59%) | 200 OK [http://test.host/session?login=quentin&password=bad+password]
+  [4;35;1mSQL (0.000197)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.000156)[0m   [0;1mBEGIN[0m
+
+
+Processing SessionsController#create (for 0.0.0.0 at 2008-03-20 19:41:36) [POST]
+  Session ID: 
+  Parameters: {"action"=>"create", "controller"=>"sessions", "password"=>"test", "login"=>"quentin"}
+  [4;35;1mUser Load (0.001050)[0m   [0mSELECT * FROM `users` WHERE (users.state = 'active') AND (`users`.`login` = 'quentin') LIMIT 1[0m
+Redirected to http://test.host/
+Completed in 0.00182 (550 reqs/sec) | DB: 0.00140 (77%) | 302 Found [http://test.host/session?login=quentin&password=test]
+  [4;36;1mSQL (0.000173)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000233)[0m   [0mBEGIN[0m
+Rendering /pages/index
+  [4;36;1mSQL (0.000221)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000149)[0m   [0mBEGIN[0m
+Rendering /pages/index
+  [4;36;1mSQL (0.000230)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000183)[0m   [0mBEGIN[0m
+Rendering /pages/index
+  [4;36;1mSQL (0.000474)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.000148)[0m   [0mBEGIN[0m
+Rendering /pages/index
+  [4;36;1mSQL (0.000204)[0m   [0;1mROLLBACK[0m
