@@ -1,0 +1,8 @@
+%h1
+  New bla
+= error_messages_for :bla
+- form_for(@bla) do |f|
+%p
+  = f.submit "Create"
+- end
+= link_to 'Back', blas_path

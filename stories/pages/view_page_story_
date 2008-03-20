@@ -1,0 +1,17 @@
+Story: Page Views
+
+  As an anonymous user
+  I want to list and see pages
+  So that I can look up information
+  
+  Scenario: listing all pages
+  
+    Given 2 pages in the system
+    And an anonymous user
+    
+    When visiting '/pages'
+    
+    Then user should see pages/index
+    And the page should show 2 entries
+    
+    

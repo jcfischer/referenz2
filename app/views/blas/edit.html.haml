@@ -1,0 +1,10 @@
+%h1
+  Editing bla
+= error_messages_for :bla
+- form_for(@bla) do |f|
+%p
+  = f.submit "Update"
+- end
+= link_to 'Show', @bla
+|
+= link_to 'Back', blas_path

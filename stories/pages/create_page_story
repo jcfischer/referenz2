@@ -1,0 +1,21 @@
+Story: Page Creation
+
+  As an anonymous user
+  I want to create new pages
+  So that I can store information
+  
+  Scenario: Creating new page
+  
+    Given no pages in the system
+    And an anonymous user
+    
+    When visiting '/' 
+    And clicks on 'Neue Seite'
+    
+    Then user should see pages/new
+    When fills in 'Title' with 'Some Title'
+    And fills in 'Body' with 'some content'
+    And clicks button 'Erstellen'
+    
+    Then the page should be saved
+    

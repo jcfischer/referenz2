@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title><%= @title || "Referenz" %></title>
+    <%= stylesheet_link_tag 'referenz' %>
+  </head>
+  <body>
+  <div id="header">
+    <h1><%= @title || "Referenz" %></h1>
+    <div id="navigation"></div>
+  </div>
+  <div id="main">
+    <div id="content">
+      <%= yield %>
+    </div>
+    <div id="sidebar">
+      <%= yield :sidebar %>
+    </div>
+  </div>
+  <div id="footer">
+    <p>&copy; 2007-<%= Time.now.year %></p>
+  </div>
+  </body>
+</html>
