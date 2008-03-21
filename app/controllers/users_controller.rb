@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   
-  skip_before_filter :login_required, :only => [:create, :activate]
+  skip_before_filter :login_required, :only => [:new, :create, :activate]
   
   # Protect these actions behind an admin login
   # before_filter :admin_required, :only => [:suspend, :unsuspend, :destroy, :purge]
