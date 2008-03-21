@@ -6,6 +6,8 @@
   %body
     #header
       %h1= @title || "Referenz" 
+      #flash
+        = flash[:notice] if flash[:notice]
       #navigation
         = render :partial => "shared/navigation"
    

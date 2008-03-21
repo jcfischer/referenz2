@@ -118,6 +118,7 @@ describe User do
     user.update_attributes(:password => 'new password', :password_confirmation => 'new password')
     user.register!
     user.should be_pending
+    user.activation_code.should_not be_nil
   end
 
   it 'suspends user' do
