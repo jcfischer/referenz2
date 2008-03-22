@@ -1,0 +1,5 @@
+# ignore log files
+log/*.log
+tmp/**/*
+.DS_Store
+db/schema.rb
