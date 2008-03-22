@@ -6,6 +6,15 @@
   %body
     #header
       %h1= @title || "Referenz" 
+      #login
+        - if logged_in?
+          = link_to "Logout #{current_user.login}", logout_path
+        - else
+          = link_to "Login", login_path
+          |
+          = link_to "Registrieren", signup_path
+      #flash
+        = flash[:notice] if flash[:notice]
       #navigation
         = render :partial => "shared/navigation"
    

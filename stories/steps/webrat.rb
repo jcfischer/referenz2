@@ -1,6 +1,6 @@
 steps_for :webrat do
   
-  When 'visits $link' do |link|
+  When "visiting '$link'" do |link|
     visits link
   end
   

@@ -46,7 +46,7 @@ describe SessionsController do
     users(:quentin).remember_me
     request.cookies["auth_token"] = cookie_for(:quentin)
     get :new
-    controller.send(:logged_in?).should be_true
+    controller.send(:logged_in?).should eql(users(:quentin))
   end
   
   it 'fails expired cookie login' do

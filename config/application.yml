@@ -1,0 +1,20 @@
+defaults: &default
+  site_host: localhost:3000
+  admin_email: dummy@example.com
+
+development: 
+  <<: *default
+  app_name: Referenz (Dev)
+  admin_email: gaga@example.com
+  
+test: 
+  <<: *default
+  app_name: Referenz (Test)
+
+  
+production:
+  <<: *default
+  app_name: Referenz
+  site_host: www.rails-praxis.ch
+  admin_email: info@rails-praxis.ch
+  
