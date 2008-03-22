@@ -13,9 +13,11 @@ Story: Page Creation
     And clicks on 'Neue Seite'
     
     Then user should see pages/new
-    When fills in 'page[title]' with 'Some Title'
+    When fills in 'Titel' with 'Some Title'
     And fills in 'page[body]' with 'some content'
     And clicks button 'Erstellen'
     
-    Then the page should be saved
+    Then user should see pages/show
+    
+    Then there should be 1 page in the system
     

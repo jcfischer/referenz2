@@ -6,13 +6,9 @@ class PagesController < ApplicationController
   make_resourceful do
     build :all
     
-    before :index do
+    before :index, :new do
       @categories = Category.find :all
     end
   end
   
-  #def index
-  #  @pages = Page.find :all
-  #  @categories = Category.find :all
-  #end
 end

@@ -50,3 +50,32 @@ describe PagesController, "GET new" do
     response.should render_template("new")
   end
 end
+
+describe PagesController, "POST create" do
+  
+  before(:each) do
+    @page = mock_model(Page, :new_record => true)
+    @page.stub!(:save).and_return(true)
+    Page.stub!(:new).and_return(@page)
+  end
+  
+  def do_post
+    post :create, :page => { :title => "some title", :body => "content"}
+  end
+  
+  it "should be successful" do
+    do_post
+    response.should be_redirect
+  end
+  
+  it "should render to show" do
+    do_post
+    response.should redirect_to(page_path(@page))
+  end
+  
+  it "should call save on new page" do
+    @page.should_receive(:save).and_return(true)
+    do_post
+  end
+  
+end
