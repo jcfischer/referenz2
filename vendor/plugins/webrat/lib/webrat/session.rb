@@ -268,7 +268,7 @@ module ActionController
       def request_page(method, url, data = {}) # :nodoc:
         debug_log "REQUESTING PAGE: #{method.to_s.upcase} #{url} with #{data.inspect}"
         @current_url = url
-        self.send "#{method}_via_redirect", @current_url, data || {}
+        self.send "#{method}_via_redirect", @current_url, data  || {}
         assert_response :success
         reset_dom
       end

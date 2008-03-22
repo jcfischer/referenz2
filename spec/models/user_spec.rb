@@ -25,9 +25,9 @@ describe User do
       @user.reload.activation_code.should_not be_nil
     end
 
-    it 'starts in pending state' do
+    it 'starts in passive state' do
       @creating_user.call
-      @user.should be_pending
+      @user.should be_passive
     end
   end
 

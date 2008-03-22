@@ -30,4 +30,8 @@ describe "/pages/index" do
     end
   end
   
+  it "should have a link to a new page" do
+    response.should have_tag("a[href=?]", new_page_path, :text => "Neue Seite")
+  end
+  
 end

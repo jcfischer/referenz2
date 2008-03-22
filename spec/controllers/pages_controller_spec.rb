@@ -1,7 +1,5 @@
 require File.dirname(__FILE__) + '/../spec_helper'
 
-class Page; end
-
 describe PagesController, "GET index" do
 
   before(:each) do
@@ -34,4 +32,21 @@ describe PagesController, "GET index" do
   end
 
 
+end
+
+describe PagesController, "GET new" do
+  
+  def do_get
+    get :new
+  end
+  
+  it "should be successful" do
+    do_get
+    response.should be_success
+  end
+  
+  it "should render the new template" do
+    do_get
+    response.should render_template("new")
+  end
 end

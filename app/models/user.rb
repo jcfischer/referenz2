@@ -116,7 +116,7 @@ class User < ActiveRecord::Base
     
     def do_pending
       make_activation_code
-      UserMailer.deliver_signup_notification(self)
+      Bj.submit "./script/runner ./jobs/send.rb signup_notification #{self.id}"
     end
     
     def do_delete
@@ -126,6 +126,8 @@ class User < ActiveRecord::Base
     def do_activate
       self.activated_at = Time.now.utc
       self.deleted_at = self.activation_code = nil
-      UserMailer.deliver_activation(self)
+      Bj.submit "./script/runner ./jobs/send.rb activation #{self.id}"
+      
+      # UserMailer.deliver_activation(self)
     end
 end

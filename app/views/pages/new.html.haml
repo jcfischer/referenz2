@@ -1,0 +1,9 @@
+%h1 Neue Seite
+
+- form_for :page do |f|
+  = f.text_field :title
+  = f.text_area :body
+  
+  = f.submit "Erstellen"
+  
+  = link_to "Abbrechen", pages_path
