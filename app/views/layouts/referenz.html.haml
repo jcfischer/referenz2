@@ -10,10 +10,10 @@
         = render :partial => "shared/navigation"
    
     #main
-      #content
-        = yield
       #sidebar
         = yield :sidebar
+      #content
+        = yield
       #clear
     #footer
       %p
