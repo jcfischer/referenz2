@@ -1,46 +1,59 @@
-* {
-  font-family: Georgia, Times, serif;
-  font-size: 16px;
+body {
+  
+  font-family: "Helvetica Neue", arial, helvetica, sans-serif;
+  font-size: 75%;
+  line-height: 1.5; 
 }
+
+/* --------------- IDs
+---------------------------------------------*/
 
 #header {
   background: lightgreen;
   border-bottom: 1px solid black;
-  margin-bottom: 4px;
+  margin-bottom: 0; 
 }
 
 #navigation {
   background: yellow;
+  padding: 5px 0; 
 }
 
 #main {
-  background: grey;
+  background: lightblue;
 }
 
 #content {
   background: lightgrey;
-  width: 69%;
-  float: right;
-  margin: 0;
+  border-left: 1px solid #000;
+  margin-left: 300px; 
+  padding: 10px; 
 }
 
 #sidebar {
   background: lightblue;
-  margin-right: 70%;
-  font-size: 90%;
-
-
-  border-right: 1px solid #000;
+  margin: 0;
   padding: 0 0 1em 0;
   margin-bottom: 1em;
-  font-family: Helvetica, Arial, sans-serif;
   color: #333;
+  float: left;
+  width: 300px; 
   
 }
 
 #footer {
   background: lightgreen;
+  text-align: right ;
+  padding: 5px 10px;
 }
+#footer p {
+  margin: 0;
+}
+
+
+
+/* --------------- Classes
+---------------------------------------------*/
 
 .clear {
   clear: both;
@@ -49,17 +62,32 @@
   margin: 0;       
 }
 
-#header h1 {
-  font-size: 36px;
-  font-family: Helvetica;
-  margin: 0;
-  padding: 8px 0;
+
+/* --------------- Headers
+---------------------------------------------*/
+
+h1, h2 {
+  font-family: "Helvetica Neue", arial, helvetica, sans-serif;
+  font-weight: normal;
 }
 
-#content h1 {
-  font-size: 24px;
+h1 {
+  font-size: 3em;
   margin: 0;
+  padding: 0;
 }
+
+h2 {
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+}
+
+#header h1 { margin-left: 10px;}
+
+
+/* --------------- Sidebar Navigaition
+---------------------------------------------*/
 
 ul.selection {
   list-style: none;
@@ -78,7 +106,7 @@ ul.selection li a {
   padding: 5px 5px 5px 0.5em;
   border-left: 10px solid #1958b7;
   border-right: 10px solid #508fc4;
-  background-color: #2175bc;
+  /* background-color: #2175bc; */
   color: #fff;
   text-decoration: none;
   width: 100%;
@@ -92,36 +120,55 @@ html>body #navigation ul li a {
 ul.selection li a:hover {
   border-left: 10px solid #1c64d1;
   border-right: 10px solid #5ba3e0;
-  background-color: #2586d7;
+  /* background-color: #2586d7; */
   color: #fff;
 }
+
+ 
     
+/* --------------- Main Navigation
+---------------------------------------------*/
+
 #navigation ul {
-  margin-left: 0;
-  padding-left: 0;
-  display: inline;
+  margin: 0;
+  padding: 0;
 } 
 
 #navigation ul li {
   margin-left: 0;
   margin-bottom: 0;
-  padding: 2px 15px 5px;
+  padding: 2px 10px 5px;
   list-style: none;
   display: inline;
 }
 
 #navigation ul li a {
-    padding: 0 5px 0 0.5em;
-  background-color: #2175bc;
-  color: #fff;
-
+  padding: 0.6em 5px;
+  color: #000;
   text-decoration: none;
   width: 100%;
+  line-height: 1.5;
 }
 
 #navigation ul li a:hover {
   background-color: #2586d7;
   color: #fff;
+}
+
+
+/* --------------- Forms
+---------------------------------------------*/
+
+form p { 
+  margin: 0;
+  margin-bottom: 0.5em;
+}
+
+label { 
+  display: block; 
+  width: 6em; 
+  font-weight: bold;
+  padding: 0 0.2em; 
 }
 
 
