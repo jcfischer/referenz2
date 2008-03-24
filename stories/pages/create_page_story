@@ -1,13 +1,14 @@
 Story: Page Creation
 
-  As an anonymous user
+  As an regular user
   I want to create new pages
   So that I can store information
   
   Scenario: Creating new page
   
     Given no pages in the system
-    And an anonymous user
+    And a user named 'Joe' with password '123456'
+    And user 'Joe' logs in with '123456'
     
     When visiting '/pages' 
     And clicks on 'Neue Seite'

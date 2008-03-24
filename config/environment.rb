@@ -64,3 +64,4 @@ end
 #ActionController::AbstractRequest.relative_url_root = "/referenz2/"
 #ActionController::CgiRequest.relative_url_root = "/referenz2/"
 
+require 'maruku'

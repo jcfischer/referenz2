@@ -30,11 +30,31 @@ describe PagesController, "GET index" do
     do_get
     response.should render_template("index")
   end
-
-
 end
 
-describe PagesController, "GET new" do
+describe PagesController, "GET show" do
+  
+  before(:each) do
+    @page = mock_model(Page, :title => "Ein Titel", :body => "text in **fett** ")
+    Page.stub!(:find).and_return(@page)
+  end
+  
+  def do_get
+    get :show, :id => @page.id
+  end
+  
+  it "should be successfull" do
+    do_get
+    response.should be_success
+  end
+  
+end
+
+describe PagesController, "GET new (logged in)" do
+  
+  before(:each) do
+    controller.stub!(:logged_in?).and_return(true)
+  end
   
   def do_get
     get :new
@@ -51,9 +71,22 @@ describe PagesController, "GET new" do
   end
 end
 
-describe PagesController, "POST create" do
+describe PagesController, "GET new (anonymous)" do
   
   before(:each) do
+    controller.stub!(:logged_in?).and_return(false)
+  end
+
+  it "should be redirect" do
+    get :new
+    response.should redirect_to("/session/new")
+  end 
+end
+
+describe PagesController, "POST create (logged in)" do
+  
+  before(:each) do
+    controller.stub!(:logged_in?).and_return(true)
     @page = mock_model(Page, :new_record => true)
     @page.stub!(:save).and_return(true)
     Page.stub!(:new).and_return(@page)
@@ -63,7 +96,7 @@ describe PagesController, "POST create" do
     post :create, :page => { :title => "some title", :body => "content"}
   end
   
-  it "should be successful" do
+  it "should be redirct" do
     do_post
     response.should be_redirect
   end

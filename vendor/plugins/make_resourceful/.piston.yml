@@ -1,0 +1,5 @@
+--- 
+format: 1
+handler: 
+  commit: e60a6ac90d6f61e73a66dc628ba569f2ccc1d1fc
+  url: git://github.com/jcfischer/make_resourceful.git
