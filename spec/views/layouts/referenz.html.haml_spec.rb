@@ -39,4 +39,11 @@ describe "/layouts/referenz (logged in)" do
     response.should have_tag("#login a[href=?]", "/logout", :text => "Logout Joe Doe")
   end
   
+  it "should have a search form" do
+    response.should have_tag("form[action=/search]") do |f|
+      f.should have_tag("input[type=text][id=search]")
+    end
+  end
+  
+  
 end
