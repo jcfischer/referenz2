@@ -3,9 +3,10 @@ class SearchController < ApplicationController
   layout "referenz"
 
   def index
-
-    @search = Ultrasphinx::Search.new(:query => params[:search])
-    @search.run
+    @query = params[:search]
+    @search = Ultrasphinx::Search.new(:query => @query)
+    @search.excerpt
+    
     @results = @search.results
   end
 end

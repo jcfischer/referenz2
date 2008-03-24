@@ -9,29 +9,33 @@ body {
 ---------------------------------------------*/
 
 #header {
-  background: lightgreen;
-  border-bottom: 1px solid black;
+  background: #97b2c5;
+  border: 1px solid #8b8ba2;
   margin-bottom: 0; 
 }
 
 #navigation {
-  background: yellow;
+  border-top: 1px solid #eee;
+  background: #6d8190;
   padding: 5px 0; 
 }
 
 #main {
-  background: lightblue;
+  border: 1px solid #8b8ba2;
+  border-top: none  ;
+  background: #C5C1B5;
+  
 }
 
 #content {
-  background: lightgrey;
-  border-left: 1px solid #000;
+  background: #e9e9e9;
+  
   margin-left: 300px; 
-  padding: 10px; 
+  padding: 10px 20px; 
 }
 
 #sidebar {
-  background: lightblue;
+  background: #C5C1B5;
   margin: 0;
   padding: 0 0 1em 0;
   margin-bottom: 1em;
@@ -42,9 +46,10 @@ body {
 }
 
 #footer {
-  background: lightgreen;
+  background: #6d8190;
   text-align: right ;
   padding: 5px 10px;
+  color: white;
 }
 #footer p {
   margin: 0;
@@ -81,9 +86,13 @@ h2 {
   font-size: 2em;
   margin: 0;
   padding: 0;
+  color: #222E54;
 }
 
-#header h1 { margin-left: 10px;}
+#header h1 { 
+  margin-left: 10px;
+  color: #222E54;
+}
 
 
 /* --------------- Sidebar Navigaition
@@ -97,15 +106,15 @@ ul.selection {
 }
  
 ul.selection li {
-  border-bottom: 1px solid #90bade;
+  border-bottom: 1px solid #fff;
   margin: 0;
 }
   
 ul.selection li a {
   display: block;
   padding: 5px 5px 5px 0.5em;
-  border-left: 10px solid #1958b7;
-  border-right: 10px solid #508fc4;
+  border-left: 10px solid #901216;
+  /* border-right: 10px solid #508fc4;
   /* background-color: #2175bc; */
   color: #fff;
   text-decoration: none;
@@ -118,8 +127,8 @@ html>body #navigation ul li a {
 }
 
 ul.selection li a:hover {
-  border-left: 10px solid #1c64d1;
-  border-right: 10px solid #5ba3e0;
+  border-left: 10px solid #D41716;
+  /* border-right: 10px solid #5ba3e0;
   /* background-color: #2586d7; */
   color: #fff;
 }
@@ -132,26 +141,23 @@ ul.selection li a:hover {
 #navigation ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 } 
 
 #navigation ul li {
-  margin-left: 0;
-  margin-bottom: 0;
+  margin: 0;
   padding: 2px 10px 5px;
-  list-style: none;
   display: inline;
 }
 
 #navigation ul li a {
   padding: 0.6em 5px;
-  color: #000;
+  color: #fff;
   text-decoration: none;
-  width: 100%;
-  line-height: 1.5;
 }
 
 #navigation ul li a:hover {
-  background-color: #2586d7;
+  background-color: #901216;
   color: #fff;
 }
 
@@ -169,6 +175,15 @@ label {
   width: 6em; 
   font-weight: bold;
   padding: 0 0.2em; 
+  color: #222E54;
 }
 
+a {
+  color: #901216;
+  text-decoration: none;
+}
+a:hover {
+  color: #901216;
+  text-decoration: underline;
+}
 

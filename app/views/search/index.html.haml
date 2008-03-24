@@ -1,8 +1,11 @@
 %h1
   Suchresultate
-
+%h2
+  = h(@query)
 #results
   %ul
     - @results.each do |result|
       %li
         = link_to result.title, result
+        %p
+          = result.body

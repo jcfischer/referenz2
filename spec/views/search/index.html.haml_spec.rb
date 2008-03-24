@@ -4,6 +4,7 @@ describe "/search/index" do
   before(:each) do
     @page = mock_model(Page, :title => "Some title", :body => "content")
     assigns[:results] = [@page]
+    assigns[:query] = "suchwort"
     render 'search/index'
   end
   
@@ -17,5 +18,13 @@ describe "/search/index" do
   
   it "should have a link to the resulting page" do
     response.should have_tag("li a[href=?]", page_path(@page), :text => "Some title")
+  end
+  
+  it "should show the search query" do
+    response.should have_tag("h2", 'suchwort')
+  end
+  
+  it "should show the body field" do
+    response.should have_tag("p", "content")
   end
 end
