@@ -3,18 +3,14 @@
   %head
     %title= @title || "Referenz"
     = stylesheet_link_tag 'referenz'
+    = javascript_include_tag 'jquery', 'application'
+    // = javascript_include_tag :all#, :cache => true
   %body
     #header
       %h1= @title || "Referenz" 
-      #login
-        - if logged_in?
-          = link_to "Logout #{current_user.login}", logout_path
-        - else
-          = link_to "Login", login_path
-          |
-          = link_to "Registrieren", signup_path
+      = render :partial => 'shared/login'
       #flash
-        = flash[:notice] if flash[:notice]
+        = flash[:notice] 
       #navigation
         = render :partial => "shared/navigation"
    
@@ -28,3 +24,4 @@
       %p
         &copy; 2007-
         = Time.now.year
+  // = javascript_tag("new Effect.Highlight('flash'); new Effect.BlindUp('flash')") #if flash[:notice]
