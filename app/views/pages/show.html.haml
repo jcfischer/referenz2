@@ -1,3 +1,6 @@
 %h1= h(@page.title)
 
-= @page.to_html
+#publish_state
+  = render :partial => 'published_state'
+
+~ @page.to_html

@@ -1,13 +1,4 @@
 %h1 Bearbeiten
 
-- form_for @page do |f|
-  %label{:for => "page_title"} Titel
-  = f.text_field :title
-  %br/
-  %label{:for => "page_body"} Body
-  ~ f.text_area :body
-  %br/
-  
-  = f.submit "Speichern"
-  
-  = link_to "Abbrechen", pages_path
+= render :partial => "form"
+

@@ -1,13 +1,3 @@
 %h1 Neue Seite
 
-- form_for :page, :url => pages_path do |f|
-  %label{:for => "page_title"} Titel
-  = f.text_field :title
-  %br/
-  %label{:for => "page_body"} Body
-  = f.text_area :body
-  %br/
-  
-  = f.submit "Erstellen"
-  
-  = link_to "Abbrechen", pages_path
+= render :partial => "form"

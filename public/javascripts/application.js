@@ -86,10 +86,16 @@ $(document).ready(function(){
   };
   
   // Behaviours
-  
+  $("a.ajax").click( function() {
+      $.ajax({
+          url: this.href,
+          dataType: "script",
+          beforeSend: function(xhr) {xhr.setRequestHeader("Accept", "text/javascript");}
+      });
+      return false;
+    });
   $('a[@href^=http]').addClass('extlink');
   $('input[@name=search]').presuggest('Suche', 'fieldSuggestion');
-  $('#page_title').presuggest('Seitentitel', 'fieldSuggestion');
   $('a.login_link').click(function()
                           {
                             $('#login_form').slideToggle(); 
@@ -97,5 +103,5 @@ $(document).ready(function(){
                           });
                           
 
-  $('#content').TOC({tocPlace: "#sidebar" });
+  $('#content').TOC({tocPlace: "#sidebar", tocTitle: "Inhaltsverzeichnis"  });
 });

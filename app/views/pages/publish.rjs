@@ -1,0 +1,1 @@
+page["#publish_state"].replaceWith render(:partial => 'published_state.html.haml', :locals => {:page => @page})

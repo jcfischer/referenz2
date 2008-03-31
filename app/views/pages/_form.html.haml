@@ -1,0 +1,11 @@
+- form_for @page do |f|
+  %label{:for => "page_title"} Titel
+  = f.text_field :title
+  %br/
+  %label{:for => "page_body"} Body
+  ~ f.text_area :body, {:rows => 30, :cols => 90}
+  %br/
+  
+  = f.submit "Speichern"
+  | 
+  = link_to "Abbrechen", pages_path
