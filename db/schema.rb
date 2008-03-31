@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 10) do
+ActiveRecord::Schema.define(:version => 9) do
 
   create_table "accesses", :force => true do |t|
     t.integer  "user_id"
@@ -81,6 +81,7 @@ ActiveRecord::Schema.define(:version => 10) do
     t.boolean  "published"
     t.string   "type"
     t.integer  "parent_id"
+    t.integer  "page_id"
   end
 
   create_table "preferences", :force => true do |t|
