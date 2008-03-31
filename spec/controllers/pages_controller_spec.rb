@@ -4,7 +4,7 @@ describe PagesController, "GET index" do
 
   before(:each) do
     @page = mock_model(Page)
-    Page.stub!(:find).with(:all).and_return([@page])
+    Page.stub!(:find).and_return([@page])
   end
 
   def do_get
@@ -22,7 +22,7 @@ describe PagesController, "GET index" do
   end
 
   it "should call the find method of the page class" do
-    Page.should_receive(:find).with(:all).and_return([@page])
+    Page.should_receive(:find).with(:all, :order => "title ASC").and_return([@page])
     do_get
   end
 

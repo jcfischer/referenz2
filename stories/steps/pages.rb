@@ -16,4 +16,9 @@ steps_for :pages do
   Then "there should be $number $page_pages in the system" do |nr_of_pages, dummy|
     Page.count.should == nr_of_pages.to_i
   end
+  
+  When "opening first page" do
+    @page = Page.find :first
+    visits "/pages/#{@page.to_param}"
+  end
 end

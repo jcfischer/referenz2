@@ -1,0 +1,25 @@
+Story: Comment Creation
+
+  As an regular user
+  I want to create new pages
+  So that I can store information
+  
+  Scenario: Creating a page
+  
+    Given 2 pages in the system
+    And a user named 'Joe' with password '123456'
+    And user 'Joe' logs in with '123456'
+    
+    When opening first page
+    
+    Then user should see pages/show
+    And user clicks on 'Kommentar schreiben'
+    
+    Then user should see comments/new
+    When fills in 'Titel' with 'Some Title'
+    And fills in 'comment[body]' with 'some content'
+    And clicks button 'Speichern'
+    
+    Then user should see pages/show
+    
+    Then there should be 1 comment in the system

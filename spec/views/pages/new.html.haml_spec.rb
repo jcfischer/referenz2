@@ -26,7 +26,7 @@ describe "/pages/new" do
   end
   
   it "should have a submit button" do
-    response.should have_tag("input[type=submit][value=?]", "Erstellen")
+    response.should have_tag("input[type=submit][value=?]", "Speichern")
   end
   
   it "should have a link to cancel" do

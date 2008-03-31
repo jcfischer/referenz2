@@ -1,6 +1,14 @@
 %h1= h(@page.title)
 
+- if logged_in?
+  = link_to "Bearbeiten", edit_page_path(@page)
+
 #publish_state
   = render :partial => 'published_state'
 
 ~ @page.to_html
+
+- if logged_in?
+  // = link_to 'Kommentar schreiben', new_page_comments_path(@page)
+- else
+  = link_to "Registrieren um zu kommentieren", signup_path

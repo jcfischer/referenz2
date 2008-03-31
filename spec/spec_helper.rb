@@ -37,3 +37,5 @@ Spec::Runner.configure do |config|
   # config.mock_with :flexmock
   # config.mock_with :rr
 end
+
+require File.dirname(__FILE__) + "/lib/helpers"

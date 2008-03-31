@@ -16,7 +16,7 @@ Story: Page Creation
     Then user should see pages/new
     When fills in 'Titel' with 'Some Title'
     And fills in 'page[body]' with 'some content'
-    And clicks button 'Erstellen'
+    And clicks button 'Speichern'
     
     Then user should see pages/show
     
