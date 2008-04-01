@@ -103,5 +103,5 @@ $(document).ready(function(){
                           });
                           
 
-  $('#content').TOC({tocPlace: "#sidebar", tocTitle: "Inhaltsverzeichnis"  });
+  $('#main_content').TOC({tocPlace: "#sidebar", tocTitle: "Inhaltsverzeichnis"  });
 });

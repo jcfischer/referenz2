@@ -13,13 +13,13 @@ Story: Comment Creation
     When opening first page
     
     Then user should see pages/show
-    And user clicks on 'Kommentar schreiben'
+    When clicks on 'Kommentar schreiben'
     
     Then user should see comments/new
-    When fills in 'Titel' with 'Some Title'
+    When fills in 'comment[title]' with 'Some Title'
     And fills in 'comment[body]' with 'some content'
     And clicks button 'Speichern'
     
     Then user should see pages/show
     
-    Then there should be 1 comment in the system
+    Then there should be 1 Comment in the system

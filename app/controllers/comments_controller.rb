@@ -1,0 +1,25 @@
+class CommentsController < ApplicationController
+  
+  layout 'referenz'
+  make_resourceful do
+    actions :all
+    belongs_to :page
+    
+    response_for :create do
+      redirect_to page_path(@page)
+    end
+    
+    before :new do
+      @parent_comment = Comment.find(params['comment_id']) if params['comment_id']
+    end
+    
+    before :create do
+      @comment.user = current_user
+      if params['comment_id']
+        @comment.parent_id = params['comment_id'] 
+        @comment.page = nil
+      end
+    end
+  end
+  
+end

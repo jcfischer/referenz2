@@ -1,7 +1,7 @@
 steps_for :pages do
 
-  Given "no pages in the system" do
-    Page.destroy_all
+  Given /no (\w+) in the system/ do |klass|
+    klass.singularize.camelize.constantize.destroy_all
   end
   
   Given "$number pages in the system" do |nr_of_pages|
@@ -10,15 +10,15 @@ steps_for :pages do
     end
   end
   
-  # Wir nutzen $page_pages als Platzhalter, damit folgendes möglich ist:
-  #   there should be 1 page in...
-  #   there should be 42 pages in...
-  Then "there should be $number $page_pages in the system" do |nr_of_pages, dummy|
-    Page.count.should == nr_of_pages.to_i
+  # 
+  #   there should be 1 Comment in...
+  #   there should be 42 Pages in...
+  Then /there should be (\d+) (\w+) in the system/ do |nr_of_objects, klass|
+    klass.singularize.camelize.constantize.count.should == nr_of_objects.to_i
   end
   
-  When "opening first page" do
-    @page = Page.find :first
-    visits "/pages/#{@page.to_param}"
+  When /opening first (\w+)/ do |klass|
+    @obj = klass.singularize.camelize.constantize.find :first
+    visits "/#{klass}s/#{@obj.to_param}"
   end
 end

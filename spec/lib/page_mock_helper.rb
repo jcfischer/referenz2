@@ -10,7 +10,8 @@ module PageMockHelper
       :title => "Eine Test Seite",
       :body  => "test inhalt",
       :to_html => "<p>test inhalt</p>",
-      :published? => true
+      :published? => true,
+      :comments => []
     }
   end
   

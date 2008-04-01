@@ -4,7 +4,11 @@ describe "/pages/show", :shared => true do
   include PagesHelper
 
   before(:each) do
-    @page = mock_page
+    @comment1 = mock_comment(:title => "Kommentar1")
+    @comment2 = mock_comment(:title => "Kommentar2")
+    @comments = [@comment1, @comment2]
+    @page = mock_page(:comments => @comments )
+
     assigns[:page] = @page
     assigns[:categories] = []
   end
@@ -27,7 +31,24 @@ describe "/pages/show", :shared => true do
     do_render
     response.should have_tag("p", :text => /#{@page.body}/)
   end
-
+  
+  it "should have a div for comments" do
+    do_render
+    response.should have_tag("div#comments")
+  end
+  
+  it "should show 2 comments" do
+    do_render
+    response.should have_tag("div#comments ul li", :count => 2)
+  end
+  
+  it "should show the comments" do
+    do_render
+    @comments.each do |comment|
+      response.should have_tag("h3", :text => comment.title)
+      response.should have_tag("p", :text => /#{comment.body}/)
+    end
+  end
 end
 
 describe "/pages/show (logged in)" do
@@ -43,10 +64,8 @@ describe "/pages/show (logged in)" do
   end
 
   it "should have a link to leave a comment" do
-    pending "noch keine Kommentarklasse" do
-      do_render
-      response.should have_tag("a[href=?]", new_page_comments_path(@page), :text => "Kommentar schreiben")
-    end
+    do_render
+    response.should have_tag("a[href=?]", new_page_comment_path(@page), :text => "Kommentar schreiben")
   end
 end
 

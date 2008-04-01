@@ -1,4 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
+
+  #map.resources :comments
+
   map.resources :users, :member => { :activate => :get,
                                      :suspend   => :put,
                                      :unsuspend => :put,
@@ -8,7 +11,11 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :session
 
 
-  map.resources :pages, :member => { :publish => :get }
+  map.resources :pages, :member => { :publish => :get } do |page|
+    page.resources :comments do |comment|
+      comment.resources :comments
+    end
+  end
   map.resources :categories
 
 
