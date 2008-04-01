@@ -1,0 +1,5 @@
+%tr[comment]
+  %td= link_to h(comment.title || "kein Titel"), admin_comment_path(comment)
+  %td= comment.user.login rescue 'unbekannt'
+  %td= comment.created_at.to_s(:db)
+  %td= link_to 'löschen', admin_comment_path(comment), :confirm => 'Wirklich löschen?', :method => :delete

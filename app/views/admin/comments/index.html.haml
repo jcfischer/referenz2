@@ -1,0 +1,11 @@
+%h1 Kommentar Administration
+
+%table
+  %tr
+    %th Titel
+    %th von
+    %th Datum
+    %th Löschen
+  = render :partial => 'comment', :collection => current_objects
+
+

@@ -16,6 +16,12 @@ ActionController::Routing::Routes.draw do |map|
       comment.resources :comments
     end
   end
+  
+  map.namespace :admin do |admin|
+    admin.resources :comments
+  end
+  
+  
   map.resources :categories
 
 
