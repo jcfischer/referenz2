@@ -11,8 +11,9 @@ class CommentsController < ApplicationController
       @comment_div = "#comment"
       logger.debug "accepts: #{request.accepts}"
       respond_to do |format|
-        format.html 
         format.js  
+        format.html 
+
       end
     end
 
