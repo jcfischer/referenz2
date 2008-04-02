@@ -3,7 +3,7 @@
 
 class ApplicationController < ActionController::Base
   include AuthenticatedSystem
-  before_filter :login_required
+  #before_filter :login_required
   
     
   helper :all # include all helpers, all the time
@@ -11,8 +11,8 @@ class ApplicationController < ActionController::Base
 
   # See ActionController::RequestForgeryProtection for details
   # Uncomment the :secret if you're not using the cookie session store
-  protect_from_forgery # :secret => 'd1d217dc4b4b545506b249bc911c6e7d'
-  
+  # protect_from_forgery # :secret => 'd1d217dc4b4b545506b249bc911c6e7d'
+  self.allow_forgery_protection = false
   filter_parameter_logging :password, :password_confirmation
   
 

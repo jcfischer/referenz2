@@ -1,5 +1,7 @@
 %h1= h(@page.title)
 
+= link_to 'Kommentar schreiben', tests_path,  :class => "ajax"
+
 - if logged_in?
   = link_to "Bearbeiten", edit_page_path(@page)
 
@@ -17,6 +19,6 @@
         
           
   - if logged_in?
-    = link_to 'Kommentar schreiben', new_page_comment_path(@page)
+    = link_to 'Kommentar schreiben', new_page_comment_path(@page),  :class => "ajax"
   - else
     = link_to "Registrieren um zu kommentieren", signup_path
