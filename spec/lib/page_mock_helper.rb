@@ -11,7 +11,8 @@ module PageMockHelper
       :body  => "test inhalt",
       :to_html => "<p>test inhalt</p>",
       :published? => true,
-      :comments => []
+      :comments => [],
+      :created_at => Time.now
     }
   end
   

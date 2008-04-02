@@ -11,7 +11,8 @@ module CommentMockHelper
       :body  => "test inhalt",
       :to_html => "<p>test inhalt</p>",
       :published? => true,
-      :children => []
+      :children => [],
+      :created_at => Time.now
     }
   end
 end

@@ -1,4 +1,5 @@
 %tr[comment]
+  %td= check_box_tag "comment[]", comment.id
   %td= link_to h(comment.title || "kein Titel"), admin_comment_path(comment)
   %td= comment.user.login rescue 'unbekannt'
   %td= comment.created_at.to_s(:db)

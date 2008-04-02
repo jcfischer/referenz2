@@ -9,8 +9,10 @@ $(document).ready(function(){
   // $('element').presuggest('Suchbegriff', 'light_text')
   $.fn.presuggest = function(text, css_class) 
   {
-    $(this).val(text).addClass('fieldSuggestion').
-            focus(function()
+    if ($(this).val() == '') {
+      $(this).val(text).addClass(css_class);
+    };
+    $(this).focus(function()
             {
               if ($(this).val() == text)
               {
@@ -96,6 +98,7 @@ $(document).ready(function(){
     });
   $('a[@href^=http]').addClass('extlink');
   $('input[@name=search]').presuggest('Suche', 'fieldSuggestion');
+  $('input[@id=page_title]').presuggest('Seitentitel', 'fieldSuggestion');
   $('a.login_link').click(function()
                           {
                             $('#login_form').slideToggle(); 

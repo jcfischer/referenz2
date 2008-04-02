@@ -18,7 +18,7 @@ ActionController::Routing::Routes.draw do |map|
   end
   
   map.namespace :admin do |admin|
-    admin.resources :comments
+    admin.resources :comments, :collection => { :delete_many => :delete }
   end
   
   
