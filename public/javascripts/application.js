@@ -98,6 +98,18 @@ $(document).ready(function(){
       });
           return false;
     });
+    
+    $('a[@href^=http]').addClass('extlink');
+    $('input[@name=search]').presuggest('Suche', 'fieldSuggestion');
+    $('input[@id=page_title]').presuggest('Seitentitel', 'fieldSuggestion');
+    $('a.login_link').click(function()
+                            {
+                              $('#login_form').slideToggle(); 
+                              return false;
+                            });
+
+
+    $('#main_content').TOC({tocPlace: "#sidebar", tocTitle: "Inhaltsverzeichnis"  });
  
   $(window).bind('ajaxError', function (e, xhr, s) {
     if (s.dataType == 'script' && xhr.responseText) {
