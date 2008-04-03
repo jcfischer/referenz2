@@ -13,12 +13,15 @@
 
 #comments
   %h2 Kommentare
+
   %ul
     - @page.comments.each do |comment| 
       = render :partial => "comments/comment", :locals => { :comment => comment }
         
           
   - if logged_in?
-    = link_to 'Kommentar schreiben', new_page_comment_path(@page),  :class => "ajax"
+    #comment_form{:style => 'display: none'}
+      gogog
+    = ajax_link_to 'Kommentar schreiben', new_page_comment_path(@page),  :class => "bla"
   - else
     = link_to "Registrieren um zu kommentieren", signup_path
