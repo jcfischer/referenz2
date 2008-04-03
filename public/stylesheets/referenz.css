@@ -12,16 +12,28 @@ body {
   position: relative;
   border: solid #8b8ba2;
   border-width: 1px 1px 0 1px;
-  padding: 10px; 
   margin-bottom: 0; 
   background: #ddd;
-}/* #97b2c5;*/
+}
 
+#header h1 {
+  margin-top: 10px;
+  margin-left: 10px;
+}
 #login_box {
-  text-align: right;
+ text-align: right;
+}
+#login_box .links {
+  padding: 5px 10px;
 }
 #login_form {
-  margin-top: 10px;
+  padding: 10px;
+  margin: 0;
+  background: #ccc;
+}
+#login_form form {
+  padding: 0;
+  margin: 0;
 }
 #login_form label {
   display: inline;
@@ -41,6 +53,7 @@ body {
 }
 
 #navigation {
+  padding: 5px 10px;
   float: left;
 }
 
@@ -117,6 +130,7 @@ h2 {
   margin: 0;
   padding: 0;
 }
+
 
 
 
