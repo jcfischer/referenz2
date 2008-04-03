@@ -1,9 +1,10 @@
 %li[comment]
   %h3= h(comment.title)
   %p 
+    %img{ :src => comment.user.gravatar_img_link(24)}
     = "von #{comment.user.login rescue 'unbekannt'} um #{comment.created_at.to_s(:db)}"
   %p= comment.to_html
-  %p= link_to "Kommentar kommentieren", new_page_comment_comment_path(@page, comment)
+  %p{:id => "comment_#{comment.id}_response"}= ajax_link_to "Kommentar kommentieren", new_page_comment_comment_path(@page, comment)
   - if comment.children.size > 0
     %ul
       - comment.children.each do |child|
