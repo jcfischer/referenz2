@@ -1,7 +1,7 @@
-%h1 Kommentar Administration
+%h2 Kommentar Administration
 
 %div[current_object]
-  %h3= current_object.title
+  %h4= current_object.title
 
   %p 
     = "von #{current_object.user.login rescue 'unbekannt'} um #{current_object.created_at.to_s(:db)}"

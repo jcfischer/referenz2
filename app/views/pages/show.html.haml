@@ -1,18 +1,17 @@
-%h1= h(@page.title)
+%h2= h(@page.title)
 
 = link_to 'Kommentar schreiben', tests_path,  :class => "ajax"
 
 - if logged_in?
   = link_to "Bearbeiten", edit_page_path(@page)
 
-#publish_state
   = render :partial => 'published_state'
 
 #main_content
   ~ @page.to_html
 
 #comments
-  %h2 Kommentare
+  %h3 Kommentare
 
   %ul
     - @page.comments.each do |comment| 

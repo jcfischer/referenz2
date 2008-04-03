@@ -1,10 +1,10 @@
 %li[comment]
-  %h3= h(comment.title)
+  %h4= h(comment.title)
   %p 
-    %img{ :src => comment.user.gravatar_img_link(24)}
+    %img{ :src => comment.user.gravatar_img_link(24), :class => "gravatar", :alt => "gravatar" }
     = "von #{comment.user.login rescue 'unbekannt'} um #{comment.created_at.to_s(:db)}"
-  %p= comment.to_html
-  %p= ajax_link_to "Kommentar kommentieren", new_page_comment_comment_path(@page, comment)
+  %div= comment.to_html
+  %p= ajax_link_to "Kommentar kommentieren", new_page_comment_comment_path(@page, comment), :class => "comment"
   %div{:id => "comment_#{comment.id}_response", :style => 'display: none;' }
   - if comment.children.size > 0
     %ul
