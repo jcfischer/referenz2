@@ -1,0 +1,7 @@
+com_id = @parent_comment ? @parent_comment.id : @page.id
+comment_div = "#comment_#{com_id}_response"
+page["#{comment_div}"].slideUp('slow').removeClass('current_comment').html("<ul></ul>")
+
+
+page["#{comment_div} ul"].append render(:partial => 'comment.html.haml', :locals => {:page => @page, :comment => @comment})
+page["#{comment_div}"].slideDown()

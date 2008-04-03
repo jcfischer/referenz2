@@ -10,6 +10,7 @@ class CommentsController < ApplicationController
 
     response_for :create do |format|
       format.html { redirect_to page_path(@page) }
+      format.js
     end
 
     before :new do
@@ -17,6 +18,7 @@ class CommentsController < ApplicationController
     end
 
     before :create do
+      @parent_comment = Comment.find(params['comment_id']) if params['comment_id']
       @comment.user = current_user
       if params['comment_id']
         @comment.parent_id = params['comment_id']
