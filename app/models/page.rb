@@ -3,6 +3,5 @@ class Page < Content
   has_many :comments
 
   
-  is_indexed :fields => ['created_at', 'title', 'body']
   
 end
