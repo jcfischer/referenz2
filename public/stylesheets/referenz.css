@@ -9,26 +9,45 @@ body {
 ---------------------------------------------*/
 
 #header {
-  background: #97b2c5;
-  border: 1px solid #8b8ba2;
+  position: relative;
+  border: solid #8b8ba2;
+  border-width: 1px 1px 0 1px;
+  padding: 10px; 
   margin-bottom: 0; 
+  background: #ddd;
+}/* #97b2c5;*/
+
+#login_box {
+  text-align: right;
+}
+#login_form {
+  margin-top: 10px;
+}
+#login_form label {
+  display: inline;
 }
 
-#login {
-  text-align: right;
-  margin-right: 10px;
+#search form {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#search form input {
+  border: 1px solid #333;
+  height: 1.5em;
 }
 
 #navigation {
-  border-top: 1px solid #eee;
-  background: #6d8190;
-  padding: 5px 0; 
+  float: left;
 }
 
 #main {
-  border: 1px solid #8b8ba2;
-  border-top: none  ;
-  background: #C5C1B5;
+  border: solid #8b8ba2;
+  border-width: 0 1px;
+  background: #eee;
   
 }
 
@@ -40,25 +59,29 @@ body {
 }
 
 #sidebar {
-  background: #C5C1B5;
+  background: #eee;
   margin: 0;
-  padding: 0 0 1em 0;
+  padding: 10px;
   margin-bottom: 1em;
   color: #333;
   float: left;
-  width: 300px; 
+  width: 280px; 
   
 }
 
 #footer {
-  background: #6d8190;
+  background: #ddd;
   text-align: right ;
+  border: solid #8b8ba2;
+  border-width: 0 1px 1px 1px;
   padding: 5px 10px;
-  color: white;
+  color: #333;
 }
 #footer p {
   margin: 0;
 }
+
+
 
 
 
@@ -79,11 +102,13 @@ body {
 h1, h2 {
   font-family: "Helvetica Neue", arial, helvetica, sans-serif;
   font-weight: normal;
+  color: #333;
 }
 
 h1 {
   font-size: 3em;
-  margin: 0;
+  margin: 0 0 0.5em 0; 
+  line-height: 1em;
   padding: 0;
 }
 
@@ -91,13 +116,8 @@ h2 {
   font-size: 2em;
   margin: 0;
   padding: 0;
-  color: #222E54;
 }
 
-#header h1 { 
-  margin-left: 10px;
-  color: #222E54;
-}
 
 
 /* --------------- Sidebar Navigation
@@ -151,20 +171,20 @@ ul.selection li a:hover {
 
 #navigation ul li {
   margin: 0;
-  padding: 2px 10px 5px;
+  padding: 2px 10px 5px 0px;
   display: inline;
 }
 
 #navigation ul li a {
   padding: 0.6em 5px;
-  color: #fff;
+  color: #333;
   text-decoration: none;
 }
 
 #navigation ul li a:hover {
-  background-color: #901216;
-  color: #fff;
-}
+  
+  color: #333;
+} /* background-color: #901216; */
 
 
 /* --------------- Forms ---------------------------------------------*/
@@ -182,11 +202,19 @@ label {
   color: #222E54;
 }
 
-#login label {
-  display: inline;
+
+
+/* --------------- Links ---------------------------------------------*/
+
+a { 
+  color: #ff9900; 
+  text-decoration: none; 
 }
 
-/* --------------- Forms ---------------------------------------------*/
+a:hover { 
+  color: #ff9900; 
+  text-decoration: underline; 
+}
 
 .extlink {
   background: url(/images/ext-link.png) right no-repeat;

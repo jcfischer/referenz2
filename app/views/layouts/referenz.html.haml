@@ -8,11 +8,12 @@
   %body
     #header
       %h1= @title || "Referenz" 
-      = render :partial => 'shared/login'
       #flash
-        = flash[:notice] 
+        = flash[:notice]
       #navigation
         = render :partial => "shared/navigation"
+      = render :partial => 'shared/login'
+
    
     #main
       #sidebar

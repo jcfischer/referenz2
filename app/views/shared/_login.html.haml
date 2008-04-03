@@ -1,21 +1,23 @@
-#login
+#login_box
   - if logged_in?
-    = link_to "Logout #{current_user.login}", logout_path
+    .links
+      = link_to "Logout #{current_user.login}", logout_path
   - else
+    .links
+      = link_to "Login", login_path, :class => "login_link"
+      |
+      = link_to "Registrieren", signup_path
     #login_form{ :style => 'display: none;' }
       - form_tag session_path do
         %p
           %label{"for"=>"login"}
             Login
           = text_field_tag 'login'
-      
+          
           %label{"for"=>"password"}
             Password
-      
           = password_field_tag 'password'
           = submit_tag 'Log in'
-    = link_to "Login", login_path, :class => "login_link"
-    |
-    = link_to "Registrieren", signup_path
+
     
 .clear
