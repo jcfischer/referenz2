@@ -90,13 +90,11 @@ $(document).ready(function(){
  
   // Behaviours
   $("a.ajax").click( function() {
-    
-      alert($(this).attr('href')); 
       $.ajax({
           url: $(this).attr('href'),
           dataType: "script"
       });
-          return false;
+      return false;
     });
     
     $('a[@href^=http]').addClass('extlink');
