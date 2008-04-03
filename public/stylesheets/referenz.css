@@ -39,7 +39,7 @@ body {
   display: inline;
 }
 
-#search form {
+#search_box form {
   padding: 0;
   margin: 0;
   position: absolute;
@@ -47,7 +47,7 @@ body {
   right: 10px;
 }
 
-#search form input {
+#search_box form input {
   border: 1px solid #333;
   height: 1.5em;
 }
@@ -94,7 +94,21 @@ body {
   margin: 0;
 }
 
+/* --------------- Comments
+---------------------------------------------*/
 
+#comments ul { 
+  list-style: none;  
+  margin: 0 0 1.5em 0;
+  padding-left: 0;
+}
+
+#comments li { 
+  border: solid #ddd;
+  border-width: 1px 0 0 0;
+  margin: 0 0 1.5em 00px;
+  padding-left: 20px;
+}
 
 
 
@@ -112,26 +126,41 @@ body {
 /* --------------- Headers
 ---------------------------------------------*/
 
-h1, h2 {
+h1, h2, h3, h5, h6 {
   font-family: "Helvetica Neue", arial, helvetica, sans-serif;
   font-weight: normal;
   color: #333;
 }
 
-h1 {
-  font-size: 3em;
-  margin: 0 0 0.5em 0; 
-  line-height: 1em;
-  padding: 0;
+h1 { 
+  font-size: 3em; 
+  line-height: 1; 
+  margin-bottom: 0.5em; 
 }
-
-h2 {
-  font-size: 2em;
-  margin: 0;
-  padding: 0;
+h2 { 
+  font-size: 2em; 
+  margin-bottom: 0.75em; 
 }
-
-
+h3 { 
+  font-size: 1.5em; 
+  line-height: 1; 
+  margin-bottom: 1em; 
+}
+h4 { 
+  font-size: 1.2em; 
+  line-height: 1.25; 
+  font-weight: bold;
+  margin-bottom: 1.25em;
+}
+h5 { 
+  font-size: 1em; 
+  font-weight: bold; 
+  margin-bottom: 1.5em; 
+}
+h6 { 
+  font-size: 1em; 
+  font-weight: bold; 
+}
 
 
 /* --------------- Sidebar Navigation
@@ -191,13 +220,11 @@ ul.selection li a:hover {
 
 #navigation ul li a {
   padding: 0.6em 5px;
-  color: #333;
   text-decoration: none;
 }
 
 #navigation ul li a:hover {
-  
-  color: #333;
+
 } /* background-color: #901216; */
 
 
@@ -220,18 +247,24 @@ textarea {
   margin-bottom: 5px;
 }
 
-
+.fieldSuggestion {
+  color: #999;
+}
 
 /* --------------- Links ---------------------------------------------*/
 
 a { 
-  color: #ff9900; 
+  color: #3b3e60; 
   text-decoration: none; 
 }
 
 a:hover { 
-  color: #ff9900; 
+  color: #ee850f; 
   text-decoration: underline; 
+}
+
+a.comment {
+  font-weight: bold;
 }
 
 .extlink {
@@ -240,6 +273,9 @@ a:hover {
   padding-right: 1.2em;
 }
 
-.fieldSuggestion {
-  color: grey;
+/* --------------- Images ---------------------------------------------*/
+
+img.gravatar {
+  float: left;
+  margin: 0 5px 5px 0;
 }
