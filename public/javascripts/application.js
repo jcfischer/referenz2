@@ -125,8 +125,9 @@ $(document).ready(function(){
 
      });
 
-
-     $(settings.tocPlace).append(toc_div);
+     if ($('.__toc').size() > 0) {
+      $(settings.tocPlace).append(toc_div);
+    };
    };
 
  
@@ -142,6 +143,21 @@ $(document).ready(function(){
     });
     
     
+    jQuery.fn.typeWatch = function(wait, fire) {
+      this.each(function() {
+        var input = this;
+        var timeout;
+
+        $(input).keyup(function() {
+          clearTimeout(timeout);
+          timeout = setTimeout(function() { fire(); }, wait)
+        });
+
+      });
+    return this;
+    };
+    
+    $("#page_body").typeWatch(750, function() { alert('You finished typing') });
     $('a[@href^=http]').addClass('extlink');
     $('input[@name=search]').presuggest('Suche', 'fieldSuggestion');
     $('input[@id=page_title]').presuggest('Seitentitel', 'fieldSuggestion');
@@ -153,6 +169,9 @@ $(document).ready(function(){
 
 
     $('#main_content').TOC({tocPlace: "#sidebar", tocTitle: "Inhaltsverzeichnis"  });
+    $('#toc').localScroll();
+    $('#main_content').localScroll();
+    
  
   $(window).bind('ajaxError', function (e, xhr, s) {
     if (s.dataType == 'script' && xhr.responseText) {
