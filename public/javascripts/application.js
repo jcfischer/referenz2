@@ -91,7 +91,7 @@ $(document).ready(function(){
   // Behaviours
   $("a.ajax").click( function() {
     
-
+      alert($(this).attr('href')); 
       $.ajax({
           url: $(this).attr('href'),
           dataType: "script"

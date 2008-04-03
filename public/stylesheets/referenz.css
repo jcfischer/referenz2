@@ -15,7 +15,8 @@ body {
 }
 
 #login {
-
+  text-align: right;
+  margin-right: 10px;
 }
 
 #navigation {
