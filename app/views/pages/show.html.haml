@@ -20,7 +20,7 @@
         
           
   - if logged_in?
-    #comment_form{:style => 'display: none'}
+    %div{:id => "comment_#{@page.id}_response", :style => 'display: none'}
       gogog
     = ajax_link_to 'Kommentar schreiben', new_page_comment_path(@page),  :class => "bla"
   - else

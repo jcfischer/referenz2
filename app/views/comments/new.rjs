@@ -1,3 +1,5 @@
-page["#{@comment_div}"].html render(:partial => 'new_form.html.haml', :locals => {:page => @page, :parent_page => @parent_page })
+com_id = @parent_comment ? @parent_comment.id : @page.id
+comment_div = "#comment_#{com_id}_response"
+page["#{comment_div}"].html render(:partial => 'new_form.html.haml', :locals => {:page => @page, :parent_page => @parent_page })
 page["#comment_body"].attr('rows', 5)
-page["#{@comment_div}"].slideDown()
+page["#{comment_div}"].slideDown()

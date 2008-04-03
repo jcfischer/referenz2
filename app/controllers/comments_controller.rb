@@ -13,7 +13,6 @@ class CommentsController < ApplicationController
     end
 
     before :new do
-      @comment_div = "#comment_form"
       @parent_comment = Comment.find(params['comment_id']) if params['comment_id']
     end
 
