@@ -1,4 +1,4 @@
 - if @page.published?
-  = link_to "Verstecken", publish_page_path(@page), :class => "ajax", :id => "publish_state"
+  = ajax_link_to "Verstecken", publish_page_path(@page), :class => "ajax", :id => "publish_state"
 - else
-  = link_to "Publizieren", publish_page_path(@page), :class => "ajax", :id => "publish_state"
+  = ajax_link_to "Publizieren", publish_page_path(@page), :class => "ajax", :id => "publish_state"

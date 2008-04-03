@@ -20,7 +20,6 @@
           
   - if logged_in?
     %div{:id => "comment_#{@page.id}_response", :style => 'display: none'}
-      gogog
     = ajax_link_to 'Kommentar schreiben', new_page_comment_path(@page)
   - else
     = link_to "Registrieren um zu kommentieren", signup_path

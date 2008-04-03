@@ -6,7 +6,6 @@
   %div= comment.to_html
   %p= ajax_link_to "Kommentar kommentieren", new_page_comment_comment_path(@page, comment), :class => "comment"
   %div{:id => "comment_#{comment.id}_response", :style => 'display: none;' }
-  - if comment.children.size > 0
-    %ul
-      - comment.children.each do |child|
-        = render :partial => "comments/comment", :locals => { :comment => child }
+  %ul{:id => "children_#{comment.id}"}
+    - comment.children.each do |child|
+      = render :partial => "comments/comment", :locals => { :comment => child }

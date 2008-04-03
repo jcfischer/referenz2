@@ -1,7 +1,6 @@
 com_id = @parent_comment ? @parent_comment.id : @page.id
 comment_div = "#comment_#{com_id}_response"
-page["#{comment_div}"].slideUp('slow').removeClass('current_comment').html("<ul></ul>")
+children_div = "#children_#{com_id}"
+page["#{comment_div}"].slideUp('slow').removeClass('current_comment').html("")
+page["#{children_div}"].append(render(:partial => 'comment.html.haml', :locals => {:page => @page, :comment => @comment})).hide().slideDown()
 
-
-page["#{comment_div} ul"].append render(:partial => 'comment.html.haml', :locals => {:page => @page, :comment => @comment})
-page["#{comment_div}"].slideDown()
