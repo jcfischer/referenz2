@@ -21,10 +21,6 @@ class PagesController < ApplicationController
     end
   end
   
-  def draft
-    render :text => params.to_yaml
-  end
-
   def current_objects
     Page.find :all, :order => 'title ASC'
   end

@@ -71,6 +71,8 @@ index
   morphology = stem_en
   stopwords = # <%= path %>/ap-stopwords.txt
   min_word_len = 1
+  
+
 
   # HTML-specific options
   html_strip = 0

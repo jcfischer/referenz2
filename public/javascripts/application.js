@@ -178,7 +178,7 @@ $(document).ready(function(){
           url: url
         })
       })
-      });
+    });
     
     // $("#new_page").delayedObserver(2, function() { console.log('You finished typing') });
     $('a[@href^=http]').addClass('extlink');
