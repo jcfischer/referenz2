@@ -1,0 +1,1 @@
+page['#update_status'].html("<p>Daten aktualisiert #{Time.now.to_s(:db)}</p>")

@@ -157,7 +157,22 @@ $(document).ready(function(){
     return this;
     };
     
-    $("#page_body").typeWatch(750, function() { alert('You finished typing') });
+
+    $(".edit_page").delayedObserver(2, function(element, value) 
+      { var id_array = element.attr("id").split('_');
+        var page_id = id_array[id_array.length-1];
+        $.ajax(  
+        
+        { async:true, 
+          type: 'POST',
+          data: $.param(element.serializeArray()),
+          // complete:function(request){$('#suggest').html(request.responseText);}, 
+          dataType:'script', 
+          url:'/pages/' + page_id 
+        })
+      })
+    
+    // $("#new_page").delayedObserver(2, function() { console.log('You finished typing') });
     $('a[@href^=http]').addClass('extlink');
     $('input[@name=search]').presuggest('Suche', 'fieldSuggestion');
     $('input[@id=page_title]').presuggest('Seitentitel', 'fieldSuggestion');

@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   layout "referenz"
 
-  skip_before_filter :login_required, :only => [:index, :show]
+  skip_before_filter :login_required, :only => [:index, :show, :draft]
 
   make_resourceful do
     build :all
@@ -15,11 +15,14 @@ class PagesController < ApplicationController
   def publish
     load_object
     current_object.toggle! :published
-    logger.debug "is xhr #{request.xhr?}"
     respond_to do |format|
       format.js  # rendert publish.rjs
       format.html { redirect_to page_path(current_object) }
     end
+  end
+  
+  def draft
+    render :text => params.to_yaml
   end
 
   def current_objects

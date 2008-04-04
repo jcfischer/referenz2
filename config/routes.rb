@@ -12,7 +12,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :session
 
 
-  map.resources :pages, :member => { :publish => :get } do |page|
+  map.resources :pages, :member => { :publish => :get, :draft => :put } do |page|
     page.resources :comments do |comment|
       comment.resources :comments
     end
