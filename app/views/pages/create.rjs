@@ -1,0 +1,1 @@
+page['#new_page'].replaceWith(render :partial => "form.html.haml", :locals => {:page => @page })

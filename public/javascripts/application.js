@@ -158,19 +158,27 @@ $(document).ready(function(){
     };
     
 
-    $(".edit_page").delayedObserver(2, function(element, value) 
-      { var id_array = element.attr("id").split('_');
-        var page_id = id_array[id_array.length-1];
+    $(".edit_page, #new_page").livequery(function() {
+      $(this).delayedObserver(2, function(element, value) 
+      { var id = element.attr("id");
+        var url;
+        if ("new_page" == id) {
+          url = '/pages';
+        } else {
+          var id_array = id.split('_');
+          var page_id = id_array[id_array.length-1];  
+          url = '/pages/' + page_id;
+        }
         $.ajax(  
         
         { async:true, 
           type: 'POST',
           data: $.param(element.serializeArray()),
-          // complete:function(request){$('#suggest').html(request.responseText);}, 
           dataType:'script', 
-          url:'/pages/' + page_id 
+          url: url
         })
       })
+      });
     
     // $("#new_page").delayedObserver(2, function() { console.log('You finished typing') });
     $('a[@href^=http]').addClass('extlink');
