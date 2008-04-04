@@ -172,6 +172,12 @@ $(document).ready(function(){
     $('#toc').localScroll();
     $('#main_content').localScroll();
     
+    $('.scrollToMe').livequery(function() {
+      console.log('scrolling');
+      $.scrollTo($(this));
+      $(this).removeClass('scrollToMe');
+      
+    });
  
   $(window).bind('ajaxError', function (e, xhr, s) {
     if (s.dataType == 'script' && xhr.responseText) {
