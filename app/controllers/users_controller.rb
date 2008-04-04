@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   
+  layout "referenz"
   skip_before_filter :login_required, :only => [:new, :create, :activate]
   
   # Protect these actions behind an admin login
