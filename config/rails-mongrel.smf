@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+
+<!DOCTYPE service_bundle SYSTEM '/usr/share/lib/xml/dtd/service_bundle.dtd.1'>
+
+<service_bundle type='manifest' name='mongrel/rails-praxis-production'>
+
+
+  <!-- 'application/' is a more appropriate name prefix than 'network/' -->
+  <service name='application/mongrel/rails-praxis-production' type='service' version='0'>
+
+    <!-- Dependancies for all mongrels. Might wanna add mysql here too, since our app requires it -->
+    <dependency name='fs' grouping='require_all' restart_on='none' type='service'>
+      <service_fmri value='svc:/system/filesystem/local'/>
+    </dependency>
+    <dependency name='net' grouping='require_all' restart_on='none' type='service'>
+      <service_fmri value='svc:/network/loopback'/>
+    </dependency>
+    
+    <!-- instance names can't start with digits. Bummer. -->
+    <instance name='p_8050' enabled='false'>
+
+      <!-- Cause the multi-user milestone to bring these services up -->
+      <dependent name='rails-praxis_8050_multi-user' restart_on='none' grouping='optional_all'>
+        <service_fmri value='svc:/milestone/multi-user'/>
+      </dependent>
+    
+      <exec_method name='start' type='method' exec='/opt/csw/bin/mongrel_rails cluster::start --clean --only 8050' timeout_seconds='10'>
+        <method_context working_directory='/opt/rails/rails-praxis/current'>
+          <method_credential user='jcf' group='other' />
+          <method_environment>
+            <envvar name='PATH' value='/usr/bin:/bin:/opt/csw/bin' />
+          </method_environment>
+        </method_context>
+      </exec_method>
+
+      <exec_method name='stop' type='method' exec=':kill' timeout_seconds='10' />
+    </instance>
+
+    <instance name='p_8051' enabled='false'>
+
+      <!-- Cause the multi-user milestone to bring these services up -->
+      <dependent name='rails-praxis_8051_multi-user' restart_on='none' grouping='optional_all'>
+        <service_fmri value='svc:/milestone/multi-user'/>
+      </dependent>
+    
+      <exec_method name='start' type='method' exec='/opt/csw/bin/mongrel_rails cluster::start --clean --only 8051' timeout_seconds='10'>
+        <method_context working_directory='/opt/rails/rails-praxis/current'>
+          <method_credential user='jcf' group='other' />
+          <method_environment>
+            <envvar name='PATH' value='/usr/bin:/bin:/opt/csw/bin' />
+          </method_environment>
+        </method_context>
+      </exec_method>
+
+      <exec_method name='stop' type='method' exec=':kill' timeout_seconds='10' />
+    </instance>
+
+  </service>
+
+</service_bundle>

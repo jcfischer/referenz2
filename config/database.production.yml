@@ -1,0 +1,6 @@
+production_m:
+  adapter: mysql
+  encoding: utf8
+  database: referenz2_production
+  username: praxis
+  password: aac9glfen73
