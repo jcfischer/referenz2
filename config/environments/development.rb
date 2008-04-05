@@ -19,4 +19,4 @@ config.action_mailer.raise_delivery_errors = false
 
 config.action_controller.perform_caching             = true
 
-config.action_controller.asset_host = "http://assets%d.rails-praxis.ch"
+# config.action_controller.asset_host = "http://assets%d.rails-praxis.ch"

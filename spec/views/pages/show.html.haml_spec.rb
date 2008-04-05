@@ -7,7 +7,8 @@ describe "/pages/show", :shared => true do
     @comment1 = mock_comment(:title => "Kommentar1")
     @comment2 = mock_comment(:title => "Kommentar2")
     @comments = [@comment1, @comment2]
-    @page = mock_page(:comments => @comments )
+    @user = mock_user
+    @page = mock_page(:comments => @comments, :user => @user )
 
     assigns[:page] = @page
     assigns[:categories] = []
@@ -24,7 +25,7 @@ describe "/pages/show", :shared => true do
 
   it "should have a title field" do
     do_render
-    response.should have_tag("h1", :text => @page.title)
+    response.should have_tag("h2", :text => @page.title)
   end
 
   it "should have a body field" do
@@ -45,7 +46,7 @@ describe "/pages/show", :shared => true do
   it "should show the comments" do
     do_render
     @comments.each do |comment|
-      response.should have_tag("h3", :text => comment.title)
+      response.should have_tag("h4", :text => comment.title)
       response.should have_tag("p", :text => /#{comment.body}/)
     end
   end
@@ -56,6 +57,8 @@ describe "/pages/show (logged in)" do
 
   before(:each) do
     template.stub!(:logged_in?).and_return(true)
+    template.stub!(:current_user).and_return(@user)
+    
   end
 
   it "should have a link to edit" do

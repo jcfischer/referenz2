@@ -3,13 +3,16 @@ require File.dirname(__FILE__) + '/../../spec_helper'
 describe "/search/index" do
   before(:each) do
     @page = mock_model(Page, :title => "Some title", :body => "content")
-    assigns[:results] = [@page]
+    assigns[:results] =
+    @results =  [@page]
+    @results.stub!(:page_count).and_return(1)
+    assigns[:search] = @results
     assigns[:query] = "suchwort"
     render 'search/index'
   end
   
   it "should have a title" do
-    response.should have_tag('h1', /Suchresultate/)
+    response.should have_tag('h2', /Suchresultate/)
   end
   
   it "should show the result list" do
@@ -21,7 +24,7 @@ describe "/search/index" do
   end
   
   it "should show the search query" do
-    response.should have_tag("h2", 'suchwort')
+    response.should have_tag("h3", 'suchwort')
   end
   
   it "should show the body field" do

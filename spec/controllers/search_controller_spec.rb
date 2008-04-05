@@ -20,7 +20,7 @@ describe SearchController do
     end
     
     it "should call the Ultraspinx search" do
-      Ultrasphinx::Search.should_receive(:new).with(:query => "suche").and_return(@search)
+      Ultrasphinx::Search.should_receive(:new).with(:query => "suche", :per_page => 2, :page => 1).and_return(@search)
       do_get
     end
     

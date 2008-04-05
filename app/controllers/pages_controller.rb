@@ -5,7 +5,10 @@ class PagesController < ApplicationController
 
   make_resourceful do
     build :all
-
+    
+    before :create do
+      @page.user = current_user
+    end
 
     before :index, :new, :show do
       @categories = Category.find :all

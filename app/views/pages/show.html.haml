@@ -1,11 +1,15 @@
 %h2= h(@page.title)
 
-= link_to 'Kommentar schreiben', tests_path,  :class => "ajax"
-
-- if logged_in?
+- if logged_in? && @page.user == current_user
   = link_to "Bearbeiten", edit_page_path(@page)
-
   = render :partial => 'published_state'
+
+#owner
+  %p
+    von
+    = @page.user.login
+    &nbsp;
+    = @page.created_at.to_s(:db)
 
 #main_content
   ~ @page.to_html

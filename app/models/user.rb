@@ -13,6 +13,9 @@ class User < ActiveRecord::Base
   validates_uniqueness_of   :login, :email, :case_sensitive => false
   before_save :encrypt_password
 
+  is_indexed :fields => [ 'email', {:field => 'login', :as => 'title'} ], :delta => true
+                          
+
   after_save :debug
 
   def debug

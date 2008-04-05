@@ -1,6 +1,0 @@
---- 
-format: 1
-handler: 
-  commit: 18d8799dcfc6acd69411c8513abe8dbe0b6ac425
-  url: git://github.com/defunkt/ultrasphinx.git
-lock: false

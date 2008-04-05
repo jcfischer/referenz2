@@ -19,7 +19,7 @@ describe "/shared/_login (anonymous)" do
   end
   
   it "should show the signup link" do
-    response.should have_tag("#login a[href=?]", "/signup", :text => "Registrieren")
+    response.should have_tag("#login_box a[href=?]", "/signup", :text => "Registrieren")
   end
   
 end
@@ -34,7 +34,7 @@ describe "/shared/_login (logged in)" do
   end
 
   it "should show the logout link" do
-    response.should have_tag("#login a[href=?]", "/logout", :text => "Logout Joe Doe")
+    response.should have_tag("#login_box a[href=?]", "/logout", :text => "Logout Joe Doe")
   end
   
 end

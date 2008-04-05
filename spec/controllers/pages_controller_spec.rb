@@ -87,7 +87,7 @@ describe PagesController, "POST create (logged in)" do
   
   before(:each) do
     controller.stub!(:logged_in?).and_return(true)
-    @page = mock_model(Page, :new_record => true, :save => true)
+    @page = mock_model(Page, :new_record => true, :save => true, :user= => true)
     Page.stub!(:new).and_return(@page)
   end
   

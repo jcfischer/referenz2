@@ -12,6 +12,7 @@ module CommentMockHelper
       :to_html => "<p>test inhalt</p>",
       :published? => true,
       :children => [],
+      :user => mock_user,
       :created_at => Time.now
     }
   end
