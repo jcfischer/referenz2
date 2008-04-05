@@ -1,16 +1,7 @@
 class Content < ActiveRecord::Base
   belongs_to :user  
   
-  is_indexed :fields => [
-                  'created_at', 
-                  'title', 
-                  'body'
-  
-              ],
-              :include => [{:association_name => 'user', :field => 'login', :as => 'user_login'}],
-              :delta => true,
-              :conditions => "type = 'Page'"
-            
+
 
 
   

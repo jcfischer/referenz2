@@ -1,6 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
 
-  #map.resources :comments
+  map.resources :comments
   map.resources :tests
   
   map.resources :users, :member => { :activate => :get,
