@@ -13,7 +13,7 @@
 #comments
   %h3 Kommentare
 
-  %ul
+  %ul{:id => "children_#{@page.id}"}
     - @page.comments.each do |comment| 
       = render :partial => "comments/comment", :locals => { :comment => comment }
         
