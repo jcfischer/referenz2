@@ -1,0 +1,7 @@
+#!/bin/sh
+
+source /home/praxis/.profile
+
+cd /opt/rails/rails-praxis/current/
+export RAILS_ENV=production 
+/opt/csw/bin/rake ultrasphinx:index:delta >> /opt/rails/rails-praxis/shared/log/ultrasphinx-index.log 2>&1
