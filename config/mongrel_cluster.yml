@@ -4,3 +4,5 @@ pid_file: /tmp/`hostname`-rails-praxis-mongrel.pid
 servers: 2
 address: 127.0.0.1
 environment: production
+user: praxis
+group: other
