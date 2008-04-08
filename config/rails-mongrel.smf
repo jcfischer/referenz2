@@ -26,7 +26,7 @@
     
       <exec_method name='start' type='method' exec='/opt/csw/bin/mongrel_rails cluster::start --clean --only 8050' timeout_seconds='10'>
         <method_context working_directory='/opt/rails/rails-praxis/current'>
-          <method_credential user='jcf' group='other' />
+          <method_credential user='praxis' group='other' />
           <method_environment>
             <envvar name='PATH' value='/usr/bin:/bin:/opt/csw/bin' />
           </method_environment>
@@ -45,7 +45,7 @@
     
       <exec_method name='start' type='method' exec='/opt/csw/bin/mongrel_rails cluster::start --clean --only 8051' timeout_seconds='10'>
         <method_context working_directory='/opt/rails/rails-praxis/current'>
-          <method_credential user='jcf' group='other' />
+          <method_credential user='praxis' group='other' />
           <method_environment>
             <envvar name='PATH' value='/usr/bin:/bin:/opt/csw/bin' />
           </method_environment>
