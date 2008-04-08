@@ -15,6 +15,8 @@ if RUBY_PLATFORM =~ /java/
   RAILS_CONNECTION_ADAPTERS = %w(jdbc)
 end
 
+ENV['HOME'] = '/home/praxis' if ENV['RAILS_ENV'] == 'production'
+
 Rails::Initializer.run do |config|
   # Settings in config/environments/* take precedence over those specified here
 
