@@ -4,5 +4,5 @@ export PATH
 
 cd /opt/rails/rails-praxis/current/
 RAILS_ENV=production
-export $RAILS_ENV
+export RAILS_ENV
 /opt/csw/bin/rake ultrasphinx:index:delta >> /opt/rails/rails-praxis/shared/log/ultrasphinx-index.log 2>&1
