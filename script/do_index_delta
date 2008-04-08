@@ -1,7 +1,8 @@
-#!/bin/sh
+PATH=/usr/bin:/usr/ucb:/etc:/usr/sbin:/usr/bin:/usr/sfw/bin:/usr/ccs/bin:/opt/csw/bin:/opt/csw/sbin:/opt/csw/gnu:/opt/csw/gcc3/bin:/opt/csw/mysql5/bin:/opt/csw/postgresql/bin:/opt/csw/apache2/bin:/opt/csw/apache2/sbin
 
-source /home/praxis/.profile
+export PATH
 
 cd /opt/rails/rails-praxis/current/
-export RAILS_ENV=production 
+RAILS_ENV=production
+export $RAILS_ENV
 /opt/csw/bin/rake ultrasphinx:index:delta >> /opt/rails/rails-praxis/shared/log/ultrasphinx-index.log 2>&1
