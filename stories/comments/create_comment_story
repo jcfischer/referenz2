@@ -6,8 +6,9 @@ Story: Comment Creation
   
   Scenario: Creating a page
   
-    Given 2 pages in the system
-    And a user named 'Joe' with password '123456'
+    
+    Given a user named 'Joe' with password '123456'
+    And 2 pages in the system
     And user 'Joe' logs in with '123456'
     
     When opening first page

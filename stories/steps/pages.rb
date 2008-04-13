@@ -6,7 +6,7 @@ steps_for :pages do
   
   Given "$number pages in the system" do |nr_of_pages|
     nr_of_pages.to_i.times do |i|
-      Page.create :title => "Titel #{i}", :body => "Inhalt #{i}"
+      Page.create :title => "Titel #{i}", :body => "Inhalt #{i}", :user => User.find(:first)
     end
   end
   
