@@ -5,7 +5,7 @@ describe SearchController do
   describe "GET 'index'" do
 
     before(:each) do
-      controller.stub!(:logged_in?).and_return(true)
+      controller.stub!(:logged_in?).and_return(false)
       @search = mock("sphinx", :excerpt => true, :results => [])
       Ultrasphinx::Search.stub!(:new).and_return(@search)
     end

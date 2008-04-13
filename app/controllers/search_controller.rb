@@ -2,6 +2,8 @@ class SearchController < ApplicationController
 
   layout "referenz"
 
+  skip_before_filter :login_required
+
   def index
     @query = params[:search]
     sort_mode = params[:search_sort] || 'relevance'
