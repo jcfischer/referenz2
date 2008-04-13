@@ -5,11 +5,9 @@
   = render :partial => 'published_state'
 
 #owner
-  %p
-    von
-    = @page.user.login
-    &nbsp;
-    = @page.created_at.to_s(:db)
+  %p 
+    %img{ :src => @page.user.gravatar_img_link(24), :class => "gravatar", :alt => "gravatar" }
+    = "von #{@page.user.login rescue 'unbekannt'} um #{@page.created_at.to_s(:ch_dt)}"
 
 #main_content
   ~ @page.to_html
