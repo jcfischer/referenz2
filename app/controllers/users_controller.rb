@@ -23,9 +23,9 @@ class UsersController < ApplicationController
     @user.save
     if @user.errors.empty?
       @user.register! 
-      self.current_user = @user
+      # self.current_user = @user
       redirect_back_or_default('/')
-      flash[:notice] = "Thanks for signing up!"
+      flash[:notice] = "Vielen Dank für's registrieren."
     else
       render :action => 'new'
     end
@@ -35,7 +35,7 @@ class UsersController < ApplicationController
     self.current_user = params[:activation_code].blank? ? false : User.find_by_activation_code(params[:activation_code])
     if logged_in? && !current_user.active?
       current_user.activate!
-      flash[:notice] = "Signup complete!"
+      flash[:notice] = "Aktivierung ist komplett."
     end
     redirect_back_or_default('/')
   end
