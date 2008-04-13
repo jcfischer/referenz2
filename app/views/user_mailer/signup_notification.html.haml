@@ -1,8 +1,13 @@
-Your account has been created.
+Dein Account wurde erstellt.
 
 Username:
-= @user.login
-Password:
-= @user.password
-Visit this url to activate your account:
+= "Login: #{@user.login}"
+
+Das Passwort ist verschlüsselt gespeichert und kann dir deshalb nicht per Mail zugeschickt werden.
+
+Bitte öffne den folgenden Link um die Aktvierung abzuschliessen
+
 = @url
+
+freundliche Grüsse
+das rails-praxis Team
