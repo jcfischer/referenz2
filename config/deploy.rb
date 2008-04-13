@@ -28,7 +28,8 @@ set :git, "/opt/csw/bin/git"
 
 set :service_list, "`svcs -H -o FMRI svc:application/mongrel/#{application}-production`"
 
-after :'deploy:update_code', :link_assets, :'ultrasphinx:daemon_stop', :'ultrasphinx:config', :'ultrasphinx:daemon_start'
+after :'deploy:update_code', :link_assets
+before :'deploy:restart', :'ultrasphinx:daemon_stop', :'ultrasphinx:config', :'ultrasphinx:daemon_start'
 
 task :link_assets, :roles => [:app] do
   run <<-CMD
