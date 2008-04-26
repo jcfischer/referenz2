@@ -1,0 +1,6 @@
+%tr[page]
+  %td= check_box_tag "page[]", page.id
+  %td= link_to h(page.title || "kein Titel"), admin_page_path(page)
+  %td= page.user.login rescue 'unbekannt'
+  %td= page.created_at.to_s(:db)
+  %td= link_to 'löschen', admin_page_path(page), :confirm => 'Wirklich löschen?', :method => :delete

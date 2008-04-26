@@ -1,0 +1,14 @@
+%h2 Seiten Administration
+
+%div[current_object]
+  %h4= current_object.title
+
+  %p 
+    = "von #{current_object.user.login rescue 'unbekannt'} um #{current_object.created_at.to_s(:db)}"
+  %p= current_object.to_html
+
+= link_to 'Edit', edit_admin_page_path(current_object)
+|
+= link_to 'Destroy', admin_page_path(current_object), :confirm => 'Really destroy page?', :method => :delete
+|
+= link_to 'Back', admin_pages_path

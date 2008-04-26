@@ -1,0 +1,6 @@
+%tr[user]
+  %td= check_box_tag "user[]", user.id
+  %td= link_to h(user.login || "kein Titel"), admin_user_path(user)
+  %td= user.email
+  %td= user.created_at.to_s(:db)
+  %td= link_to 'löschen', admin_user_path(user), :confirm => 'Wirklich löschen?', :method => :delete

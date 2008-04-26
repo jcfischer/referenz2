@@ -1,0 +1,12 @@
+%h2 Benutzer Administration
+
+%div[current_object]
+  %h4= current_object.login
+
+  %p
+    Email: 
+    = current_object.email
+
+= link_to 'Destroy', admin_user_path(current_object), :confirm => 'Really destroy user?', :method => :delete
+|
+= link_to 'Back', admin_users_path
