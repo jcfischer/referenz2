@@ -14,7 +14,7 @@ describe "/layouts/referenz (anonymous)" do
   end
   
   it "should show the title of the application" do
-    response.should have_tag("#header h1", :text => "Referenz")
+    response.should have_tag("#header h1", :text => "Rails-Praxis")
   end
   
 end

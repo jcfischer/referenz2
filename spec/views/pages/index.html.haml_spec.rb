@@ -1,6 +1,6 @@
 require File.dirname(__FILE__) + '/../../spec_helper'
 
-describe "/pages/index" do
+describe "/pages/index (logged in)" do
   include PagesHelper
   
   before(:each) do
@@ -9,6 +9,7 @@ describe "/pages/index" do
     @pages = [@page1, @page2]
     assigns[:pages] = @pages
     assigns[:categories] = []
+    template.stub!(:logged_in?).and_return(true)
     render "/pages/index"
   end
 
@@ -32,6 +33,26 @@ describe "/pages/index" do
   
   it "should have a link to a new page" do
     response.should have_tag("a[href=?]", new_page_path, :text => "Neue Seite")
+  end
+  
+end
+
+
+describe "/pages/index (anonymous)" do
+  include PagesHelper
+  
+  before(:each) do
+    @page1 = mock_model(Page, :title => "Titel 1")
+    @page2 = mock_model(Page, :title => "Titel 2")
+    @pages = [@page1, @page2]
+    assigns[:pages] = @pages
+    assigns[:categories] = []
+    template.stub!(:logged_in?).and_return(false)
+    render "/pages/index"
+  end
+  
+  it "should not have a link to a new page" do
+    response.should_not have_tag("a[href=?]", new_page_path, :text => "Neue Seite")
   end
   
 end
