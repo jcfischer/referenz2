@@ -3,7 +3,8 @@
     - @categories.each do |cat|
       %li[cat]= link_to cat.name, category_path(cat)
 
-= link_to "Neue Seite", new_page_path
+- if logged_in?
+  = link_to "Neue Seite", new_page_path
 
 %ul#pages
   - @pages.each do |page|

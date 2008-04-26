@@ -1,0 +1,13 @@
+Story: Home Page
+
+  As an anonymous user
+  I want to see the home page
+  So that I know what information there is
+  
+  Scenario: showing home page
+  
+    Given an anonymous user
+    
+    When visiting '/'
+    
+    Then user should see page/home

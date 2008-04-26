@@ -1,0 +1,17 @@
+- content_for :sidebar do
+  %ul.selection
+    %li= link_to 'Referenz', pages_path
+    
+%p
+  Die Begleitseite zum Buch.
+#referenz
+  %h2 Referenz
+  %p
+    Eine umfassende 
+    = link_to "Rails Referenz", pages_path
+
+#errata
+  %h2 Errata
+  %p
+    Fehler? Leider nicht zu Vermeiden... Hier geht es zu der bekannten Fehlern:
+    = link_to "Errata", "#"

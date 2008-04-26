@@ -1,0 +1,2 @@
+module PageControllerHelper
+end
