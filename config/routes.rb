@@ -20,6 +20,8 @@ ActionController::Routing::Routes.draw do |map|
   
   map.namespace :admin do |admin|
     admin.resources :comments, :collection => { :delete_many => :delete }
+    admin.resources :pages, :collection => { :delete_many => :delete }
+    admin.resources :users, :collection => { :delete_many => :delete }
   end
   
   
