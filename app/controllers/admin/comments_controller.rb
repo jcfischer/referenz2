@@ -1,5 +1,7 @@
 class Admin::CommentsController < ApplicationController
 
+  permit 'system_admin'
+  
   layout 'referenz'
   make_resourceful do
     actions :index, :show, :destroy

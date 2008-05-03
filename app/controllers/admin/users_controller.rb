@@ -1,5 +1,6 @@
 class Admin::UsersController < ApplicationController
   
+  permit 'system_admin'
   
   layout 'referenz'
   make_resourceful do
