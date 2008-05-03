@@ -14,13 +14,12 @@ class User < ActiveRecord::Base
   before_save :encrypt_password
 
   is_indexed :fields => [ 'email', {:field => 'login', :as => 'title'} ], :delta => true
-                          
 
-  after_save :debug
 
-  def debug
-    logger.debug "saving: #{self.activation_code}"
-  end
+  # Authorization plugin
+  acts_as_authorized_user
+  acts_as_authorizable
+
 
   # prevents a user from submitting a crafted form that bypasses activation
   # anything else you want your user to change should be added here.

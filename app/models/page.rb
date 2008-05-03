@@ -2,6 +2,8 @@ class Page < ActiveRecord::Base
   belongs_to :category, :counter_cache => true
   has_many :comments
   belongs_to :user
+  
+  acts_as_authorizable
 
   is_indexed :fields => [ 'created_at', 'title', 'body',
                           {:field => 'title', :sortable => true}],
