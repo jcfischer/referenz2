@@ -10,7 +10,7 @@ set :repository,  "git@github.com:jcfischer/referenz2.git"
 set :scm, :git
 set :git_enable_submodules, 1
 # set :deploy_via, :remote_cache
-set :branch, 'origin/master'
+set :branch, 'master'
 # set :deploy_via, :copy
 
 
@@ -24,7 +24,8 @@ set :group_writable, false
 
 set :sudo, "/opt/csw/bin/sudo"
 set :rake, "/opt/csw/bin/rake"
-set :git, "/opt/csw/bin/git"
+# set :git, "/opt/csw/bin/git"
+set :scm_command, 'git'
 
 set :service_list, "`svcs -H -o FMRI svc:application/mongrel/#{application}-production`"
 
