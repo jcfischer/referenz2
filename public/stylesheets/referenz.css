@@ -9,24 +9,35 @@ body {
 ---------------------------------------------*/
 
 #header {
-  position: relative;
-  border: solid #8b8ba2;
-  border-width: 1px 0 0 0;
+  height: 100px; 
+  border: solid #7f2719;
+  border-width: 0 0 6px 0;
   margin-bottom: 0; 
-  background: #ddd;
+  background: #e0452d;
 }
 
 #header h1 {
-  margin-top: 10px;
-  margin-left: 10px;
+  position: absolute;
+  top: 20px;
+  right: 0;
 }
-#login_box {
- text-align: right;
 
+#header h1 a {
+  color: #48150d;
 }
+
+#login_box {
+  position: absolute;
+  text-align: right;
+  top: 72px;
+  right: 0;
+  color: #ff9f91;
+}
+
 #login_box .links {
-  padding: 5px 10px;
+  padding: 5px 0;
 }
+
 #login_form {
   padding: 0;
   margin: 0;
@@ -40,12 +51,16 @@ body {
   display: inline;
 }
 
+#login_box a {
+  color: #ff9f91;
+}
+
 #search_box form {
+  position: absolute;
+  top: 25px;
+  left: 0;
   padding: 0;
   margin: 0;
-  position: absolute;
-  top: 10px;
-  right: 10px;
 }
 
 #search_box form input {
@@ -55,40 +70,37 @@ body {
 }
 
 #navigation {
-  padding: 5px 10px;
-  float: left;
+
 }
 
-#main {
-  background: #eee;
-  
+#main { 
+  margin-bottom: 20px;
 }
 
 #content {
-  background: #fff;
-  
   margin-left: 300px; 
   padding: 10px 20px; 
 }
 
 #sidebar {
-  background: #eee;
   margin: 0;
   padding: 10px;
   margin-bottom: 1em;
-  color: #333;
   float: left;
   width: 280px; 
   
 }
 
 #footer {
-  background: #ddd;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #888;
   text-align: right ;
-  border: solid #8b8ba2;
-  border-width: 0 0 1px 0;
-  padding: 5px 10px;
-  color: #333;
+  border: solid #111;
+  border-width: 3px 0 0 0;
+  padding: 5px 0;
+  color: #111;
 }
 #footer p {
   margin: 0;
@@ -122,6 +134,10 @@ body {
   margin: 0;       
 }
 
+.relative {
+  position: relative;
+}
+
 
 /* --------------- Headers
 ---------------------------------------------*/
@@ -129,7 +145,7 @@ body {
 h1, h2, h3, h5, h6 {
   font-family: "Helvetica Neue", arial, helvetica, sans-serif;
   font-weight: normal;
-  color: #333;
+  color: #7f2719;
 }
 
 h1 { 
@@ -219,8 +235,9 @@ ul.selection li a:hover {
 }
 
 #navigation ul li a {
-  padding: 0.6em 5px;
+  
   text-decoration: none;
+  color: white;
 }
 
 #navigation ul li a:hover {
