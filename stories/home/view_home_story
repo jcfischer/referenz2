@@ -11,3 +11,16 @@ Story: Home Page
     When visiting '/'
     
     Then user should see page/home
+
+
+  Scenario: Seeing tools
+
+    Given an anonymous user
+    
+    When visiting '/'
+    And clicks on 'Errata'
+    Then user should see errata/index
+
+    When visiting '/'
+    And clicks on 'Source Code'
+    Then user should see page/source

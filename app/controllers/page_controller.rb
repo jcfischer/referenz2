@@ -8,4 +8,7 @@ class PageController < ApplicationController
 
   def about
   end
+  
+  def source
+  end
 end

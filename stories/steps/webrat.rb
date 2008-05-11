@@ -47,4 +47,12 @@ steps_for :webrat do
     clicks_button button
   end
   
+  Then "sees text '$text'" do |text|
+    response.should have_text(/#{text}/)
+  end
+  
+  Then "sees tag '$tag' with '$text'" do |tag, text|
+    response.should have_tag(tag, :text => text)
+  end
+  
 end
