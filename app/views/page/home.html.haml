@@ -15,3 +15,21 @@
   %p
     Fehler? Leider nicht zu Vermeiden... Hier geht es zu der bekannten Fehlern:
     = link_to "Errata", "#"
+
+#source
+  %h2 Source
+  %p
+    Aller Code, der im Buch entwickelt wird (inklusive dem Code dieser Webanwendung) finden Sie in unter: 
+    = link_to 'Source', :controller => :page, :action => :source
+
+- unless logged_in?    
+  #register
+    %h2 Registrieren
+    %p
+      Als registrierter Benutzer haben Sie folgende weiteren Vorteile:
+      %ul
+        %li Zugriff auf weitere Kapitel des Buches
+        %li Möglichkeit Kommentare abzugeben
+    %p
+      = link_to 'Registrieren Sie sich', signup_path
+    
