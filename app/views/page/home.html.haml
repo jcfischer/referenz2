@@ -2,22 +2,34 @@
 //  %ul.selection
 //    %li= link_to 'Referenz', pages_path
 
-#neuigkeiten.grid_9.suffix_1
-  %h4
-    Die Begleitseite zum Buch.
+.grid_9.suffix_2.alpha
+  #neuigkeiten
+    %h4
+      Die Begleitseite zum Buch.
     
-  %h2 Neuigkeiten
-  %p
-    Proin suscipit bibendum lectus. Aenean placerat nunc sit amet libero. Etiam a sapien. Nunc ut turpis. Pellentesque fermentum nulla eget pede. Maecenas a urna et      augue condimentum venenatis. Quisque elementum sem a erat. Donec luctus, justo ac sodales dictum, metus neque sagittis magna, sed malesuada dolor nibh ut metus. Praesent eu nunc aliquet leo eleifend fringilla. Vivamus ac ligula. Nunc ut ligula. In sem. Maecenas id felis. Praesent rhoncus, erat sed iaculis venenatis, elit metus tristique elit, id semper purus augue non orci. Cras dui diam, accumsan id, interdum vel, aliquam sit amet, sem.
+    %h2 Neuigkeiten
+    %p
+      Proin suscipit bibendum lectus. Aenean placerat nunc sit amet libero. Etiam a sapien. Nunc ut turpis. Pellentesque fermentum nulla eget pede. Maecenas a urna et      augue condimentum venenatis. Quisque elementum sem a erat. Donec luctus, justo ac sodales dictum, metus neque sagittis magna, sed malesuada dolor nibh ut metus. Praesent eu nunc aliquet leo eleifend fringilla. Vivamus ac ligula. Nunc ut ligula. In sem. Maecenas id felis. Praesent rhoncus, erat sed iaculis venenatis, elit metus tristique elit, id semper purus augue non orci. Cras dui diam, accumsan id, interdum vel, aliquam sit amet, sem.
+    
+    #referenz.grid_4.suffix_1.alpha
+      %h2= link_to  "Referenz", pages_path
+      %p
+        Eine umfassende 
+        = link_to "Rails Referenz", pages_path
 
-#errata.grid_6
+    #source.grid_4.omega
+      %h2= link_to "Source", :controller => :page, :action => :source
+      %p
+        Aller Code, der im Buch entwickelt wird (inklusive dem Code dieser Webanwendung) finden Sie in unter: 
+        = link_to 'Source', :controller => :page, :action => :source
+        
+#errata.grid_5.omega
   %h2= link_to "Errata", "#"
   %p
     Fehler? Leider nicht zu Vermeiden... Hier geht es zu der bekannten Fehlern:
     = link_to "Errata", "#"
 
-- unless logged_in?    
-  #register.grid_6
+  - unless logged_in?    
     %h2= link_to "Registrieren", signup_path
     %p
       Als registrierter Benutzer haben Sie folgende weiteren Vorteile:
@@ -27,16 +39,7 @@
     %p
       = link_to 'Registrieren Sie sich', signup_path
 
-%div
-  #referenz.grid_4
-    %h2= link_to  "Referenz", pages_path
-    %p
-      Eine umfassende 
-      = link_to "Rails Referenz", pages_path
 
-  #source.grid_4
-    %h2= link_to "Source", :controller => :page, :action => :source
-    %p
-      Aller Code, der im Buch entwickelt wird (inklusive dem Code dieser Webanwendung) finden Sie in unter: 
-      = link_to 'Source', :controller => :page, :action => :source
+
+
 
