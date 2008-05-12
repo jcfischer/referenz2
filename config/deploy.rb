@@ -24,7 +24,7 @@ set :group_writable, false
 
 set :sudo, "/opt/csw/bin/sudo"
 set :rake, "/opt/csw/bin/rake"
-# set :git, "/opt/csw/bin/git"
+set :git, "/opt/csw/bin/git"
 set :scm_command, 'git'
 
 set :service_list, "`svcs -H -o FMRI svc:application/mongrel/#{application}-production`"
