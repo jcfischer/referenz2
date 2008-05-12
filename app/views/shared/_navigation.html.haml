@@ -1,4 +1,4 @@
-#login_box.container_16
+#login_box.container_12
   - if logged_in?
     .links
       = link_to "Logout #{current_user.login}", logout_path
@@ -15,15 +15,16 @@
         = link_to page.title, page_path(page)
       
 #login_form{ :style => 'display: none;' }
-  - form_tag session_path do
-    %p
-      %label{"for"=>"login"}
-        Login
-      = text_field_tag 'login'
+  .container_12
+    - form_tag session_path do
+      %p
+        %label{"for"=>"login"}
+          Login
+        = text_field_tag 'login'
     
-      %label{"for"=>"password"}
-        Password
-      = password_field_tag 'password'
-      = submit_tag 'Log in'
+        %label{"for"=>"password"}
+          Password
+        = password_field_tag 'password'
+        = submit_tag 'Log in'
 
 .clear

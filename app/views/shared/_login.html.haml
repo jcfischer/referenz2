@@ -1,4 +1,4 @@
-#login_box.container_16
+#login_box.container_12
   - if logged_in?
     .links
       = link_to "Logout #{current_user.login}", logout_path
@@ -9,7 +9,7 @@
       = link_to "Registrieren", signup_path
       
 #login_form{ :style => 'display: none;' }
-  .container_16
+  .container_12
     - form_tag session_path do
       %p
         %label{"for"=>"login"}

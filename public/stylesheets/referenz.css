@@ -20,7 +20,7 @@ body {
 #header h1 {
   position: absolute;
   top: 20px;
-  right: 0;
+  right: 10px;
 }
 
 #header h1 a {
@@ -29,7 +29,9 @@ body {
 
 #login_box {
   text-align: right;
+  padding-right: 20px;
   color: #ff9f91;
+  
   border: solid #5c1f12;
   border-width: 0 0 0 0;
 }
@@ -61,7 +63,7 @@ body {
 #search_box form {
   position: absolute;
   top: 25px;
-  left: 0;
+  left: 10px;
   padding: 0;
   margin: 0;
 }
@@ -81,8 +83,16 @@ body {
   background: #fff url("/images/navigation.png") top repeat-x;
 }
 
+#neuigkeiten {
+  margin-bottom: 42px;
+}
+
+#errata {
+  margin-bottom: 42px;
+}
+
 #main { 
-  margin-top: 54px;
+  margin-top: 60px;
   margin-bottom: 40px;
 }
 
@@ -91,16 +101,30 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: #888;
-  text-align: right ;
-  border: solid #111;
+  border: solid #333;
   border-width: 3px 0 0 0;
-  padding: 5px 0;
-  color: #111;
+  padding: 0.5em 0 0 0;
+  color: #eee;
+  background: #888;
 }
-#footer p {
-  margin: 0;
+
+#footer h3 {
+  color: #eee;
 }
+
+
+#copyright {
+  margin-top: 0.5em;
+  padding: 4px 0;
+  text-align: right;
+  color: #888;
+  background: #333;
+}
+
+#copyright p {
+  margin: 0 10px;
+}
+
 
 /* --------------- Comments
 ---------------------------------------------*/
@@ -164,8 +188,8 @@ h2 {
 }
 h3 { 
   font-size: 1.5em; 
-  line-height: 1; 
-  margin-bottom: 1em; 
+  line-height: 1.5; 
+  margin-bottom: 0; 
 }
 h4 { 
   font-size: 1.2em; 

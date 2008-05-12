@@ -5,12 +5,16 @@
     = stylesheet_link_tag 'gs/reset'
     = stylesheet_link_tag 'gs/960'
     = stylesheet_link_tag 'referenz'
+    
+    = javascript_include_tag 'jquery-1.2.3.js'
+    = javascript_include_tag 'jquery.form.js', 'jquery.livequery.pack.js', 'jquery.scrollTo-min.js', 'jquery.localscroll-min.js', 'jrails'
+    = javascript_include_tag 'application'
 
 
   %body
     
     #header
-      .container_16.relative
+      .container_12.relative
         %h1
           = link_to( @title || "Rails-Praxis", "/")
         #flash
@@ -19,17 +23,29 @@
       #navigation
         = render :partial => 'shared/navigation'
 
-    #main.container_16
+    #main.container_12
       #sidebar
         = yield :sidebar
       #content
         = yield
       #clear
+      
     #footer
-      .container_16
-        &copy; 2007-
-        = Time.now.year
+      .container_12
+        .grid_3.suffix_1
+          %h3 About
+          %p
+            Aliquam erat volutpat. Nunc consequat blandit ligula. Donec molestie justo in quam. Fusce venenatis porttitor ante. Fusce sollicitudin, lacus nec tristique mattis, arcu tortor convallis libero, egestas dapibus justo turpis eu nulla. 
+            
+        .grid_3.suffix_1
+          %h3 More Info
+          %p
+            Aliquam erat volutpat. Nunc consequat blandit ligula. Donec molestie justo in quam. Fusce venenatis porttitor ante. Fusce sollicitudin, lacus nec tristique mattis, arcu tortor convallis libero, egestas dapibus justo turpis eu nulla.
+              
+        .clear
+      #copyright
+        .container_12
+          %p
+            &copy; 2007-
+            = Time.now.year
 
-= javascript_include_tag 'jquery-1.2.3.js'
-= javascript_include_tag 'jquery.form.js', 'jquery.livequery.pack.js', 'jquery.scrollTo-min.js', 'jquery.localscroll-min.js', 'jrails'
-= javascript_include_tag 'application'
