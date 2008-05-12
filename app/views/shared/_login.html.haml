@@ -1,4 +1,4 @@
-#login_box
+#login_box.container_16
   - if logged_in?
     .links
       = link_to "Logout #{current_user.login}", logout_path
@@ -7,17 +7,18 @@
       = link_to "Login", login_path, :class => "login_link"
       |
       = link_to "Registrieren", signup_path
-    #login_form{ :style => 'display: none;' }
-      - form_tag session_path do
-        %p
-          %label{"for"=>"login"}
-            Login
-          = text_field_tag 'login'
-          
-          %label{"for"=>"password"}
-            Password
-          = password_field_tag 'password'
-          = submit_tag 'Log in'
+      
+#login_form{ :style => 'display: none;' }
+  .container_16
+    - form_tag session_path do
+      %p
+        %label{"for"=>"login"}
+          Login
+        = text_field_tag 'login'
+      
+        %label{"for"=>"password"}
+          Password
+        = password_field_tag 'password'
+        = submit_tag 'Log in'
 
-    
 .clear

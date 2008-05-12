@@ -9,11 +9,12 @@ body {
 ---------------------------------------------*/
 
 #header {
-  height: 100px; 
-  border: solid #7f2719;
-  border-width: 0 0 6px 0;
-  margin-bottom: 0; 
-  background: #e0452d;
+  height: 90px; 
+  background: #b83e25;
+}
+
+#header .relative {
+  padding-top: 72p;
 }
 
 #header h1 {
@@ -27,11 +28,10 @@ body {
 }
 
 #login_box {
-  position: absolute;
   text-align: right;
-  top: 72px;
-  right: 0;
   color: #ff9f91;
+  border: solid #5c1f12;
+  border-width: 0 0 0 0;
 }
 
 #login_box .links {
@@ -41,7 +41,9 @@ body {
 #login_form {
   padding: 0;
   margin: 0;
-  background: #ccc;
+  text-align: right;
+  background: #fff;
+  color: white;
 }
 #login_form form {
   padding: 10px;
@@ -70,11 +72,14 @@ body {
 }
 
 #navigation {
-
+  border: solid #5c1f12;
+  border-width: 0 0 0 0;
+  margin-bottom: 0; 
+  background: #8a2e1c;
 }
 
 #main { 
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 #content {
@@ -256,7 +261,7 @@ label {
   display: block; 
   font-weight: bold;
   padding: 0 0.2em; 
-  color: #222E54;
+  color: #111;
 }
 
 textarea {
