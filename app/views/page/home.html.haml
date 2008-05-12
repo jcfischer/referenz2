@@ -1,36 +1,43 @@
-- content_for :sidebar do
-  %ul.selection
-    %li= link_to 'Referenz', pages_path
-    
-%p
-  Die Begleitseite zum Buch.
-#referenz
-  %h2 Referenz
-  %p
-    Eine umfassende 
-    = link_to "Rails Referenz", pages_path
+//- content_for :sidebar do
+//  %ul.selection
+//    %li= link_to 'Referenz', pages_path
 
-#errata
-  %h2 Errata
+.grid_9.suffix_2.alpha
+  #neuigkeiten
+    %h4
+      Die Begleitseite zum Buch.
+    
+    %h2 Neuigkeiten
+    %p
+      Proin suscipit bibendum lectus. Aenean placerat nunc sit amet libero. Etiam a sapien. Nunc ut turpis. Pellentesque fermentum nulla eget pede. Maecenas a urna et      augue condimentum venenatis. Quisque elementum sem a erat. Donec luctus, justo ac sodales dictum, metus neque sagittis magna, sed malesuada dolor nibh ut metus. Praesent eu nunc aliquet leo eleifend fringilla. Vivamus ac ligula. Nunc ut ligula. In sem. Maecenas id felis. Praesent rhoncus, erat sed iaculis venenatis, elit metus tristique elit, id semper purus augue non orci. Cras dui diam, accumsan id, interdum vel, aliquam sit amet, sem.
+    
+    #referenz.grid_4.suffix_1.alpha
+      %h2= link_to  "Referenz", pages_path
+      %p
+        Eine umfassende 
+        = link_to "Rails Referenz", pages_path
+
+    #source.grid_4.omega
+      %h2= link_to "Source", :controller => :page, :action => :source
+      %p
+        Aller Code, der im Buch entwickelt wird (inklusive dem Code dieser Webanwendung) finden Sie in unter: 
+        = link_to 'Source', :controller => :page, :action => :source
+        
+#errata.grid_5.omega
+  %h2= link_to "Errata", "#"
   %p
     Fehler? Leider nicht zu Vermeiden... Hier geht es zu der bekannten Fehlern:
     = link_to "Errata", "#"
 
-#source
-  %h2 Source
-  %p
-    Aller Code, der im Buch entwickelt wird (inklusive dem Code dieser Webanwendung) finden Sie in unter: 
-    = link_to 'Source', :controller => :page, :action => :source
 
-#twitter
-  %h2 Letzte News
-  %ul#twitter_update_list
+  #twitter
+    %h2 Letzte News
+    %ul#twitter_update_list
   
 
 
-- unless logged_in?    
-  #register
-    %h2 Registrieren
+  - unless logged_in?    
+    %h2= link_to "Registrieren", signup_path
     %p
       Als registrierter Benutzer haben Sie folgende weiteren Vorteile:
       %ul
@@ -41,3 +48,4 @@
     
 %script{ :type => "text/javascript", :src => "http://twitter.com/javascripts/blogger.js" }
 %script{ :type => "text/javascript", :src => "http://twitter.com/statuses/user_timeline/rails_praxis.json?callback=twitterCallback2&count=5" }
+

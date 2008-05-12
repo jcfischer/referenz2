@@ -1,6 +1,6 @@
 body {
   
-  font-family: "Helvetica Neue", arial, helvetica, sans-serif;
+  font-family: "Helvetica", arial, helvetica, sans-serif;
   font-size: 75%;
   line-height: 1.5; 
 }
@@ -9,7 +9,7 @@ body {
 ---------------------------------------------*/
 
 #header {
-  height: 90px; 
+  height: 100px; 
   background: #b83e25;
 }
 
@@ -39,22 +39,23 @@ body {
 }
 
 #login_form {
-  padding: 0;
-  margin: 0;
   text-align: right;
-  background: #fff;
+  background: #ccc;
+  background: #5c1f12;
   color: white;
 }
+
 #login_form form {
-  padding: 10px;
-  margin: 0;
+  padding: 5px 10px;
+  margin: 0 10px;
 }
 #login_form label {
   display: inline;
+  color: white;
 }
 
 #login_box a {
-  color: #ff9f91;
+  color: #fff;
 }
 
 #search_box form {
@@ -72,29 +73,19 @@ body {
 }
 
 #navigation {
-  border: solid #5c1f12;
-  border-width: 0 0 0 0;
+  width: 100%;
+  height: 65px;
   margin-bottom: 0; 
-  background: #8a2e1c;
+  position: absolute;
+  top: 85px;
+  background: #fff url("/images/navigation.png") top repeat-x;
 }
 
 #main { 
+  margin-top: 54px;
   margin-bottom: 40px;
 }
 
-#content {
-  margin-left: 300px; 
-  padding: 10px 20px; 
-}
-
-#sidebar {
-  margin: 0;
-  padding: 10px;
-  margin-bottom: 1em;
-  float: left;
-  width: 280px; 
-  
-}
 
 #footer {
   position: fixed;
@@ -139,6 +130,14 @@ body {
   margin: 0;       
 }
 
+.clearleft {
+  clear: left;
+}
+
+.clearright {
+  clear: right;
+}
+
 .relative {
   position: relative;
 }
@@ -160,7 +159,8 @@ h1 {
 }
 h2 { 
   font-size: 2em; 
-  margin-bottom: 0.75em; 
+  line-height: 1.5; 
+  
 }
 h3 { 
   font-size: 1.5em; 
@@ -182,6 +182,15 @@ h6 {
   font-size: 1em; 
   font-weight: bold; 
 }
+
+h2 a {
+  color: #7f2719;
+}
+
+h2 a:hover {
+  color: #7f2719;
+}
+
 
 
 /* --------------- Sidebar Navigation
@@ -228,7 +237,7 @@ ul.selection li a:hover {
 ---------------------------------------------*/
 
 #navigation ul {
-  margin: 0;
+  margin: 0 0 10px 0;
   padding: 0;
   list-style: none;
 } 
@@ -299,4 +308,14 @@ a.comment {
 img.gravatar {
   float: left;
   margin: 0 5px 5px 0;
+}
+
+
+p {
+  margin: 0 0 1.5em 0;
+}
+
+ul {
+  padding-left: 2em;
+  list-style: square;
 }

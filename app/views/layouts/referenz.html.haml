@@ -4,7 +4,6 @@
     %title= @title || "Referenz"
     = stylesheet_link_tag 'gs/reset'
     = stylesheet_link_tag 'gs/960'
-    = stylesheet_link_tag 'gs/text'
     = stylesheet_link_tag 'referenz'
 
 
@@ -17,10 +16,9 @@
         #flash
           = flash[:notice]
         = render :partial => "shared/search"
-    #navigation.relative
-      = render :partial => 'shared/login'
+      #navigation
+        = render :partial => 'shared/navigation'
 
-   
     #main.container_16
       #sidebar
         = yield :sidebar
