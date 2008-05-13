@@ -1,12 +1,8 @@
-<<<<<<< HEAD:.gitignore
-# ignore log files
-=======
 .DS_Store
->>>>>>> a24fa0ea8cb2cab19d9cd9b5566afc5c06fd8f13:.gitignore
+
+# ignore log files
 log/*.log
 tmp/**/*
-<<<<<<< HEAD:.gitignore
-.DS_Store
+
 db/schema.rb
-=======
->>>>>>> a24fa0ea8cb2cab19d9cd9b5566afc5c06fd8f13:.gitignore
+
