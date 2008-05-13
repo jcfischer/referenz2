@@ -10,7 +10,7 @@ body {
 
 #header {
   height: 100px; 
-  background: #b83e25 url("/images/header.png") repeat-x;
+  background: #b83e25 url("/images/header2.png") repeat-x;
 }
 
 #header .relative {
@@ -155,8 +155,13 @@ body {
   display: none;
 }
 
-#owner { margin-bottom: 1.5em; }
+#owner { 
+  margin-bottom: 1.5em; 
+}
 
+#ueber_uns {
+  cursor: pointer;
+}
 
 /* --------------- Comments
 ---------------------------------------------*/

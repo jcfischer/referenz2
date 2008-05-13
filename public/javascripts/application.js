@@ -93,9 +93,13 @@ $(document).ready(function(){
 
  
   // Behaviours
-    $("#ueber_uns").click(function() {
-      $('#about').slideToggle(); 
+    $("#ueber_uns").mouseover(function() {
+      $('#about').slideDown(); 
     }); 
+    
+    $("#footer").bind("mouseleave",function() {
+      $('#about').slideUp(); 
+    });
 
     $("form.ajax").livequery(function() {
         $(this).ajaxForm({ dataType: 'script'});
