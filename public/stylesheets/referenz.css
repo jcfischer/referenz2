@@ -94,6 +94,15 @@ body {
   margin-bottom: 20px;
 }
 
+#buch {
+  margin-bottom: 20px;
+  min-height: 220px;
+}
+#buch img {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
 #main { 
   margin-top: 60px;
   margin-bottom: 140px;
@@ -121,6 +130,7 @@ body {
 
 #about {
   display: none;
+  padding: 0.5em 0;
 }
 
 #bottom {
