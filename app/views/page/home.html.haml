@@ -20,30 +20,29 @@
   #source.grid_3.omega
     %h2= link_to "Source", :controller => :page, :action => :source
     %p
-      Aller Code, der im Buch entwickelt wird (inklusive dem Code dieser Webanwendung) finden Sie in unter: 
+      Aller Code, der im Buch entwickelt wird (inklusive dem Code dieser Web- anwendung) finden Sie in unter: <br />
       = link_to 'Source', :controller => :page, :action => :source
 
 .grid_4    
   #errata
     %h2= link_to "Errata", "#"
     %p
-      Fehler? Leider nicht zu Vermeiden... Hier geht es zu der bekannten Fehlern:
+      Fehler? Leider nicht zu Vermeiden... Hier geht es zu der bekannten Fehlern:<br />
       = link_to "Errata", "#"
-
 
   #twitter
     %h2 Letzte News
     %ul#twitter_update_list
-  
 
 
   - unless logged_in?    
     %h2= link_to "Registrieren", signup_path
     %p
       Als registrierter Benutzer haben Sie folgende weiteren Vorteile:
-      %ul
-        %li Zugriff auf weitere Kapitel des Buches
-        %li Möglichkeit Kommentare abzugeben
+      
+    %ul
+      %li Zugriff auf weitere Kapitel des Buches
+      %li Möglichkeit Kommentare abzugeben
     %p
       = link_to 'Registrieren Sie sich', signup_path
     

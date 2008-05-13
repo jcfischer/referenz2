@@ -89,9 +89,13 @@ $(document).ready(function(){
     };
 
    };
+   
 
  
   // Behaviours
+    $("#ueber_uns").click(function() {
+      $('#about').slideToggle(); 
+    }); 
 
     $("form.ajax").livequery(function() {
         $(this).ajaxForm({ dataType: 'script'});

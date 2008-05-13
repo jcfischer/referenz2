@@ -26,12 +26,12 @@
     #main.container_12
       #content
         = yield
-      #sidebar
+      #sidebar.grid_4
         = yield :sidebar
       #clear
       
     #footer
-      .container_12
+      #about.container_12
         .grid_3.suffix_1
           %h3 About
           %p
@@ -41,11 +41,14 @@
           %h3 Impressum
           %p
             Donec molestie justo in quam. Fusce venenatis porttitor ante. 
-              
         .clear
-      #copyright
-        .container_12
+        
+      #bottom
+        .container_12.relative
           %p
-            &copy; 2007-
-            = Time.now.year
+            %a#ueber_uns{ :href => "#" }
+              Über Rais-Praxis
+            %span#copyright
+              &copy; 2007-
+              = Time.now.year
 
