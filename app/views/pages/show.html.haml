@@ -10,7 +10,7 @@
       %img{ :src => @page.user.gravatar_img_link(24), :class => "gravatar", :alt => "gravatar" }
       = "von #{@page.user.login rescue 'unbekannt'} um #{@page.created_at.to_s(:ch_dt)}"
 
-  #main_content
+  #main_content.clearleft
     ~ @page.to_html
 
   #comments

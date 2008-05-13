@@ -28,7 +28,8 @@
         = yield
       #sidebar.grid_4
         = yield :sidebar
-      #clear
+      .clearboth
+        &nbsp;
       
     #footer
       #about.container_12
@@ -47,7 +48,7 @@
         .container_12.relative
           %p
             %a#ueber_uns{ :href => "#" }
-              Über Rais-Praxis
+              Über Rais Praxis
             %span#copyright
               &copy; 2007-
               = Time.now.year

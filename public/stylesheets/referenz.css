@@ -10,7 +10,7 @@ body {
 
 #header {
   height: 100px; 
-  background: #b83e25;
+  background: #b83e25 url("/images/header.png") repeat-x;
 }
 
 #header .relative {
@@ -19,12 +19,17 @@ body {
 
 #header h1 {
   position: absolute;
-  top: 20px;
+  top: 27px;
   right: 10px;
+  text-indent: -10000px;
 }
 
 #header h1 a {
   color: #48150d;
+  display: block;
+  height: 42px;
+  width: 250px;
+  background: url("/images/logo.png") no-repeat;
 }
 
 #login_box {
@@ -37,7 +42,7 @@ body {
 }
 
 #login_box .links {
-  padding: 5px 0;
+  padding: 3px 0 7px;
 }
 
 #login_form {
@@ -62,7 +67,7 @@ body {
 
 #search_box form {
   position: absolute;
-  top: 25px;
+  top: 32px;
   left: 10px;
   padding: 0;
   margin: 0;
@@ -80,22 +85,11 @@ body {
   margin-bottom: 0; 
   position: absolute;
   top: 85px;
+  border-top: 3px solid #732717;
   background: #fff url("/images/navigation.png") top repeat-x;
 }
 
-#neuigkeiten {
-  margin-bottom: 42px;
-}
-
-#errata {
-  margin-bottom: 20px;
-}
-#twitter {
-  margin-bottom: 20px;
-}
-
 #buch {
-  margin-bottom: 20px;
   min-height: 220px;
 }
 #buch img {
@@ -105,7 +99,7 @@ body {
 
 #main { 
   margin-top: 60px;
-  margin-bottom: 140px;
+  padding-bottom: 40px;
 }
 
 
@@ -117,7 +111,7 @@ body {
   border-width: 3px 0 0 0;
   padding: 0;
   color: #eee;
-  background: #888;
+  background: #686868 url("/images/about.png") repeat-x;
 }
 
 #footer h3 {
@@ -130,12 +124,17 @@ body {
 
 #about {
   display: none;
-  padding: 0.5em 0;
+  
+}
+
+#about div { 
+  margin-top: 0.75em;
+  margin-bottom: 0.5em;
 }
 
 #bottom {
   margin-top: 0;
-  padding: 4px 0;
+  padding: 6px 0;
   position: relative;
   color: #999;
   background: #333;
@@ -155,6 +154,8 @@ body {
 #twitter_update_list li span {
   display: none;
 }
+
+#owner { margin-bottom: 1.5em; }
 
 
 /* --------------- Comments
@@ -178,6 +179,10 @@ body {
 /* --------------- Classes
 ---------------------------------------------*/
 
+.box {
+  margin-bottom: 1.5em;
+}
+
 .clear {
   clear: both;
   height: 1px;
@@ -191,6 +196,10 @@ body {
 
 .clearright {
   clear: right;
+}
+
+.clearboth {
+  clear: both;
 }
 
 .relative {
@@ -227,6 +236,7 @@ h4 {
   line-height: 1.25; 
   font-weight: bold;
   margin-bottom: 1.25em;
+  color: #5c1f12;
 }
 h5 { 
   font-size: 1em; 
@@ -292,7 +302,7 @@ ul.selection li a:hover {
 ---------------------------------------------*/
 #page_nav {
   float: left;
-  margin: 5px 0 0 10px;
+  margin: 3px 0 7px 10px;
 }
 #page_nav ul {
   display: inline;
