@@ -65,6 +65,11 @@ body {
   color: #fff;
 }
 
+#login_box a:hover {
+  color: #f19100;
+  text-decoration: none;
+}
+
 #search_box form {
   position: absolute;
   top: 32px;
@@ -352,12 +357,12 @@ textarea {
 /* --------------- Links ---------------------------------------------*/
 
 a { 
-  color: #3b3e60; 
+  color: #f19100; 
   text-decoration: none; 
 }
 
 a:hover { 
-  color: #ee850f; 
+  color: #f19100; 
   text-decoration: underline; 
 }
 
