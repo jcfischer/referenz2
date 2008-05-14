@@ -3,6 +3,7 @@ body {
   font-family: "Helvetica", arial, helvetica, sans-serif;
   font-size: 75%;
   line-height: 1.5; 
+  background: transparent url("/images/header3.png") repeat-x;
 }
 
 /* --------------- IDs
@@ -10,11 +11,11 @@ body {
 
 #header {
   height: 100px; 
-  background: #b83e25 url("/images/header2.png") repeat-x;
+  width: 100%;
 }
 
 #header .relative {
-  padding-top: 72p;
+  padding-top: 72px;
 }
 
 #header h1 {
@@ -91,7 +92,6 @@ body {
   position: absolute;
   top: 85px;
   border-top: 3px solid #732717;
-  background: #fff url("/images/navigation.png") top repeat-x;
 }
 
 #buch {
@@ -145,6 +145,10 @@ body {
   background: #333;
   border: solid #8a2e1c;
   border-width: 3px 0 0 0;
+}
+
+#bottom .relative {
+  background: #333;
 }
 
 #bottom p {
