@@ -90,6 +90,7 @@ body {
   height: 65px;
   margin-bottom: 0; 
   position: absolute;
+  right: 10px;
   top: 85px;
   border-top: 3px solid #732717;
 }
