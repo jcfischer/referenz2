@@ -5,7 +5,7 @@ describe "/layouts/referenz (anonymous)" do
   before(:each) do
     template.stub!(:logged_in?).and_return(false)
     
-    template.expect_render(:partial => 'shared/login')
+    template.expect_render(:partial => 'shared/navigation')
     render "/layouts/referenz"
   end
 
