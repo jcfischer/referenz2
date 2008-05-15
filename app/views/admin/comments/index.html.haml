@@ -1,14 +1,15 @@
-%h2 Kommentar Administration
+.grid_12
+  %h2 Kommentar Administration
 
-- form_tag delete_many_admin_comments_path, :method => :delete do
-  %table
-    %tr
-      %th &nbsp;
-      %th Titel
-      %th von
-      %th Datum
-      %th Löschen
-    = render :partial => 'comment', :collection => current_objects
+  - form_tag delete_many_admin_comments_path, :method => :delete do
+    %table.admin
+      %tr
+        %th &nbsp;
+        %th Titel
+        %th von
+        %th Datum
+        %th Löschen
+      = render :partial => 'comment', :collection => current_objects
   
-  = will_paginate @current_objects
-  = submit_tag "Löschen"
+    = will_paginate @current_objects
+    = submit_tag "Löschen"

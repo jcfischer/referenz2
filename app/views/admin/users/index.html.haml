@@ -1,14 +1,15 @@
-%h2 Benutzer Administration
+.grid_12
+  %h2 Benutzer Administration
 
-- form_tag delete_many_admin_users_path, :method => :delete do
-  %table
-    %tr
-      %th &nbsp;
-      %th Login
-      %th Email
-      %th Datum
-      %th Löschen
-    = render :partial => 'user', :collection => current_objects
+  - form_tag delete_many_admin_users_path, :method => :delete do
+    %table.admin
+      %tr
+        %th &nbsp;
+        %th Login
+        %th Email
+        %th Datum
+        %th Löschen
+      = render :partial => 'user', :collection => current_objects
   
-  = will_paginate @current_objects
-  = submit_tag "Löschen"
+    = will_paginate @current_objects
+    = submit_tag "Löschen"

@@ -22,11 +22,12 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :comments, :collection => { :delete_many => :delete }
     admin.resources :pages, :collection => { :delete_many => :delete }
     admin.resources :users, :collection => { :delete_many => :delete }
+    admin.resources :erratas, :collection => { :delete_many => :delete }
   end
   
   
   map.resources :categories
-
+  map.resources :erratas
 
   map.activate '/activate/:activation_code', :controller => 'users', :action => 'activate', :activation_code => nil
   map.signup   '/signup', :controller => 'users', :action => 'new'

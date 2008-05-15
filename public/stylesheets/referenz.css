@@ -35,7 +35,6 @@ body {
 
 #login_box {
   text-align: right;
-  padding-right: 20px;
   color: #fff;
   
   border: solid #5c1f12;
@@ -171,6 +170,30 @@ body {
 
 #ueber_uns {
   cursor: pointer;
+}
+
+#register {
+  padding: 20px 30px;
+  border: 3px solid #a23621;
+  background: #e5e5e5;
+}
+
+
+#register input.text {
+  font-size: 1.5em;
+  width: 384px;
+  border: 2px solid #555;
+}
+
+#register label {
+  font-weight: normal;
+  color: #333;
+  margin-top: 5px;
+  margin-bottom: -2px;
+}
+
+input#submit {
+  width: 8em;
 }
 
 /* --------------- Comments
@@ -389,6 +412,8 @@ img.gravatar {
 }
 
 
+/* --------------- Defaults---------------------------------------------*/
+
 p {
   margin: 0.75em 0 0.75em 0;
 }
@@ -402,3 +427,29 @@ ul {
 pre {
   margin: 0 0 1.5em 0;
 }
+
+/* --------------- Tables---------------------------------------------*/
+
+table.admin {
+  width: 100%;
+  border-top: 2px #aaa solid;
+  margin-bottom: 1.5em;
+}
+
+table.admin th {
+  text-align: left;
+  padding: 0 5px;
+  border-bottom: 2px #aaa solid;
+  background: #ddd;
+}
+
+table.admin td {
+  text-align: left;
+  padding: 3px 5px;
+  border: #aaa solid;
+  border-width: 0 0 2px 0;
+}
+
+
+
+

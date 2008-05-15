@@ -1,15 +1,13 @@
 .grid_12
-  %h2 Seiten Administration
+  %h2 Errata
 
   - form_tag delete_many_admin_pages_path, :method => :delete do
     %table.admin
       %tr
-        %th &nbsp;
         %th Titel
         %th von
         %th Datum
-        %th Löschen
-      = render :partial => 'page', :collection => current_objects
+      = render :partial => 'errata', :collection => current_objects
   
     = will_paginate @current_objects
-    = submit_tag "Löschen"
+    = link_to "Neue Errata", new_errata_path
