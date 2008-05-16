@@ -18,7 +18,7 @@ class ErratasController < ApplicationController
   end
   
   def current_objects
-    Errata.paginate(:all, :order => 'page', :page => params[:page], :per_page => 15, :conditions => ["state = ?", "fixed"])
+    Errata.paginate(:all, :order => 'page', :page => params[:page], :per_page => 15, :conditions => ["state = ?", "reviewed"])
   end
   
 end

@@ -2,18 +2,16 @@
   %h2 Errata Administration
 
   %div[current_object]
-    %h4= current_object.title
-
     %p 
-      = "von #{current_object.user.login rescue 'unbekannt'} um #{current_object.created_at.to_s(:db)}"
-    %p= current_object.description
-    
-    %p
-      = "State: #{current_object.state}"
-      - unless current_object.fixed?
-        %br
-        = link_to "Publish", "#"
-
-  = link_to 'Destroy', admin_page_path(current_object), :confirm => 'Really destroy page?', :method => :delete
-  |
-  = link_to 'Back', admin_erratas_path
+      = "von #{@errata.user.login rescue 'unbekannt'} um #{@errata.created_at.to_s(:db)}"
+      
+    - form_for(:errata, :url => admin_errata_path(@errata), :html => {:method => 'put'}) do |f|
+      = render :partial => "form.html.haml", :locals => {:f => f}
+      %p
+        = submit_tag "Speichern"
+        &nbsp;
+        = @errata.reviewed? ? "Reviewed" : link_to("Publish", :action => "publish", :id => @errata.id)
+        | 
+        = link_to 'Destroy', admin_page_path(@errata), :confirm => 'Really destroy page?', :method => :delete
+        |
+        = link_to 'Back', admin_erratas_path

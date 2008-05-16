@@ -18,6 +18,12 @@ class Admin::ErratasController < ApplicationController
     end
     redirect_to admin_erratas_path
   end
+  
+  def publish
+    @errata = Errata.find(params[:id])
+    @errata.publish!
+    redirect_to edit_admin_errata_path(@errata)
+  end
 
   protected
   def current_objects

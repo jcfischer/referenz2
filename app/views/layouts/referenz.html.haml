@@ -11,13 +11,13 @@
       .container_12.relative
         %h1
           = link_to( @title || "Rails-Praxis", "/")
-        #flash
-          = flash[:notice]
         = render :partial => "shared/search"
       #navigation
         = render :partial => 'shared/navigation'
 
     #main.container_12
+      #flash.grid_12
+        = flash[:notice]
       #content
         = yield
       #sidebar.grid_4
