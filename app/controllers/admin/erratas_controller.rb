@@ -4,7 +4,7 @@ class Admin::ErratasController < ApplicationController
 
   layout 'referenz'
   make_resourceful do
-    actions :index, :show, :destroy
+    actions :index, :show, :edit, :update, :destroy
   end
 
   def delete_many

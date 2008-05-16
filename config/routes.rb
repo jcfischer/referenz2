@@ -25,6 +25,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :erratas, :collection => { :delete_many => :delete }
   end
   
+  map.danke    '/erratas/danke', :controller => 'erratas', :action => 'thanks'
   
   map.resources :categories
   map.resources :erratas
@@ -33,6 +34,8 @@ ActionController::Routing::Routes.draw do |map|
   map.signup   '/signup', :controller => 'users', :action => 'new'
   map.login    '/login', :controller => 'sessions', :action => 'new'
   map.logout   '/logout', :controller => 'sessions', :action => 'destroy'   
+  
+ 
   
   # The priority is based upon order of creation: first created -> highest priority.
 

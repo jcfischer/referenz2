@@ -1,6 +1,7 @@
 %tr[errata]
   %td= check_box_tag "errata[]", errata.id
-  %td= link_to h(errata.title || "kein Titel"), admin_errata_path(errata)
+  %td= link_to h(errata.title || "kein Titel"), edit_admin_errata_path(errata)
   %td= errata.user.login rescue 'unbekannt'
   %td= errata.created_at.to_s(:db)
+  %td= errata.state
   %td= link_to 'löschen', admin_errata_path(errata), :confirm => 'Wirklich löschen?', :method => :delete

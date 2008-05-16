@@ -9,13 +9,16 @@ class ErratasController < ApplicationController
     end
     
     response_for :create, :update do |format|
-      format.html { redirect_to erratas_path }
+      format.html { redirect_to :action => "thanks" }
     end
     
   end
   
+  def thanks
+  end
+  
   def current_objects
-    Errata.paginate(:all, :order => 'page', :page => params[:page], :per_page => 15)
+    Errata.paginate(:all, :order => 'page', :page => params[:page], :per_page => 15, :conditions => ["state = ?", "fixed"])
   end
   
 end
