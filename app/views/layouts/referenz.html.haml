@@ -28,23 +28,40 @@
     #footer
       #about.container_12
         .grid_3.suffix_1
-          %h3 About
+          %h3 Über Rails-Praxis
           %p
-            Aliquam erat volutpat. Nunc consequat blandit ligula. 
+            Die Webseite enthält das Begleitmaterial zum Buch »Ruby on Rails 2.0« von Jens-Christian Fischer, erschienen im mitp Verlag, 2008
             
-        .grid_3.suffix_1
+        .grid_2.suffix_1
           %h3 Impressum
           %p
-            Donec molestie justo in quam. Fusce venenatis porttitor ante. 
+            InVisible GmbH
+            %br/
+            Jens-Christian Fischer
+            %br/
+            Schweighofstrasse 312
+            %br/
+            CH-8055 Zürich
+        .grid_2.suffix_1
+          %h3 &nbsp;
+          %p
+            = link_to 'www.invisible.ch', 'http://www.invisible.ch', { :class => 'no_ext'}
+            %br/
+            = link_to 'blog.invisible.ch', 'http://blog.invisible.ch', { :class => 'no_ext'}
+            %br/
+            Mobile: +41 79 691 05 48
+            %br/
+            = mail_to 'jcf@invisible.ch', 'jcf@invisible.ch'
+        
         .clear
         
       #bottom
         .container_12.relative
           %p
             %span#ueber_uns
-              Über Rais Praxis
+              Über Rails Praxis
             %span#copyright
-              &copy; 2007-
+              &copy; Jens-Christian Fischer, 2007-
               = Time.now.year
 
     = javascript_include_tag 'jquery-1.2.3.js'
