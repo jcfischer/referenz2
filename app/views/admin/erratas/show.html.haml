@@ -8,4 +8,11 @@
 
   #main_content.clearleft
     ~ @errata.to_html
+    = @errata.reviewed? ? "Reviewed" : link_to("Publish", :action => "publish", :id => @errata.id)
+    |
+    = link_to 'Edit', edit_admin_errata_path(@errata)
+    | 
+    = link_to 'Destroy', admin_errata_path(@errata), :confirm => 'Really destroy errata?', :method => :delete
+    |
+    = link_to 'Index', admin_erratas_path
 
