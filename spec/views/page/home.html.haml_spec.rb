@@ -23,7 +23,7 @@ describe "/page/home", :shared => true do
 
   it "should have a body field" do
     do_render
-    response.should have_tag("h4", :text => /Die Begleitseite zum Buch/)
+    response.should have_tag("h4", :text => /Professionelle Webentwicklung/)
   end
   
 end

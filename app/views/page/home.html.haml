@@ -1,7 +1,3 @@
-//- content_for :sidebar do
-//  %ul.selection
-//    %li= link_to 'Referenz', pages_path
-
 .grid_7.suffix_1
   #neuigkeiten.box
     %h4
@@ -43,11 +39,11 @@
     %h4 Das Buch zur Webseite
     %p
 
-      = link_to "<img src='http://www.mitp.de/images/130p/978-3-8266-1683-9.gif' alt='Rails Praxis' />", 'http://www.mitp.de/vmi/mitp/detail/pWert/1683/titel/Ruby%20on%20Rails%202.0%20in%20der%20Praxis', { :class => 'no_ext'}
+      = link_to(image_tag('book_cover.jpg'), 'http://www.mitp.de/vmi/mitp/detail/pWert/1683/titel/Ruby%20on%20Rails%202.0%20in%20der%20Praxis', { :class => 'no_ext'})
       Im 
       = link_to 'mitp Verlag', 'http://www.mitp.de'
       Verlag erschienen beschreibt dieses Buch den Aufbau einer komplexen Rails-Anwendung. 
-
+  .clear
 
   #errata.box
     %h2= link_to "Errata", erratas_path
