@@ -4,7 +4,8 @@
   - form_tag delete_many_admin_pages_path, :method => :delete do
     %table.admin
       %tr
-        %th Titel
+        %th Seite
+        %th Beschreibung
         %th von
         %th Datum
       = render :partial => 'errata', :collection => current_objects

@@ -1,4 +1,5 @@
 %tr[errata]
+  %td= errata.page
   %td= link_to h(errata.title || "kein Titel"), errata_path(errata)
   %td= errata.user.login rescue 'unbekannt'
   %td= errata.created_at.to_s(:db)
