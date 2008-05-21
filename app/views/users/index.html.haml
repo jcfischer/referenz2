@@ -1,5 +1,5 @@
 .grid_12
-  %h2 Errata
+  %h2 Benutzer
 
   - form_tag delete_many_admin_pages_path, :method => :delete do
     %table.admin
@@ -11,7 +11,4 @@
       = render :partial => 'errata', :collection => current_objects
   
     = will_paginate @current_objects
-    - if logged_in?
-      = link_to "Errata erfassen", new_errata_path
-    - else
-      = link_to 'Registrieren um Errata zu erfassen', signup_path
+    = link_to "Neue Errata", new_errata_path

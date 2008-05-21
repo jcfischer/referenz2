@@ -21,6 +21,8 @@ class User < ActiveRecord::Base
   acts_as_authorizable
   
   has_many :erratas
+  has_many :pages
+  has_many :comments
 
   # prevents a user from submitting a crafted form that bypasses activation
   # anything else you want your user to change should be added here.

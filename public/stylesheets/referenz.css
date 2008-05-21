@@ -338,22 +338,22 @@ ul.selection li a:hover {
     
 /* --------------- Main Navigation
 ---------------------------------------------*/
-#page_nav {
+#page_nav, #main_nav {
   float: left;
   margin: 3px 0 7px 10px;
 }
-#page_nav ul {
+#page_nav ul, #main_nav ul {
   display: inline;
   list-style: none;
 }
 
-#page_nav li {
+#page_nav li, #main_nav li {
   margin: 0;
   padding: 5px 10px 5px 0px;
   display: inline;
 }
 
-#page_nav li a {
+#page_nav li a, #main_nav li a  {
   text-decoration: none;
   color: white;
 }

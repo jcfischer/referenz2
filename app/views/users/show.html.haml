@@ -1,0 +1,28 @@
+.grid_12
+  %h2 Benutzer Information
+  %p
+    = @user.login
+    %br/
+    Registriert seit: 
+    = @user.created_at.to_s(:ch_dt)
+  #pages.grid_3.suffix_1.alpha.box
+    %h3 Seiten
+    %p
+      %ul
+        - @user.pages.each do |page|
+          %li 
+            = link_to h(page.title), page
+  #comments.grid_3.suffix_1.alpha.box
+    %h3 Kommentare
+    %p
+      %ul
+        - @user.comments.each do |comment|
+          %li 
+            = link_to h(comment.title), comment  
+  #errata.grid_3.suffix_1.alpha.box
+    %h3 Errata
+    %p
+      %ul
+        - @user.erratas.each do |errata|
+          %li 
+            = link_to h(errata.title), errata

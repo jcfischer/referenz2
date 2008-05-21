@@ -13,6 +13,10 @@ class UsersController < ApplicationController
   def new
   end
 
+  def show
+    @user = User.find(params[:id])
+  end
+
   def create
     cookies.delete :auth_token
     # protects against session fixation attacks, wreaks havoc with
