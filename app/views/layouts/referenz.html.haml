@@ -68,5 +68,10 @@
     = javascript_include_tag 'jquery.form.js', 'jquery.livequery.pack.js', 'jquery.scrollTo-min.js', 'jquery.localscroll-min.js', 'jrails'
     = javascript_include_tag 'application'
       
-      
+    = javascript_include_tag "http://www.google-analytics.com/urchin.js"
+
+    %script{ :type => "text/javascript" }
+      _uacct = "UA-787467-10";
+      urchinTracker();
+
       
