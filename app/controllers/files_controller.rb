@@ -39,7 +39,7 @@ class FilesController < ApplicationController
 
     def download
       begin
-        fname = "#{params[:file]}.#{params[:ext]}"
+        fname = "#{params[:file]}"
         path = sanitize_file_path(fname, base_path)
         raise MissingFile, 'permission denied' unless permit_file? path
         download = Download.find_or_create_by_file fname
@@ -69,10 +69,9 @@ class FilesController < ApplicationController
         logger.info "tests: readable #{File.readable?(path)}"
         logger.info "tests: file #{File.file?(path)}"
         raise MissingFile, "couldn't read #{filename}" unless
-            path =~ /^#{File.expand_path(base_path)}/ 
-            #and
-            #File.readable?(path) and
-            #File.file?(path)
+            path =~ /^#{File.expand_path(base_path)}/ and
+            File.readable?(path) and
+            File.file?(path)
 
         return path
     end
