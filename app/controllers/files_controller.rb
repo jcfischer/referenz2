@@ -13,7 +13,7 @@ class FilesController < ApplicationController
   protected
     def base_path
       if RAILS_ENV == 'production'
-        "/opt/rails/rails-praxis/current/files" 
+        "/opt/rails/rails-praxis/shared/files" 
       else
         "#{RAILS_ROOT}/files"
       end
