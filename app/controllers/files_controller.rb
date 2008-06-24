@@ -66,7 +66,7 @@ class FilesController < ApplicationController
         # Deny ./../etc/passwd and friends.
         # File must exist, be readable, and not be a directory, pipe, etc.
         logger.info "tests: regexp #{path =~ /^#{File.expand_path(base_path)}/}"
-        logger.info "tests: readable #File.readable?(path)}"
+        logger.info "tests: readable #{File.readable?(path)}"
         logger.info "tests: file #{File.file?(path)}"
         raise MissingFile, "couldn't read #{filename}" unless
             path =~ /^#{File.expand_path(base_path)}/ and
