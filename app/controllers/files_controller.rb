@@ -45,13 +45,13 @@ class FilesController < ApplicationController
         download = Download.find_or_create_by_file fname
         download.increment! :count
         if http_if_modified_since? path
-          send_file path
+          send_file path, :x_sendfile => true
         else
           render :text => '', :status => 304
         end
 
         rescue MissingFile => e
-          flash['error'] = "Download error: #{e}" 
+          flash['error'] = "Download fehler: #{e}" 
           redirect_to :action => 'index'
         end
     end
@@ -69,9 +69,10 @@ class FilesController < ApplicationController
         logger.info "tests: readable #{File.readable?(path)}"
         logger.info "tests: file #{File.file?(path)}"
         raise MissingFile, "couldn't read #{filename}" unless
-            path =~ /^#{File.expand_path(base_path)}/ and
-            File.readable?(path) and
-            File.file?(path)
+            path =~ /^#{File.expand_path(base_path)}/ 
+            #and
+            #File.readable?(path) and
+            #File.file?(path)
 
         return path
     end
