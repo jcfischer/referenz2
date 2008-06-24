@@ -1,0 +1,15 @@
+%h2 Kapitel herunterladen
+
+%p
+  = flash["error"]
+
+%p
+  Die folgenden Kapitel des Buches sind als PDF Dateien verfügbar:
+%table
+  %tr
+    %th Kapitel
+    %th Zähler
+  - @files.each do |fname, title|
+    %tr
+      %td= link_download fname, title
+      %td= @counts[fname] 

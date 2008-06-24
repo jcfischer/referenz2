@@ -35,7 +35,7 @@ ActionController::Routing::Routes.draw do |map|
   map.login    '/login', :controller => 'sessions', :action => 'new'
   map.logout   '/logout', :controller => 'sessions', :action => 'destroy'   
   
- 
+  map.download '/download/:file.:ext', :controller => 'files', :action => 'download', :file => nil
   
   # The priority is based upon order of creation: first created -> highest priority.
 
