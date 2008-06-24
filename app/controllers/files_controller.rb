@@ -12,7 +12,11 @@ class FilesController < ApplicationController
 
   protected
     def base_path
-        "#{RAILS_ROOT}/../../current/files"
+      if RAILS_ENV == 'production'
+        "/opt/rails/rails-praxis/current/files" 
+      else
+        "#{RAILS_ROOT}/files"
+      end
     end
 
     def permit_file?(path)
