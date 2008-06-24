@@ -42,7 +42,7 @@ class User < ActiveRecord::Base
   event :activate do
     transitions :from => :pending, :to => :active
   end
-
+  
   event :suspend do
     transitions :from => [:passive, :pending, :active], :to => :suspended
   end
@@ -75,6 +75,10 @@ class User < ActiveRecord::Base
 
   def authenticated?(password)
     crypted_password == encrypt(password)
+  end
+  
+  def reactivate
+    do_pending
   end
 
   def remember_token?

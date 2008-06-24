@@ -4,9 +4,12 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :tests
   
   map.resources :users, :member => { :activate => :get,
+                                     
                                      :suspend   => :put,
                                      :unsuspend => :put,
-                                     :purge     => :delete }
+                                     :purge     => :delete },
+                        :collection => { :reactivate => :post,
+                                         :activation => :get}
 
 
   map.resource :session

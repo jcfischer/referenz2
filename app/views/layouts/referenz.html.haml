@@ -17,7 +17,8 @@
 
     #main.container_12
       #flash.grid_12
-        = flash[:notice]
+        = flash[:notice] if flash[:notice]
+        = flash[:error] if flash[:error]
       #content
         = yield
       #sidebar.grid_4
