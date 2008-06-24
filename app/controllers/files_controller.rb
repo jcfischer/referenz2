@@ -12,7 +12,7 @@ class FilesController < ApplicationController
 
   protected
     def base_path
-        "#{RAILS_ROOT}/files"
+        "#{RAILS_ROOT}/../../current/files"
     end
 
     def permit_file?(path)
