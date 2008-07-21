@@ -26,6 +26,7 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :pages, :collection => { :delete_many => :delete }
     admin.resources :users, :collection => { :delete_many => :delete }
     admin.resources :erratas, :collection => { :delete_many => :delete }
+    admin.resources :chapters
   end
   
   map.danke    '/erratas/danke', :controller => 'erratas', :action => 'thanks'

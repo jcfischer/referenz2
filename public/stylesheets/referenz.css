@@ -340,7 +340,7 @@ ul.selection li a:hover {
 ---------------------------------------------*/
 #page_nav, #main_nav {
   float: left;
-  margin: 3px 0 7px 10px;
+  margin: 3px 0 7px 0;
 }
 #page_nav ul, #main_nav ul {
   display: inline;

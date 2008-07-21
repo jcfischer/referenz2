@@ -1,0 +1,5 @@
+%tr[chapter]
+  %td= chapter.number
+  %td= link_to h(chapter.title || "kein Titel"), edit_admin_chapter_path(chapter)
+  %td= chapter.created_at.to_s(:db)
+ 
