@@ -1,7 +1,14 @@
-%h2 Chapters
+.grid_12
+  %h2 Chapters
 
-%ul
-  - @chapters.each do |chapter|
-    %li
-      = "#{chapter.number} &ndash; "
-      = link_to "#{chapter.title}", chapter_path(chapter)
+  %table.chapters.admin
+    %tr
+      %th.number Nummer
+      %th.title Titel
+
+    - unless @chapters.empty?
+      = render :partial => 'chapter', :collection => @chapters
+    - else
+      %tr
+        %td No Chapters
+  

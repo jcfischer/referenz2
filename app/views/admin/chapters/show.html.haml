@@ -4,14 +4,18 @@
   %p 
     = @chapter.body
     
-  %ul
+  %table.admin
+    %tr
+      %th.number Nummer
+      %th Titel
     -unless @chapter.sections.empty?
       - @chapter.sections.each do |section| 
-        %li
-          = section.number
-          = link_to section.title, edit_admin_chapter_section_path(@chapter, section)
+        %tr
+          %td= section.number
+          %td= link_to section.title, edit_admin_chapter_section_path(@chapter, section)
     - else
-      %li No Sections
+      %tr 
+        %td No Sections
       
   %p
     = link_to "New Section", new_admin_chapter_section_path(@chapter)

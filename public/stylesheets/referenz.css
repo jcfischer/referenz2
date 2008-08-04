@@ -450,6 +450,10 @@ table.admin td {
   border-width: 0 0 2px 0;
 }
 
+table th.number {
+  width: 80px;
+}
+
 
 
 
