@@ -24,6 +24,7 @@ describe "/layouts/referenz (logged in)" do
   
   before(:each) do
     @user = mock_model(User, :login => "Joe Doe")
+    @user.stub!(:has_role?).and_return(true)
     template.stub!(:current_user).and_return(@user)
     template.stub!(:logged_in?).and_return(true)
     render "/layouts/referenz"
