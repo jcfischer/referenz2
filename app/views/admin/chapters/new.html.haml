@@ -3,7 +3,7 @@
 
   = error_messages_for :chapter
 
-  - form_for(:chapter, :url => admin_chapters_url, :method => "put") do |f|
+  - form_for(:chapter, :url => admin_chapters_url, :html => { :method => :post }) do |f|
     = render :partial => "form", :locals => {:f => f}
     %p= submit_tag "Speichern"
 

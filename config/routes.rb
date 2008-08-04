@@ -26,13 +26,18 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :pages, :collection => { :delete_many => :delete }
     admin.resources :users, :collection => { :delete_many => :delete }
     admin.resources :erratas, :collection => { :delete_many => :delete }
-    admin.resources :chapters
+    admin.resources :chapters do |chapter|
+      chapter.resources :sections
+    end
   end
   
   map.danke    '/erratas/danke', :controller => 'erratas', :action => 'thanks'
   
   map.resources :categories
   map.resources :erratas
+  map.resources :chapters do |chapter|
+    chapter.resources :sections
+  end
 
   map.activate '/activate/:activation_code', :controller => 'users', :action => 'activate', :activation_code => nil
   map.signup   '/signup', :controller => 'users', :action => 'new'

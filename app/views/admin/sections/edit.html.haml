@@ -1,0 +1,12 @@
+.grid_12
+  %h2 
+    = "#{@chapter.title}: #{@section.title}"
+    
+
+  = error_messages_for :section
+
+  - form_for(:section, :url => admin_chapter_section_url(@chapter), :html => { :method => :put }) do |f|
+    = render :partial => "form", :locals => {:f => f}
+    %p= submit_tag "Speichern"
+
+  = link_to 'Back', admin_chapter_path(@chapter)

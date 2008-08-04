@@ -3,7 +3,7 @@ class CreateSections < ActiveRecord::Migration
     create_table :sections do |t|
       t.string :title
       t.text :body, :intro
-      t.float :number
+      t.string :number
       t.integer :chapter_id
       t.timestamps
     end

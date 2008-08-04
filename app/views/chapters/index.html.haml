@@ -1,0 +1,7 @@
+%h2 Chapters
+
+%ul
+  - @chapters.each do |chapter|
+    %li
+      = "#{chapter.number} &ndash; "
+      = link_to "#{chapter.title}", chapter_path(chapter)

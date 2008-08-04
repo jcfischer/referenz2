@@ -5,6 +5,7 @@ class Admin::ChaptersController < ApplicationController
   
   make_resourceful do
     actions :all
+    
   end
   
 end

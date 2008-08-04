@@ -4,6 +4,9 @@
       %li= link_to_unless_current 'Referenz', pages_path
       %li= link_to_unless_current 'Errata', erratas_path
       %li= link_to_unless_current 'Download', :controller => 'files'
+      %li= link_to_unless_current 'Chapters', chapters_path
+      - if current_user && current_user.has_role?('system_admin')
+        %li= link_to 'Edit Chapters', admin_chapters_path
 
   - if logged_in?
     .links

@@ -3,7 +3,7 @@ class CreateChapters < ActiveRecord::Migration
     create_table :chapters do |t|
       t.string :title
       t.text :body, :intro
-      t.float :number
+      t.string :number
       t.timestamps
     end
   end
