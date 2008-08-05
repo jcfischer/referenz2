@@ -1,24 +1,3 @@
-<<<<<<< HEAD:app/views/chapters/show.html.haml
-.grid_12
-  %h2 
-    = "#{@chapter.number} &ndash; #{@chapter.title}"
-
-  %p 
-    = @chapter.body
-    
-  %table.admin
-    %tr
-      %th.number Abschnitt
-      %th Titel
-    -unless @chapter.sections.empty?
-      - @chapter.sections.each do |section| 
-        %tr
-          %td= section.number
-          %td= link_to section.title, chapter_section_path(@chapter, section)
-    - else
-      %tr 
-        %td Keine Abschnitte
-=======
 .grid_4
   = render :partial => "/shared/chapter_navigation.html.haml"
 
@@ -29,4 +8,3 @@
     #book_content
       = @chapter.body
     
->>>>>>> 3d360a5abe344ac43076b8553cf2cfed39e9736e:app/views/chapters/show.html.haml
