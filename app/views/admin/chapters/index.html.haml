@@ -10,7 +10,7 @@
       = render :partial => 'chapter', :collection => @chapters
     - else
       %tr
-        %td No Chapters
+        %td{ :colspan => "3" } No Chapters
   
   %p 
     = link_to "New Chapter", new_admin_chapter_path

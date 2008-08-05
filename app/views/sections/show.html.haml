@@ -1,4 +1,7 @@
-%h2= @section.title
+.grid_4
+  = render :partial => "/shared/chapter_navigation.html.haml"
 
-#content
-  = @section.body
+.grid_7.suffix_1
+  %h2= @section.title
+  #book_content
+    = @section.body

@@ -8,5 +8,8 @@ class SectionsController < ApplicationController
     actions :show
     
     belongs_to :chapter
+    before :show do
+      @chapters = Chapter.find(:all)
+    end
   end
 end

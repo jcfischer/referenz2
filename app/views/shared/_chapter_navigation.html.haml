@@ -1,0 +1,16 @@
+#chapter_nav
+  %ul
+    - @chapters.each do |chapter|
+      %li
+        %span.number
+          = chapter.ordinal
+        %span.title
+          = link_to_unless_current chapter.title, chapter_path(chapter)
+        - if @chapter == chapter
+          %ul 
+            - chapter.sections.each do |section|
+              %li
+                %span.number
+                  = section.number
+                %span.title
+                  = link_to_unless_current section.title, chapter_section_path(chapter, section)
