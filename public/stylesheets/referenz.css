@@ -1,7 +1,7 @@
 body {
   
-  font-family: "Helvetica", arial, helvetica, sans-serif;
-  font-size: 75%;
+  font-family: "Lucida Grande", arial, helvetica, sans-serif;
+  font-size: 87.5%;
   line-height: 1.5; 
   background: transparent url("/images/header3.png") repeat-x;
 }
@@ -9,6 +9,13 @@ body {
 /* --------------- IDs
 ---------------------------------------------*/
 
+#book_content {
+  margin-top: 1.5em;
+}
+
+#book {
+  padding: 0 0 0 20px; 
+}
 #header {
   height: 100px; 
   width: 100%;
@@ -30,7 +37,7 @@ body {
   display: block;
   height: 42px;
   width: 250px;
-  background: url("/images/logo.png") no-repeat;
+  background: url("/images/logo.png") no-repeat;font-size: 0.8571em;
 }
 
 #login_box {
@@ -92,6 +99,7 @@ body {
   right: 10px;
   top: 85px;
   border-top: 3px solid #732717;
+  font-size: 0.8571em;
 }
 
 #buch {
@@ -117,6 +125,7 @@ body {
   padding: 0;
   color: #eee;
   background: #686868 url("/images/about.png") repeat-x;
+  font-size: 0.8571em;
 }
 
 #footer h3 {
@@ -124,7 +133,7 @@ body {
 }
 
 #footer a {
-  color: #999;
+  color: #bbb;
 }
 
 #about {
@@ -358,6 +367,52 @@ ul.selection li a:hover {
   color: white;
 }
 
+#chapter_nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#chapter_nav {
+  color: #111;
+  font-size: 0.8571em;
+  line-height: 1.75em;
+}
+#chapter_nav a {
+  color: #ab3a22;
+}
+
+#chapter_nav a:hover {
+  color: #111;
+  text-decoration: none;
+}
+#chapter_nav li ul {
+  padding: 0 0 0 1.8em; 
+  margin: 0;
+}
+
+#chapter_nav li {
+  padding: 0; 
+  margin: 0;
+}
+#chapter_nav li .title {
+  display: block;
+  margin-left: 1.8em;
+}
+
+#chapter_nav li .number {
+  color: #111;
+  display: block;
+  float: left;
+  width: 1.8em;
+}
+#chapter_nav li li .number {
+  width: 2.7em;
+}
+#chapter_nav li li .title {
+  margin-left: 2.7em;
+}
+
 
 
 /* --------------- Forms ---------------------------------------------*/
@@ -385,12 +440,12 @@ textarea {
 /* --------------- Links ---------------------------------------------*/
 
 a { 
-  color: #f19100; 
+  color: #ab3a22;
   text-decoration: none; 
 }
 
 a:hover { 
-  color: #f19100; 
+  color: #ab3a22;
   text-decoration: underline; 
 }
 
@@ -415,13 +470,18 @@ img.gravatar {
 /* --------------- Defaults---------------------------------------------*/
 
 p {
-  margin: 0.75em 0 0.75em 0;
+  margin: 0 0 1.5em;
 }
 
 ul {
   padding-left: 2em;
-  margin: 0.75em 0 0.75em 0;
+  margin: 0 0 1.5em;
   list-style: square;
+}
+
+sup {
+  font-size: 0.8571em;
+  vertical-align: super;
 }
 
 pre {
@@ -453,6 +513,8 @@ table.admin td {
 table th.number {
   width: 80px;
 }
+
+
 
 
 

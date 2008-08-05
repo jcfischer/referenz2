@@ -5,7 +5,12 @@ class ChaptersController < ApplicationController
   
   make_resourceful do
     actions :index, :show
-    
+    before :show do
+      @chapters = Chapter.find(:all)
+    end
+    before :index do
+      @chapter = Chapter.find(:first)
+    end
   end
   
 end

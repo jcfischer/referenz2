@@ -1,14 +1,9 @@
-.grid_12
-  %h2 Chapters
+.grid_4
+  = render :partial => "/shared/chapter_navigation.html.haml"
 
-  %table.chapters.admin
-    %tr
-      %th.number Nummer
-      %th.title Titel
-
-    - unless @chapters.empty?
-      = render :partial => 'chapter', :collection => @chapters
-    - else
-      %tr
-        %td No Chapters
+.grid_7.suffíx_1
+  %h2 
+    = @chapter.title
+  %p 
+    = @chapter.body
   
