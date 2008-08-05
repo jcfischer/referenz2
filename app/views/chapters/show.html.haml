@@ -1,0 +1,18 @@
+.grid_12
+  %h2 
+    = "#{@chapter.number} &ndash; #{@chapter.title}"
+  %p 
+    = @chapter.body
+    
+  %table.admin
+    %tr
+      %th.number Nummer
+      %th Titel
+    -unless @chapter.sections.empty?
+      - @chapter.sections.each do |section| 
+        %tr
+          %td= section.number
+          %td= link_to section.title, chapter_section_path(@chapter, section)
+    - else
+      %tr 
+        %td No Sections

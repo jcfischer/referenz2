@@ -13,6 +13,10 @@ class PagesController < ApplicationController
     before :index, :new, :show do
       @categories = Category.find :all
     end
+    
+    before :new, :show do
+      @pages = current_objects
+    end
   end
 
   def publish

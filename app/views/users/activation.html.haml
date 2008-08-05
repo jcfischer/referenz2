@@ -1,0 +1,9 @@
+.grid_9.suffix_3
+  %h2 Aktivierungsmail nochmals versenden
+  - form_for :user, :url => reactivate_users_path do |f|
+    %p
+      %label{"for"=>"login"}
+        Login
+      = f.text_field :login, :class => "text"
+    %p
+      = submit_tag 'senden', :id => "submit"

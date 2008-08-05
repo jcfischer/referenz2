@@ -1,0 +1,14 @@
+.grid_12
+  %h2 Chapters
+
+  %table.chapters.admin
+    %tr
+      %th.number Nummer
+      %th.title Titel
+
+    - unless @chapters.empty?
+      = render :partial => 'chapter', :collection => @chapters
+    - else
+      %tr
+        %td No Chapters
+  

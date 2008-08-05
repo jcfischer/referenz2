@@ -1,0 +1,13 @@
+.grid_12
+  %h2= h(@errata.title)
+
+  #owner
+    %p 
+      %img{ :src => @errata.user.gravatar_img_link(24), :class => "gravatar", :alt => "gravatar" }
+      = "von #{@errata.user.login rescue 'unbekannt'} um #{@errata.created_at.to_s(:ch_dt)}"
+
+  #main_content.clearleft
+    ~ @errata.to_html
+    %p
+      = link_to 'Zurück zur Errata Liste', erratas_path
+

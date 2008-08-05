@@ -3,6 +3,7 @@ body {
   font-family: "Helvetica", arial, helvetica, sans-serif;
   font-size: 75%;
   line-height: 1.5; 
+  background: transparent url("/images/header3.png") repeat-x;
 }
 
 /* --------------- IDs
@@ -10,34 +11,38 @@ body {
 
 #header {
   height: 100px; 
-  background: #b83e25;
+  width: 100%;
 }
 
 #header .relative {
-  padding-top: 72p;
+  padding-top: 72px;
 }
 
 #header h1 {
   position: absolute;
-  top: 20px;
+  top: 27px;
   right: 10px;
+  text-indent: -10000px;
 }
 
 #header h1 a {
   color: #48150d;
+  display: block;
+  height: 42px;
+  width: 250px;
+  background: url("/images/logo.png") no-repeat;
 }
 
 #login_box {
   text-align: right;
-  padding-right: 20px;
-  color: #ff9f91;
+  color: #fff;
   
   border: solid #5c1f12;
   border-width: 0 0 0 0;
 }
 
 #login_box .links {
-  padding: 5px 0;
+  padding: 3px 0 7px;
 }
 
 #login_form {
@@ -60,9 +65,14 @@ body {
   color: #fff;
 }
 
+#login_box a:hover {
+  color: #f19100;
+  text-decoration: none;
+}
+
 #search_box form {
   position: absolute;
-  top: 25px;
+  top: 32px;
   left: 10px;
   padding: 0;
   margin: 0;
@@ -79,21 +89,22 @@ body {
   height: 65px;
   margin-bottom: 0; 
   position: absolute;
+  right: 10px;
   top: 85px;
-  background: #fff url("/images/navigation.png") top repeat-x;
+  border-top: 3px solid #732717;
 }
 
-#neuigkeiten {
-  margin-bottom: 42px;
+#buch {
+  min-height: 220px;
 }
-
-#errata {
-  margin-bottom: 42px;
+#buch img {
+  float: left;
+  margin: 0 20px 20px 0;
 }
 
 #main { 
   margin-top: 60px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 
@@ -101,30 +112,89 @@ body {
   position: fixed;
   bottom: 0;
   width: 100%;
-  border: solid #333;
+  border: solid #111;
   border-width: 3px 0 0 0;
-  padding: 0.5em 0 0 0;
+  padding: 0;
   color: #eee;
-  background: #888;
+  background: #686868 url("/images/about.png") repeat-x;
 }
 
 #footer h3 {
   color: #eee;
 }
 
+#footer a {
+  color: #999;
+}
 
-#copyright {
-  margin-top: 0.5em;
-  padding: 4px 0;
-  text-align: right;
-  color: #888;
+#about {
+  display: none;
+  
+}
+
+#about div { 
+  margin-top: 0.75em;
+  margin-bottom: 0.5em;
+}
+
+#bottom {
+  margin-top: 0;
+  padding: 6px 0;
+  position: relative;
+  color: #999;
+  background: #333;
+  border: solid #8a2e1c;
+  border-width: 3px 0 0 0;
+}
+
+#bottom .relative {
   background: #333;
 }
 
-#copyright p {
+#bottom p {
   margin: 0 10px;
 }
 
+#bottom #copyright {
+  position: absolute;
+  right: 10px;
+}
+
+#twitter_update_list li span {
+  display: none;
+}
+
+#owner { 
+  margin-bottom: 1.5em; 
+}
+
+#ueber_uns {
+  cursor: pointer;
+}
+
+#register {
+  padding: 20px 30px;
+  border: 3px solid #a23621;
+  background: #e5e5e5;
+}
+
+
+#register input.text {
+  font-size: 1.5em;
+  width: 384px;
+  border: 2px solid #555;
+}
+
+#register label {
+  font-weight: normal;
+  color: #333;
+  margin-top: 5px;
+  margin-bottom: -2px;
+}
+
+input#submit {
+  width: 8em;
+}
 
 /* --------------- Comments
 ---------------------------------------------*/
@@ -147,6 +217,10 @@ body {
 /* --------------- Classes
 ---------------------------------------------*/
 
+.box {
+  margin-bottom: 1.5em;
+}
+
 .clear {
   clear: both;
   height: 1px;
@@ -160,6 +234,10 @@ body {
 
 .clearright {
   clear: right;
+}
+
+.clearboth {
+  clear: both;
 }
 
 .relative {
@@ -196,6 +274,7 @@ h4 {
   line-height: 1.25; 
   font-weight: bold;
   margin-bottom: 1.25em;
+  color: #5c1f12;
 }
 h5 { 
   font-size: 1em; 
@@ -259,28 +338,26 @@ ul.selection li a:hover {
     
 /* --------------- Main Navigation
 ---------------------------------------------*/
-
-#navigation ul {
-  margin: 0 0 10px 0;
-  padding: 0;
+#page_nav, #main_nav {
+  float: left;
+  margin: 3px 0 7px 0;
+}
+#page_nav ul, #main_nav ul {
+  display: inline;
   list-style: none;
-} 
+}
 
-#navigation ul li {
+#page_nav li, #main_nav li {
   margin: 0;
-  padding: 2px 10px 5px 0px;
+  padding: 5px 10px 5px 0px;
   display: inline;
 }
 
-#navigation ul li a {
-  
+#page_nav li a, #main_nav li a  {
   text-decoration: none;
   color: white;
 }
 
-#navigation ul li a:hover {
-
-} /* background-color: #901216; */
 
 
 /* --------------- Forms ---------------------------------------------*/
@@ -308,12 +385,12 @@ textarea {
 /* --------------- Links ---------------------------------------------*/
 
 a { 
-  color: #3b3e60; 
+  color: #f19100; 
   text-decoration: none; 
 }
 
 a:hover { 
-  color: #ee850f; 
+  color: #f19100; 
   text-decoration: underline; 
 }
 
@@ -335,11 +412,48 @@ img.gravatar {
 }
 
 
+/* --------------- Defaults---------------------------------------------*/
+
 p {
-  margin: 0 0 1.5em 0;
+  margin: 0.75em 0 0.75em 0;
 }
 
 ul {
   padding-left: 2em;
+  margin: 0.75em 0 0.75em 0;
   list-style: square;
 }
+
+pre {
+  margin: 0 0 1.5em 0;
+}
+
+/* --------------- Tables---------------------------------------------*/
+
+table.admin {
+  width: 100%;
+  border-top: 2px #aaa solid;
+  margin-bottom: 1.5em;
+}
+
+table.admin th {
+  text-align: left;
+  padding: 0 5px;
+  border-bottom: 2px #aaa solid;
+  background: #ddd;
+}
+
+table.admin td {
+  text-align: left;
+  padding: 3px 5px;
+  border: #aaa solid;
+  border-width: 0 0 2px 0;
+}
+
+table th.number {
+  width: 80px;
+}
+
+
+
+

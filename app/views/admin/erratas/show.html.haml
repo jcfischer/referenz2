@@ -1,0 +1,18 @@
+.grid_12
+  %h2= h(@errata.title)
+
+  #owner
+    %p 
+      %img{ :src => @errata.user.gravatar_img_link(24), :class => "gravatar", :alt => "gravatar" }
+      = "von #{@errata.user.login rescue 'unbekannt'} um #{@errata.created_at.to_s(:ch_dt)}"
+
+  #main_content.clearleft
+    ~ @errata.to_html
+    = @errata.reviewed? ? "Reviewed" : link_to("Publish", :action => "publish", :id => @errata.id)
+    |
+    = link_to 'Edit', edit_admin_errata_path(@errata)
+    | 
+    = link_to 'Destroy', admin_errata_path(@errata), :confirm => 'Really destroy errata?', :method => :delete
+    |
+    = link_to 'Index', admin_erratas_path
+

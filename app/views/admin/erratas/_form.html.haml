@@ -1,0 +1,9 @@
+%p
+  %label{:for => "errata_title"} Titel
+  = f.text_field :title
+%p
+  %label{:for => "errata_page"} Page/Paragraph
+  = f.text_field :page
+%p
+  %label{:for => "errata_page"} Beschreibung
+  ~ f.text_area :description

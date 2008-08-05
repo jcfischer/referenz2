@@ -1,0 +1,16 @@
+.grid_12
+  %h2 Chapter Administration
+
+  %table.chapters.admin
+    %tr
+      %th.number Nummer
+      %th.title Titel
+      %th.modify Modify
+    - unless @chapters.empty?
+      = render :partial => 'chapter', :collection => @chapters
+    - else
+      %tr
+        %td No Chapters
+  
+  %p 
+    = link_to "New Chapter", new_admin_chapter_path

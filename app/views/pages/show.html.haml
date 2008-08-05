@@ -1,27 +1,28 @@
-%h2= h(@page.title)
+.grid_7.suffix_1
+  %h2= h(@page.title)
 
-- if logged_in? && @page.user == current_user
-  = link_to "Bearbeiten", edit_page_path(@page)
-  = render :partial => 'published_state'
+  - if logged_in? && @page.user == current_user
+    = link_to "Bearbeiten", edit_page_path(@page)
+    = render :partial => 'published_state'
 
-#owner
-  %p 
-    %img{ :src => @page.user.gravatar_img_link(24), :class => "gravatar", :alt => "gravatar" }
-    = "von #{@page.user.login rescue 'unbekannt'} um #{@page.created_at.to_s(:ch_dt)}"
+  #owner
+    %p 
+      %img{ :src => @page.user.gravatar_img_link(24), :class => "gravatar", :alt => "gravatar" }
+      = "von #{@page.user.login rescue 'unbekannt'} um #{@page.created_at.to_s(:ch_dt)}"
 
-#main_content
-  ~ @page.to_html
+  #main_content.clearleft
+    ~ @page.to_html
 
-#comments
-  %h3 Kommentare
+  #comments
+    %h3 Kommentare
 
-  %ul{:id => "children_#{@page.id}"}
-    - @page.comments.each do |comment| 
-      = render :partial => "comments/comment", :locals => { :comment => comment }
+    %ul{:id => "children_#{@page.id}"}
+      - @page.comments.each do |comment| 
+        = render :partial => "comments/comment", :locals => { :comment => comment }
         
           
-  - if logged_in?
-    %div{:id => "comment_#{@page.id}_response", :style => 'display: none'}
-    = ajax_link_to 'Kommentar schreiben', new_page_comment_path(@page)
-  - else
-    = link_to "Registrieren um zu kommentieren", signup_path
+    - if logged_in?
+      %div{:id => "comment_#{@page.id}_response", :style => 'display: none'}
+      = ajax_link_to 'Kommentar schreiben', new_page_comment_path(@page)
+    - else
+      = link_to "Registrieren um zu kommentieren", signup_path

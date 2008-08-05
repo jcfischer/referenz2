@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   
   layout "referenz"
-  skip_before_filter :login_required, :only => [:new, :create, :activate]
+  skip_before_filter :login_required, :only => [:new, :create, :activate, :activation, :reactivate]
   
   # Protect these actions behind an admin login
   # before_filter :admin_required, :only => [:suspend, :unsuspend, :destroy, :purge]
@@ -11,6 +11,10 @@ class UsersController < ApplicationController
 
   # render new.rhtml
   def new
+  end
+
+  def show
+    @user = User.find(params[:id])
   end
 
   def create
@@ -25,7 +29,7 @@ class UsersController < ApplicationController
       @user.register! 
       # self.current_user = @user
       redirect_back_or_default('/')
-      flash[:notice] = "Vielen Dank für's registrieren."
+      flash[:notice] = "Vielen Dank für's registrieren. Du bekommst in den nächsten Minuten ein Mail mit einem Aktivierungslink zugestellt."
     else
       render :action => 'new'
     end
@@ -38,6 +42,17 @@ class UsersController < ApplicationController
       flash[:notice] = "Aktivierung ist komplett."
     end
     redirect_back_or_default('/')
+  end
+  
+  def reactivate
+    @user = User.find_in_state :first, :pending, :conditions => {:login => params[:user][:login]}
+    if @user
+      @user.reactivate
+      flash[:notice] = "Neues Aktivierungsmail versendet"
+    else
+      flash[:error] = "Dieser Benutzer wurde bereits aktviert"
+    end
+    render :action => :activation
   end
 
   def suspend

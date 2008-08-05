@@ -6,7 +6,6 @@ class Admin::CommentsController < ApplicationController
   make_resourceful do
     actions :index, :show, :destroy
     belongs_to :page
-
   end
 
   def delete_many

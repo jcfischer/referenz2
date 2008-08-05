@@ -1,16 +1,26 @@
-- form_tag session_path do
-  %p
-    %label{"for"=>"login"}
-      Login
-    = text_field_tag 'login'
-  %p
-    %label{"for"=>"password"}
-      Password
-    = password_field_tag 'password'
-  /
-    Uncomment this if you want this functionality
-    <p><label for="remember_me">Remember me:</label>
-    <haml:loud> check_box_tag 'remember_me' </haml:loud></p>
-  %p
-    = submit_tag 'Log in'
+.grid_6.suffix_3.prefix_3
+
+  #register
+    %p
+      Login funktioniert nicht? 
+    %p
+      Haben Sie das Benutzerkonto aktiviert? Sie sollten
+      eine Email mit einem Aktivierungslink bekommen haben. Wenn dieses EMail fehlt,
+      dann hilft nur eines: 
+      = link_to 'neuen Aktivierungslink an mich senden', activation_users_path
+    - form_tag session_path do
+      %p
+        %label{"for"=>"login"}
+          Login
+        = text_field_tag 'login', nil, :class => 'text'
+      %p
+        %label{"for"=>"password"}
+          Passwort
+        = password_field_tag 'password', nil, :class => 'text'
+      /
+        Uncomment this if you want this functionality
+        <p><label for="remember_me">Remember me:</label>
+        <haml:loud> check_box_tag 'remember_me' </haml:loud></p>
+      %p
+        = submit_tag 'Log in'
 

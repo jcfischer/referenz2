@@ -1,0 +1,14 @@
+.grid_12
+  %h2 Benutzer
+
+  - form_tag delete_many_admin_pages_path, :method => :delete do
+    %table.admin
+      %tr
+        %th Seite
+        %th Beschreibung
+        %th von
+        %th Datum
+      = render :partial => 'errata', :collection => current_objects
+  
+    = will_paginate @current_objects
+    = link_to "Neue Errata", new_errata_path

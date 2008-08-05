@@ -1,52 +1,74 @@
-//- content_for :sidebar do
-//  %ul.selection
-//    %li= link_to 'Referenz', pages_path
-
 .grid_7.suffix_1
-  #neuigkeiten
+  #neuigkeiten.box
     %h4
-      Die Begleitseite zum Buch.
+      Professionelle Webentwicklung mit Ruby on Rails 2. 
+      %br/
+      Das Praxisbuch für Entwickler
     
     %h2 Neuigkeiten
     %p
-      Proin suscipit bibendum lectus. Aenean placerat nunc sit amet libero. Etiam a sapien. Nunc ut turpis. Pellentesque fermentum nulla eget pede. Maecenas a urna et      augue condimentum venenatis. Quisque elementum sem a erat. Donec luctus, justo ac sodales dictum, metus neque sagittis magna, sed malesuada dolor nibh ut metus. Praesent eu nunc aliquet leo eleifend fringilla. Vivamus ac ligula. Nunc ut ligula. In sem. Maecenas id felis. Praesent rhoncus, erat sed iaculis venenatis, elit metus tristique elit, id semper purus augue non orci. Cras dui diam, accumsan id, interdum vel, aliquam sit amet, sem.
+      Die Einleitung, sowie Kapitel 11, "RSpec und User Stories" sind als PDF erhältlich und können heruntergeladen werden.
+      = link_to "Kapitel-Downloads", :controller => 'files'
+    %p
+      Erste (positive) Besprechung auf Twitter:
+      = link_to "...Tests...", 'http://twitter.com/penguintux/statuses/818986975'
+      und
+      = link_to '...Fortgeschritten...', 'http://twitter.com/penguintux/statuses/818980960'
+      &nbsp;. Danke erstmals. Ich bin natürlich auf weiteren Feedback gespannt!
+    %p
+      Am 19.5.2008 ist das Buch aus der Druckerei in den Versand gegangen. Die ersten Exemplare dürften diese Woche
+      ausgeliefert werden. Noch etwas im Bau ist die Website. Die Referenz ist noch nicht vollständig aus dem 
+      englischen übersetzt und auf Rails 2.0 angepasst... Wir arbeiten daran!
     
-  #referenz.grid_3.suffix_1.alpha
+  #referenz.grid_3.suffix_1.alpha.box
     %h2= link_to  "Referenz", pages_path
     %p
       Eine umfassende 
       = link_to "Rails Referenz", pages_path
 
-  #source.grid_3.omega
+  #source.grid_3.omega.box
     %h2= link_to "Source", :controller => :page, :action => :source
     %p
-      Aller Code, der im Buch entwickelt wird (inklusive dem Code dieser Webanwendung) finden Sie in unter: 
+      Aller Code, der im Buch entwickelt wird (inklusive dem Code dieser Web- anwendung) finden Sie in unter: <br />
       = link_to 'Source', :controller => :page, :action => :source
-
-.grid_4    
-  #errata
-    %h2= link_to "Errata", "#"
-    %p
-      Fehler? Leider nicht zu Vermeiden... Hier geht es zu der bekannten Fehlern:
-      = link_to "Errata", "#"
-
-
-  #twitter
-    %h2 Letzte 3 News
-    %ul#twitter_update_list
-  
-
-
+      
   - unless logged_in?    
-    %h2= link_to "Registrieren", signup_path
-    %p
-      Als registrierter Benutzer haben Sie folgende weiteren Vorteile:
+    #registrieren.grid_7.alpha.omega.box
+      %h2= link_to "Registrieren", signup_path
+      %p
+        Als registrierter Benutzer haben Sie folgende weiteren Vorteile:
+
       %ul
         %li Zugriff auf weitere Kapitel des Buches
         %li Möglichkeit Kommentare abzugeben
+      %p
+        = link_to 'Registrieren Sie sich', signup_path
+
+
+.grid_4    
+  #buch.box
+    %h4 Das Buch zur Webseite
     %p
-      = link_to 'Registrieren Sie sich', signup_path
+
+      = link_to(image_tag('book_cover.jpg'), 'http://www.mitp.de/vmi/mitp/detail/pWert/1683/titel/Ruby%20on%20Rails%202.0%20in%20der%20Praxis', { :class => 'no_ext'})
+      Im 
+      = link_to 'mitp Verlag', 'http://www.mitp.de/vmi/mitp/detail/pWert/1683/titel/Ruby%20on%20Rails%202.0%20in%20der%20Praxis'
+      Verlag erschienen beschreibt dieses Buch den Aufbau einer komplexen Rails-Anwendung. 
+  .clear
+
+  #errata.box
+    %h2= link_to "Errata", erratas_path
+    %p
+      Fehler? Leider nicht zu Vermeiden... Hier geht es zu den bekannten Fehlern:<br />
+      = link_to "Errata", erratas_path
     
-%script{ :type => "text/javascript", :src => "http://twitter.com/javascripts/blogger.js" }
-%script{ :type => "text/javascript", :src => "http://twitter.com/statuses/user_timeline/rails_praxis.json?callback=twitterCallback2&count=3" }
+
+    
+
+
+
+      
+
+    
+
 

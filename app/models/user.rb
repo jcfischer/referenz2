@@ -19,7 +19,10 @@ class User < ActiveRecord::Base
   # Authorization plugin
   acts_as_authorized_user
   acts_as_authorizable
-
+  
+  has_many :erratas
+  has_many :pages
+  has_many :comments
 
   # prevents a user from submitting a crafted form that bypasses activation
   # anything else you want your user to change should be added here.
@@ -39,7 +42,7 @@ class User < ActiveRecord::Base
   event :activate do
     transitions :from => :pending, :to => :active
   end
-
+  
   event :suspend do
     transitions :from => [:passive, :pending, :active], :to => :suspended
   end
@@ -72,6 +75,10 @@ class User < ActiveRecord::Base
 
   def authenticated?(password)
     crypted_password == encrypt(password)
+  end
+  
+  def reactivate
+    do_pending
   end
 
   def remember_token?

@@ -1,51 +1,78 @@
 !!!
 %html{ :xmlns => "http://www.w3.org/1999/xhtml" }
   %head
-    %title= @title || "Referenz"
+    %title= @title || "Rails-Praxis"
     = stylesheet_link_tag 'gs/reset'
     = stylesheet_link_tag 'gs/960'
     = stylesheet_link_tag 'referenz'
     
-    = javascript_include_tag 'jquery-1.2.3.js'
-    = javascript_include_tag 'jquery.form.js', 'jquery.livequery.pack.js', 'jquery.scrollTo-min.js', 'jquery.localscroll-min.js', 'jrails'
-    = javascript_include_tag 'application'
-
-
   %body
-    
     #header
       .container_12.relative
         %h1
           = link_to( @title || "Rails-Praxis", "/")
-        #flash
-          = flash[:notice]
         = render :partial => "shared/search"
       #navigation
         = render :partial => 'shared/navigation'
 
     #main.container_12
-      #sidebar
-        = yield :sidebar
+      #flash.grid_12
+        = flash[:notice] if flash[:notice]
+        = flash[:error] if flash[:error]
       #content
         = yield
-      #clear
+      #sidebar.grid_4
+        = yield :sidebar
+      .clearboth
+        &nbsp;
       
     #footer
-      .container_12
+      #about.container_12
         .grid_3.suffix_1
-          %h3 About
+          %h3 Über Rails-Praxis
           %p
-            Aliquam erat volutpat. Nunc consequat blandit ligula. Donec molestie justo in quam. Fusce venenatis porttitor ante. Fusce sollicitudin, lacus nec tristique mattis, arcu tortor convallis libero, egestas dapibus justo turpis eu nulla. 
+            Die Webseite enthält das Begleitmaterial zum Buch »Ruby on Rails 2.0« von Jens-Christian Fischer, erschienen im mitp Verlag, 2008
             
-        .grid_3.suffix_1
-          %h3 More Info
+        .grid_2.suffix_1
+          %h3 Impressum
           %p
-            Aliquam erat volutpat. Nunc consequat blandit ligula. Donec molestie justo in quam. Fusce venenatis porttitor ante. Fusce sollicitudin, lacus nec tristique mattis, arcu tortor convallis libero, egestas dapibus justo turpis eu nulla.
-              
+            InVisible GmbH
+            %br/
+            Jens-Christian Fischer
+            %br/
+            Schweighofstrasse 312
+            %br/
+            CH-8055 Zürich
+        .grid_2.suffix_1
+          %h3 &nbsp;
+          %p
+            = link_to 'www.invisible.ch', 'http://www.invisible.ch', { :class => 'no_ext'}
+            %br/
+            = link_to 'blog.invisible.ch', 'http://blog.invisible.ch', { :class => 'no_ext'}
+            %br/
+            Mobile: +41 79 691 05 48
+            %br/
+            jcf (at) invisible.ch
+        
         .clear
-      #copyright
-        .container_12
+        
+      #bottom
+        .container_12.relative
           %p
-            &copy; 2007-
-            = Time.now.year
+            %span#ueber_uns
+              Über Rails Praxis
+            %span#copyright
+              &copy; Jens-Christian Fischer, 2007-
+              = Time.now.year
 
+    = javascript_include_tag 'jquery-1.2.3.js'
+    = javascript_include_tag 'jquery.form.js', 'jquery.livequery.pack.js', 'jquery.scrollTo-min.js', 'jquery.localscroll-min.js', 'jrails'
+    = javascript_include_tag 'application'
+      
+    = javascript_include_tag "http://www.google-analytics.com/urchin.js"
+
+    %script{ :type => "text/javascript" }
+      _uacct = "UA-787467-10";
+      urchinTracker();
+
+      

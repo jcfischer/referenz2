@@ -1,22 +1,24 @@
-%h2
-  Suchresultate
-%h3
-  = h(@query)
-#adv_search_form
-  - form_tag url_for(:controller => "search", :action => "index"), :method => :get do 
-    Was suchen?
-    = text_field_tag "search"
-    Wo?
-    = select_tag "search_models", options_for_select(["Page", "Comment"])
-    %br/
-    Sortierung:
-    = select_tag "search_sort", options_for_select([["Relevanz", "relevance"], ["Datum aufsteigend", 'ascending'], ["Datum absteigend", 'descending']])
+.grid_12
+
+  %h2
+    Suchresultate
+  %h3
+    = h(@query)
+  #adv_search_form
+    - form_tag url_for(:controller => "search", :action => "index"), :method => :get do 
+      Was suchen?
+      = text_field_tag "search"
+      Wo?
+      = select_tag "search_models", options_for_select(["Page", "Comment"])
+      %br/
+      Sortierung:
+      = select_tag "search_sort", options_for_select([["Relevanz", "relevance"], ["Datum aufsteigend", 'ascending'], ["Datum absteigend", 'descending']])
       
-#results
-  %ul
-    - @results.each do |result|
-      %li
-        = link_to result.title, result
-        %p
-          = result.body
-  = will_paginate(@search)
+  #results
+    %ul
+      - @results.each do |result|
+        %li
+          = link_to result.title, result
+          %p
+            = result.body
+    = will_paginate(@search)

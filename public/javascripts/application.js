@@ -89,9 +89,17 @@ $(document).ready(function(){
     };
 
    };
+   
 
  
   // Behaviours
+    $("#ueber_uns").mouseover(function() {
+      $('#about').slideDown(); 
+    }); 
+    
+    $("#footer").bind("mouseleave",function() {
+      $('#about').slideUp(); 
+    });
 
     $("form.ajax").livequery(function() {
         $(this).ajaxForm({ dataType: 'script'});
@@ -141,7 +149,7 @@ $(document).ready(function(){
     });
     
     // $("#new_page").delayedObserver(2, function() { console.log('You finished typing') });
-    $('a[@href^=http]').addClass('extlink');
+    $('a[@href^=http]').not('.no_ext').addClass('extlink');
     $('input[@name=search]').presuggest('Suche', 'fieldSuggestion');
     $('input[@id=page_title]').presuggest('Seitentitel', 'fieldSuggestion');
     $('a.login_link').click(function()

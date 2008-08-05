@@ -34,7 +34,10 @@ before :'deploy:restart', :'ultrasphinx:daemon_stop', :'ultrasphinx:config', :'u
 
 task :link_assets, :roles => [:app] do
   run <<-CMD
-  cp #{shared_path}/database.production.yml #{release_path}/config/database.yml
+  cp #{shared_path}/database.production.yml #{release_path}/config/database.yml &&
+  ln -nfs #{shared_path}/files #{release_path}/files &&
+  chmod 777 #{release_path}/public/images
+
   CMD
 end
 

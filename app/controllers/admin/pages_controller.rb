@@ -5,7 +5,6 @@ class Admin::PagesController < ApplicationController
   layout 'referenz'
   make_resourceful do
     actions :index, :show, :destroy
-
   end
 
   def delete_many
