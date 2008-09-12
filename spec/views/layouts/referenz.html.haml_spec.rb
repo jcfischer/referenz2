@@ -24,6 +24,7 @@ describe "/layouts/referenz (logged in)" do
   
   before(:each) do
     @user = mock_model(User, :login => "Joe Doe")
+    @user.stub!(:has_role?).and_return(true)
     template.stub!(:current_user).and_return(@user)
     template.stub!(:logged_in?).and_return(true)
     render "/layouts/referenz"
@@ -35,5 +36,28 @@ describe "/layouts/referenz (logged in)" do
     end
   end
   
+  
+end
+
+describe "/layouts/referenz (admin logged in)" do
+
+  
+  before(:each) do
+    @user = mock_model(User, :login => "Joe Doe")
+    @user.stub!(:has_role?).and_return(true)
+    template.stub!(:current_user).and_return(@user)
+    template.stub!(:logged_in?).and_return(true)
+    render "/layouts/referenz"
+  end
+
+  it "should have a search form" do
+    response.should have_tag("form[action=/search]") do |f|
+      f.should have_tag("input[type=text][id=search]")
+    end
+  end
+  
+  it 'should show chapters' do
+    response.should have_tag('a[href=?]', chapters_path, :text => 'Chapters')
+  end
   
 end
