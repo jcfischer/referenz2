@@ -8,4 +8,8 @@ class Admin::ChaptersController < ApplicationController
     
   end
   
+  def current_object
+    nr = params[:id].split("_").first
+    Chapter.find_by_number(nr)
+  end
 end
