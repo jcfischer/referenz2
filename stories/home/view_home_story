@@ -19,7 +19,7 @@ Story: Home Page
     
     When visiting '/'
     And clicks on 'Errata'
-    Then user should see errata/index
+    Then user should see erratas/index
 
     When visiting '/'
     And clicks on 'Source Code'
