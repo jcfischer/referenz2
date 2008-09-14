@@ -13,7 +13,6 @@ class Chapter < ActiveRecord::Base
   def slug
     return '' if title.blank?
     slug = title.downcase.gsub(/\s/, '_')
-    slug.gsub(/![a-z]/, "")
     
   end
   
