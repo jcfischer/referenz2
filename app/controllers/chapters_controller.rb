@@ -9,8 +9,7 @@ class ChaptersController < ApplicationController
   end
   
   def show
-    nr = params[:id].split("_").first
-    @chapter = Chapter.find_by_number(nr)
+    @chapter = Chapter.find_by_permalink(params[:id])
   end
   
 private

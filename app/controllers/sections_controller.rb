@@ -6,9 +6,8 @@ class SectionsController < ApplicationController
   
   def show
     @chapters = Chapter.find(:all)
-    logger.debug params
-    title = params[:id]
-    @section = Section.find_by_title(title)
+    @section = Section.find_by_permalink(params[:id])
+    @chapter = @section.chapter
   end
   
 end

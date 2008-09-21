@@ -41,7 +41,7 @@ describe ChaptersController, "GET show" do
   before(:each) do
     @chapter = mock_model(Chapter, :number => '2')
     Chapter.stub!(:find).and_return([@chapter])
-    Chapter.stub!(:find_by_number).and_return(@chapter)
+    Chapter.stub!(:find_by_permalink).and_return(@chapter)
   end
 
   def do_get
@@ -68,7 +68,7 @@ describe ChaptersController, "GET show" do
   end
   
   it "should call the find method of the chapter class" do
-    Chapter.should_receive(:find_by_number).with("2").and_return(@chapter)
+    Chapter.should_receive(:find_by_permalink).with("2_einfuhrung").and_return(@chapter)
     do_get
   end
   

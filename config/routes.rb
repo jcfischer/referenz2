@@ -35,6 +35,7 @@ ActionController::Routing::Routes.draw do |map|
   
   map.resources :categories
   map.resources :erratas
+  map.resources :sections
   map.resources :chapters do |chapter|
     chapter.resources :sections
   end

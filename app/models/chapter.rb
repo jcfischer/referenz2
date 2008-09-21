@@ -1,19 +1,10 @@
 class Chapter < ActiveRecord::Base
   
   has_many :sections
+  use_permalink :title
   
   def ordinal
     number ? "#{number}." : number
-  end
-  
-  def to_param
-    "#{number}_#{slug}"
-  end
-  
-  def slug
-    return '' if title.blank?
-    slug = title.downcase.gsub(/\s/, '_')
-    
   end
   
 end
