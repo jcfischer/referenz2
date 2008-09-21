@@ -13,6 +13,9 @@ body {
   margin-top: 1.5em;
 }
 
+#book {
+  padding: 0 0 0 20px; 
+}
 #header {
   height: 100px; 
   width: 100%;
@@ -34,7 +37,7 @@ body {
   display: block;
   height: 42px;
   width: 250px;
-  background: url("/images/logo.png") no-repeat;font-size: 12px;
+  background: url("/images/logo.png") no-repeat;font-size: 0.8571em;
 }
 
 #login_box {
@@ -96,7 +99,7 @@ body {
   right: 10px;
   top: 85px;
   border-top: 3px solid #732717;
-  font-size: 12px;
+  font-size: 0.8571em;
 }
 
 #buch {
@@ -122,7 +125,7 @@ body {
   padding: 0;
   color: #eee;
   background: #686868 url("/images/about.png") repeat-x;
-  font-size: 12px;
+  font-size: 0.8571em;
 }
 
 #footer h3 {
@@ -372,18 +375,25 @@ ul.selection li a:hover {
 
 #chapter_nav {
   color: #111;
-  font-size: 12px;
+  font-size: 0.8571em;
   line-height: 1.75em;
 }
 #chapter_nav a {
   color: #ab3a22;
 }
+
 #chapter_nav a:hover {
-  color: #ab3a22;
+  color: #111;
   text-decoration: none;
 }
 #chapter_nav li ul {
-  padding-left: 1.8em; 
+  padding: 0 0 0 1.8em; 
+  margin: 0;
+}
+
+#chapter_nav li {
+  padding: 0; 
+  margin: 0;
 }
 #chapter_nav li .title {
   display: block;
@@ -399,6 +409,10 @@ ul.selection li a:hover {
 #chapter_nav li li .number {
   width: 2.7em;
 }
+#chapter_nav li li .title {
+  margin-left: 2.7em;
+}
+
 
 
 /* --------------- Forms ---------------------------------------------*/
@@ -465,6 +479,11 @@ ul {
   list-style: square;
 }
 
+sup {
+  font-size: 0.8571em;
+  vertical-align: super;
+}
+
 pre {
   margin: 0 0 1.5em 0;
 }
@@ -494,6 +513,8 @@ table.admin td {
 table th.number {
   width: 80px;
 }
+
+
 
 
 
