@@ -5,7 +5,7 @@ class ChaptersController < ApplicationController
   before_filter :get_chapters
   
   def index
-    @chapter = @chapters.first
+    @chapter = @chapters.first || Chapter.new(:title => 'Kein Kapitel')
   end
   
   def show
