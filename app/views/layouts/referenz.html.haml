@@ -40,9 +40,9 @@
             %br/
             Jens-Christian Fischer
             %br/
-            Schweighofstrasse 312
+            Erlachstrasse 25
             %br/
-            CH-8055 Zürich
+            CH-8003 Zürich
         .grid_2.suffix_1
           %h3 &nbsp;
           %p
@@ -69,10 +69,20 @@
     = javascript_include_tag 'jquery.form.js', 'jquery.livequery.pack.js', 'jquery.scrollTo-min.js', 'jquery.localscroll-min.js', 'jrails'
     = javascript_include_tag 'application'
       
-    = javascript_include_tag "http://www.google-analytics.com/urchin.js"
+    %a{ :href => "http://piwik.org", :title => "Web analytics", :onclick => "window.open(this.href);return(false);"}
+      %script{ :type => "text/javascript" }
+        var pkBaseURL = (("https:" == document.location.protocol) ? "https://stats.take-back-the-net.org/" : "http://stats.take-back-the-net.org/");
+        document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+      %script{ :type => "text/javascript" }
+        piwik_action_name = '';
+        piwik_idsite = 4;
+        piwik_url = pkBaseURL + "piwik.php";
+        piwik_log(piwik_action_name, piwik_idsite, piwik_url);
+      %object
+        %noscript
+          %p 
+            Web analytics 
+            %img{ :src => "http://stats.take-back-the-net.org/piwik.php?idsite=4", :style => "border:0", :alt => ""}
 
-    %script{ :type => "text/javascript" }
-      _uacct = "UA-787467-10";
-      urchinTracker();
 
       
