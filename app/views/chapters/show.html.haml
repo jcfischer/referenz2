@@ -1,3 +1,13 @@
+.grid_12
+  %p
+    Dieses Kapitel stammt aus dem Buch 
+    = link_to 'Professionelle Webentwicklung mit Rails 2', 'http://www.amazon.de/dp/3826616839?tag=invisiblech-21&camp=1410&creative=6378&linkCode=as1&creativeASIN=3826616839&adid=17HY873HVDHDHDRRDGFP&'
+  %p
+    Es kann 
+    = link_to 'als PDF', 'http://rails-praxis.myshopify.com'
+    oder als 
+    = link_to 'Buch', 'http://www.mitp.de/vmi/mitp/detail/pWert/1683/titel/Ruby%20on%20Rails%202.0%20in%20der%20Praxis'
+    gekauft werden.
 .grid_4
   = render :partial => "/shared/chapter_navigation.html.haml"
 
@@ -7,4 +17,11 @@
       = "#{@chapter.number} &ndash; #{@chapter.title}"
     #book_content
       ~ @chapter.body
-    
+.grid_12
+  %br
+  %p
+    &copy; 2008 mitp Verlag und Jens-Christian Fischer
+  %p
+    Sie dürfen diese HTML Version für Ihren privaten Gebrauch natürlich ausdrucken. Ansonsten unterliegt diese Version
+    denselben Bestimmungen, wie die gebundene Ausgabe: Das Werk einschließlich aller seiner Teile ist urheberrechtlich geschützt. 
+    Alle Rechte vorbehalten einschließlich der Vervielfältigung, Übersetzung, Mikroverfilmung sowie Einspeicherung und Verarbeitung in elektronischen Systemen.

@@ -1,9 +1,27 @@
+.grid_12
+  %p
+    Dieses Kapitel stammt aus dem Buch 
+    = link_to 'Professionelle Webentwicklung mit Rails 2', '#'
+    Es kann 
+    = link_to 'als PDF', 'http://rails-praxis.myshopify.com'
+    oder als 
+    = link_to 'Buch', '#'
+    gekauft werden.
 .grid_4
   = render :partial => "/shared/chapter_navigation.html.haml"
 
 .grid_8
+
   #book
     %h2= @section.title
     #book_content
       ~ @section.body
-      
+
+.grid_12
+  %br
+  %p
+    &copy; 2008 mitp Verlag und Jens-Christian Fischer
+  %p
+    Sie dürfen diese HTML Version für Ihren privaten Gebrauch natürlich ausdrucken. Ansonsten unterliegt diese Version
+    denselben Bestimmungen, wie die gebundene Ausgabe: Das Werk einschließlich aller seiner Teile ist urheberrechtlich geschützt. 
+    Alle Rechte vorbehalten einschließlich der Vervielfältigung, Übersetzung, Mikroverfilmung sowie Einspeicherung und Verarbeitung in elektronischen Systemen.
