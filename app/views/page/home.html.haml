@@ -7,28 +7,14 @@
     
     %h2 Neuigkeiten
     %p
-      Nach längerem Hiatus (bedingt durch einen Serverwechsel) ist die Website für
-      das Buch jetzt wieder online. Leider ist die Datenbank (mit Logins / Errata) beim
-      Serverwechsel so beschädigt worden, dass sie nicht wieder hergestellt werden konnte.
+      Im Moment arbeiten wir an einer aktualiserten Fassung des Buches für Rails 3. Sie 
+      können eine Beta-Version des Buches direkt beim Verlag bestellen.
+      %a{ :href => 'http://www.it-fachportal.de/betabook.html'} BetaBook bei it-fachportal.de
     %p
       Die Einleitung, sowie Kapitel 11, "RSpec und User Stories" sind als PDF erhältlich und können heruntergeladen werden.
       = link_to "Kapitel-Downloads", :controller => 'files'
     %p
-      Erste (positive) Besprechung auf Twitter:
-      = link_to "...Tests...", 'http://twitter.com/penguintux/statuses/818986975'
-      und
-      = link_to '...Fortgeschritten...', 'http://twitter.com/penguintux/statuses/818980960'
-      &nbsp;. Danke erstmals. Ich bin natürlich auf weiteren Feedback gespannt!
-    %p
-      Am 19.5.2008 ist das Buch aus der Druckerei in den Versand gegangen. Die ersten Exemplare dürften diese Woche
-      ausgeliefert werden. Noch etwas im Bau ist die Website. Die Referenz ist noch nicht vollständig aus dem 
-      englischen übersetzt und auf Rails 2.0 angepasst... Wir arbeiten daran!
     
-  #referenz.grid_3.suffix_1.alpha.box
-    %h2= link_to  "Referenz", pages_path
-    %p
-      Eine umfassende 
-      = link_to "Rails Referenz", pages_path
 
   #source.grid_3.omega.box
     %h2= link_to "Source", :controller => :page, :action => :source
@@ -42,9 +28,6 @@
       %p
         Als registrierter Benutzer haben Sie folgende weiteren Vorteile:
 
-      %ul
-        %li Zugriff auf weitere Kapitel des Buches
-        %li Möglichkeit Kommentare abzugeben
       %p
         = link_to 'Registrieren Sie sich', signup_path
 
@@ -61,11 +44,6 @@
   %p
   .clear
 
-  #errata.box
-    %h2= link_to "Errata", erratas_path
-    %p
-      Fehler? Leider nicht zu Vermeiden... Hier geht es zu den bekannten Fehlern:<br />
-      = link_to "Errata", erratas_path
     
 
     
